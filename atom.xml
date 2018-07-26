@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-26T11:24:01.418Z</updated>
+  <updated>2018-07-26T11:35:30.949Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,16 +21,13 @@
     <link href="http://yoursite.com/2018/07/26/%E7%BA%AA%E5%BF%B5%E5%8D%9A%E5%AE%A2%E6%90%AD%E8%BD%BD%E5%AE%8C%E6%88%90/"/>
     <id>http://yoursite.com/2018/07/26/纪念博客搭载完成/</id>
     <published>2018-07-26T11:19:39.000Z</published>
-    <updated>2018-07-26T11:24:01.418Z</updated>
+    <updated>2018-07-26T11:35:30.949Z</updated>
     
-    <content type="html"><![CDATA[<p>搭载博客路遇到非常多的坑，但是不知道怎么过来了，前几天还停滞不前，经过同学指点和百度的指点，才坑坑洼洼搭载完成。我个人认为搭载博客非常有意义，他可以记录你所学的知识并且让你不会忘记，就像是写日志一样，起初只是为了搭载个玩，非常感谢各位大佬的技术知识。实在是非常牛，值得我们小白学习！！</p>]]></content>
+    <content type="html"><![CDATA[<p>搭载博客路遇到非常多的坑，但是不知道怎么过来了，前几天还停滞不前，经过同学指点和百度的指点，才坑坑洼洼搭载完成。我个人认为搭载博客非常有意义，他可以记录你所学的知识并且让你不会忘记，就像是写日志一样，起初只是为了搭载个玩。<a id="more"></a>非常感谢各位大佬的技术知识。实在是非常牛，值得我们小白学习！！</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;搭载博客路遇到非常多的坑，但是不知道怎么过来了，前几天还停滞不前，经过同学指点和百度的指点，才坑坑洼洼搭载完成。我个人认为搭载博客非常有意义，他可以记录你所学的知识并且让你不会忘记，就像是写日志一样，起初只是为了搭载个玩，非常感谢各位大佬的技术知识。实在是非常牛，值得我们小
-      
+      &lt;p&gt;搭载博客路遇到非常多的坑，但是不知道怎么过来了，前几天还停滞不前，经过同学指点和百度的指点，才坑坑洼洼搭载完成。我个人认为搭载博客非常有意义，他可以记录你所学的知识并且让你不会忘记，就像是写日志一样，起初只是为了搭载个玩。
     
     </summary>
     
@@ -42,79 +39,17 @@
   </entry>
   
   <entry>
-    <title>移动端初始</title>
-    <link href="http://yoursite.com/2018/07/26/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%88%9D%E5%A7%8B/"/>
-    <id>http://yoursite.com/2018/07/26/移动端初始/</id>
-    <published>2018-07-26T01:08:13.000Z</published>
-    <updated>2018-07-26T01:25:01.123Z</updated>
-    
-    <content type="html"><![CDATA[<p>在pc端编辑移动页面时，需要添加移动端的适口.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;在pc端编辑移动页面时，需要添加移动端的适口.&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="移动端适口" scheme="http://yoursite.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E5%8F%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>node初始第一天</title>
-    <link href="http://yoursite.com/2018/07/23/node1/"/>
-    <id>http://yoursite.com/2018/07/23/node1/</id>
-    <published>2018-07-23T06:57:35.260Z</published>
-    <updated>2018-07-26T02:35:40.841Z</updated>
-    
-    <content type="html"><![CDATA[<p>node是属于后台开发语言，相对于java和php等开发语言来说更适合前端人员学习。下载node应注意带有LTS的是不会更新只会修复bug，但带有current是会持续更新的。<br>如何在命令行中运行node.js 第一步：进入盘符。eg：d：第二步：更改路径：cd 你的文件夹名称。第三步：输入node 文件名.js<br>require(“模块名”)//引用模块；</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;node是属于后台开发语言，相对于java和php等开发语言来说更适合前端人员学习。下载node应注意带有LTS的是不会更新只会修复bug，但带有current是会持续更新的。&lt;br&gt;如何在命令行中运行node.js 第一步：进入盘符。eg：d：第二步：更改路径：cd 你的
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>我的博客</title>
-    <link href="http://yoursite.com/2018/07/21/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2018/07/21/我的博客/</id>
-    <published>2018-07-21T11:46:20.130Z</published>
-    <updated>2018-07-21T11:53:33.087Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://yoursite.com/2018/07/21/hello-world/"/>
     <id>http://yoursite.com/2018/07/21/hello-world/</id>
     <published>2018-07-21T09:12:06.404Z</published>
-    <updated>2018-07-21T09:12:06.404Z</updated>
+    <updated>2018-07-26T11:58:35.672Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p></p><h2>Hello World</h2><br><a id="more"></a><br>Welcome to our blog !!<p></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;p&gt;&lt;/p&gt;&lt;h2&gt;Hello World&lt;/h2&gt;&lt;br&gt;
     
     </summary>
     
