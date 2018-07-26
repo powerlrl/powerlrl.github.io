@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-26T01:25:01.123Z</updated>
+  <updated>2018-07-26T11:24:01.418Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>纪念博客搭载完成</title>
+    <link href="http://yoursite.com/2018/07/26/%E7%BA%AA%E5%BF%B5%E5%8D%9A%E5%AE%A2%E6%90%AD%E8%BD%BD%E5%AE%8C%E6%88%90/"/>
+    <id>http://yoursite.com/2018/07/26/纪念博客搭载完成/</id>
+    <published>2018-07-26T11:19:39.000Z</published>
+    <updated>2018-07-26T11:24:01.418Z</updated>
+    
+    <content type="html"><![CDATA[<p>搭载博客路遇到非常多的坑，但是不知道怎么过来了，前几天还停滞不前，经过同学指点和百度的指点，才坑坑洼洼搭载完成。我个人认为搭载博客非常有意义，他可以记录你所学的知识并且让你不会忘记，就像是写日志一样，起初只是为了搭载个玩，非常感谢各位大佬的技术知识。实在是非常牛，值得我们小白学习！！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;搭载博客路遇到非常多的坑，但是不知道怎么过来了，前几天还停滞不前，经过同学指点和百度的指点，才坑坑洼洼搭载完成。我个人认为搭载博客非常有意义，他可以记录你所学的知识并且让你不会忘记，就像是写日志一样，起初只是为了搭载个玩，非常感谢各位大佬的技术知识。实在是非常牛，值得我们小
+      
+    
+    </summary>
+    
+      <category term="有意义" scheme="http://yoursite.com/categories/%E6%9C%89%E6%84%8F%E4%B9%89/"/>
+    
+    
+      <category term="专注比广博更为重要" scheme="http://yoursite.com/tags/%E4%B8%93%E6%B3%A8%E6%AF%94%E5%B9%BF%E5%8D%9A%E6%9B%B4%E4%B8%BA%E9%87%8D%E8%A6%81/"/>
+    
+  </entry>
   
   <entry>
     <title>移动端初始</title>
