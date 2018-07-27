@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-26T11:35:30.949Z</updated>
+  <updated>2018-07-27T00:26:40.577Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,20 @@
     <link href="http://yoursite.com/2018/07/26/%E7%BA%AA%E5%BF%B5%E5%8D%9A%E5%AE%A2%E6%90%AD%E8%BD%BD%E5%AE%8C%E6%88%90/"/>
     <id>http://yoursite.com/2018/07/26/纪念博客搭载完成/</id>
     <published>2018-07-26T11:19:39.000Z</published>
-    <updated>2018-07-26T11:35:30.949Z</updated>
+    <updated>2018-07-27T00:26:40.577Z</updated>
     
-    <content type="html"><![CDATA[<p>搭载博客路遇到非常多的坑，但是不知道怎么过来了，前几天还停滞不前，经过同学指点和百度的指点，才坑坑洼洼搭载完成。我个人认为搭载博客非常有意义，他可以记录你所学的知识并且让你不会忘记，就像是写日志一样，起初只是为了搭载个玩。<a id="more"></a>非常感谢各位大佬的技术知识。实在是非常牛，值得我们小白学习！！</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="一、工具"><a href="#一、工具" class="headerlink" title="一、工具"></a>一、工具</h1><p>博客是利用github+hexo搭建而成。<br>首先你想的pc里面要有git，其次你还要下载nodeJS（非常强大的一款软件，适合前端同学学习！）</p><h1 id="二、发展"><a href="#二、发展" class="headerlink" title="二、发展"></a>二、发展</h1><p>搭建博客路遇到非常多的坑，期间有想过放弃。<br>只要功夫深，铁锤磨成针。一开始照着网上的教程勉勉强强的只能在本地运行。并不能部署到GitHub上感到非常的烦躁，就放在了那里。最后经过同学的指点，一步一步搭载出今天的博客，详情请参照<a href="https://limjk.tech/2018/07/25/Hexo%E6%90%AD%E5%BB%BA%E6%89%8B%E5%86%8C/" target="_blank" rel="noopener">博客链接</a>很不错的一篇博客，强烈推荐。</p><h1 id="三、致谢"><a href="#三、致谢" class="headerlink" title="三、致谢"></a>三、致谢</h1><p>感谢百度+阿里云+GitHub+hexo+git+nodeJS+同学技术支持。<br><a id="more"></a></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;搭载博客路遇到非常多的坑，但是不知道怎么过来了，前几天还停滞不前，经过同学指点和百度的指点，才坑坑洼洼搭载完成。我个人认为搭载博客非常有意义，他可以记录你所学的知识并且让你不会忘记，就像是写日志一样，起初只是为了搭载个玩。
+      &lt;h1 id=&quot;一、工具&quot;&gt;&lt;a href=&quot;#一、工具&quot; class=&quot;headerlink&quot; title=&quot;一、工具&quot;&gt;&lt;/a&gt;一、工具&lt;/h1&gt;&lt;p&gt;博客是利用github+hexo搭建而成。&lt;br&gt;首先你想的pc里面要有git，其次你还要下载nodeJS（非常强大的一款软件，适合前端同学学习！）&lt;/p&gt;
+&lt;h1 id=&quot;二、发展&quot;&gt;&lt;a href=&quot;#二、发展&quot; class=&quot;headerlink&quot; title=&quot;二、发展&quot;&gt;&lt;/a&gt;二、发展&lt;/h1&gt;&lt;p&gt;搭建博客路遇到非常多的坑，期间有想过放弃。&lt;br&gt;只要功夫深，铁锤磨成针。一开始照着网上的教程勉勉强强的只能在本地运行。并不能部署到GitHub上感到非常的烦躁，就放在了那里。最后经过同学的指点，一步一步搭载出今天的博客，详情请参照&lt;a href=&quot;https://limjk.tech/2018/07/25/Hexo%E6%90%AD%E5%BB%BA%E6%89%8B%E5%86%8C/
+&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;博客链接&lt;/a&gt;很不错的一篇博客，强烈推荐。&lt;/p&gt;
+&lt;h1 id=&quot;三、致谢&quot;&gt;&lt;a href=&quot;#三、致谢&quot; class=&quot;headerlink&quot; title=&quot;三、致谢&quot;&gt;&lt;/a&gt;三、致谢&lt;/h1&gt;&lt;p&gt;感谢百度+阿里云+GitHub+hexo+git+nodeJS+同学技术支持。&lt;br&gt;
     
     </summary>
     
-      <category term="有意义" scheme="http://yoursite.com/categories/%E6%9C%89%E6%84%8F%E4%B9%89/"/>
+      <category term="杂谈" scheme="http://yoursite.com/categories/%E6%9D%82%E8%B0%88/"/>
     
     
       <category term="专注比广博更为重要" scheme="http://yoursite.com/tags/%E4%B8%93%E6%B3%A8%E6%AF%94%E5%B9%BF%E5%8D%9A%E6%9B%B4%E4%B8%BA%E9%87%8D%E8%A6%81/"/>
