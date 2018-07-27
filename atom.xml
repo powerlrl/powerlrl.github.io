@@ -3,11 +3,11 @@
   <title>Lrl&#39;Blog</title>
   
   
-  <link href="/Hexo/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/Hexo/"/>
+  <link href="http://yoursite.com/"/>
   <updated>2018-07-27T00:45:47.411Z</updated>
-  <id>http://yoursite.com/Hexo/</id>
+  <id>http://yoursite.com/</id>
   
   <author>
     <name>林仁连</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>纪念博客搭载完成</title>
-    <link href="http://yoursite.com/Hexo/2018/07/26/%E7%BA%AA%E5%BF%B5%E5%8D%9A%E5%AE%A2%E6%90%AD%E8%BD%BD%E5%AE%8C%E6%88%90/"/>
-    <id>http://yoursite.com/Hexo/2018/07/26/纪念博客搭载完成/</id>
+    <link href="http://yoursite.com/2018/07/26/%E7%BA%AA%E5%BF%B5%E5%8D%9A%E5%AE%A2%E6%90%AD%E8%BD%BD%E5%AE%8C%E6%88%90/"/>
+    <id>http://yoursite.com/2018/07/26/纪念博客搭载完成/</id>
     <published>2018-07-26T11:19:39.000Z</published>
     <updated>2018-07-27T00:45:47.411Z</updated>
     
@@ -34,17 +34,17 @@
     
     </summary>
     
-      <category term="杂谈" scheme="http://yoursite.com/Hexo/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="http://yoursite.com/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="博客搭载过程" scheme="http://yoursite.com/Hexo/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E8%BD%BD%E8%BF%87%E7%A8%8B/"/>
+      <category term="博客搭载过程" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E8%BD%BD%E8%BF%87%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/Hexo/2018/07/21/hello-world/"/>
-    <id>http://yoursite.com/Hexo/2018/07/21/hello-world/</id>
+    <link href="http://yoursite.com/2018/07/21/hello-world/"/>
+    <id>http://yoursite.com/2018/07/21/hello-world/</id>
     <published>2018-07-21T09:12:06.404Z</published>
     <updated>2018-07-26T11:58:35.672Z</updated>
     
