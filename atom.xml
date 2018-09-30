@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-28T07:37:05.717Z</updated>
+  <updated>2018-09-30T11:15:48.644Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>国庆安排</title>
+    <link href="http://yoursite.com/2018/09/30/%E5%9B%BD%E5%BA%86%E5%AE%89%E6%8E%92/"/>
+    <id>http://yoursite.com/2018/09/30/国庆安排/</id>
+    <published>2018-09-30T11:14:04.000Z</published>
+    <updated>2018-09-30T11:15:48.644Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>准备抄写玩京东页面，完成JavaScript视频观看，和jQuery！</p><h1 id="二、正文"><a href="#二、正文" class="headerlink" title="二、正文"></a>二、正文</h1><p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p><h1 id="三、结尾"><a href="#三、结尾" class="headerlink" title="三、结尾"></a>三、结尾</h1><p>xxxxxxxxxxxxxxxx</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、绪论&quot;&gt;&lt;a href=&quot;#一、绪论&quot; class=&quot;headerlink&quot; title=&quot;一、绪论&quot;&gt;&lt;/a&gt;一、绪论&lt;/h1&gt;&lt;p&gt;准备抄写玩京东页面，完成JavaScript视频观看，和jQuery！&lt;/p&gt;
+&lt;h1 id=&quot;二、正文&quot;&gt;&lt;a href=&quot;#二、正文&quot; class=&quot;headerlink&quot; title=&quot;二、正文&quot;&gt;&lt;/a&gt;二、正文&lt;/h1&gt;&lt;p&gt;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&lt;/p&gt;
+&lt;h1 id=&quot;三、结尾&quot;&gt;&lt;a href=&quot;#三、结尾&quot; class=&quot;headerlink&quot; title=&quot;三、结尾&quot;&gt;&lt;/a&gt;三、结尾&lt;/h1&gt;&lt;p&gt;xxxxxxxxxxxxxxxx&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="假期" scheme="http://yoursite.com/categories/%E5%81%87%E6%9C%9F/"/>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js篇</title>
+    <link href="http://yoursite.com/2018/08/04/js%E7%AF%87/"/>
+    <id>http://yoursite.com/2018/08/04/js篇/</id>
+    <published>2018-08-04T12:57:40.000Z</published>
+    <updated>2018-08-04T13:01:46.086Z</updated>
+    
+    <content type="html"><![CDATA[<p>js代码用<script></script>标签包裹起来，js代码可以放在行内，body的后面，或者body之前，外部，但是通常我们会将js代码放在title的标签之下，但是如果这样的话，浏览器会先加载js代码，而不会先加载html的部分。由此，我们可以用window.onload = function(){js..代码}这种写法，但请不要忘记script标签。</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;js代码用&lt;script&gt;&lt;/script&gt;标签包裹起来，js代码可以放在行内，body的后面，或者body之前，外部，但是通常我们会将js代码放在title的标签之下，但是如果这样的话，浏览器会先加载js代码，而不会先加载html的部分。由此，我们可以用window.onload = function(){js..代码}这种写法，但请不要忘记script标签。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="分类别" scheme="http://yoursite.com/categories/%E5%88%86%E7%B1%BB%E5%88%AB/"/>
+    
+    
+      <category term="关于某方面的标签" scheme="http://yoursite.com/tags/%E5%85%B3%E4%BA%8E%E6%9F%90%E6%96%B9%E9%9D%A2%E7%9A%84%E6%A0%87%E7%AD%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>flag</title>
