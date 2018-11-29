@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-30T11:15:48.644Z</updated>
+  <updated>2018-11-29T14:11:59.879Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jquery总结</title>
+    <link href="http://yoursite.com/2018/11/29/jquery%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2018/11/29/jquery总结/</id>
+    <published>2018-11-29T13:59:48.000Z</published>
+    <updated>2018-11-29T14:11:59.879Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>总体来说总结一下jquery</p><h1 id="二、正文"><a href="#二、正文" class="headerlink" title="二、正文"></a>二、正文</h1><p>学习了大约一个多月的jQuery,我发现jQuery的特性就是用更小的代码，实现很强大的功能，就像它的那句话，The Write Less, Do More。首先是它的入口函数就有三种，分别是$(function(){});,jquery(function(){}),$(document).ready(function(){});而且还有多种方法,列如animate（）这个方法是可以做动画效果。个人非常喜欢，sibling()除了自身的兄弟节点,preall()自己前面的兄弟节点，与之对应的nextall（）,后继所有兄弟节点。而且jquery操作样式也是非常的方便。就像css的属性，可以传入一个对象。js不可以调用jquery对象，但是jquery可以调用js对象。这一点是要注意的。而且jQuery对事件的处理也是非常好，jQuery可以处理委托事件。重点重点（敲黑板！）jQuery不用担心兼容性问题。</p><h1 id="三、结尾"><a href="#三、结尾" class="headerlink" title="三、结尾"></a>三、结尾</h1><p>实在记不得方法，可以去查看手册。</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、绪论&quot;&gt;&lt;a href=&quot;#一、绪论&quot; class=&quot;headerlink&quot; title=&quot;一、绪论&quot;&gt;&lt;/a&gt;一、绪论&lt;/h1&gt;&lt;p&gt;总体来说总结一下jquery&lt;/p&gt;
+&lt;h1 id=&quot;二、正文&quot;&gt;&lt;a href=&quot;#二、正文&quot; class=&quot;headerlink&quot; title=&quot;二、正文&quot;&gt;&lt;/a&gt;二、正文&lt;/h1&gt;&lt;p&gt;学习了大约一个多月的jQuery,我发现jQuery的特性就是用更小的代码，实现很强大的功能，就像它的那句话，The Write Less, Do More。首先是它的入口函数就有三种，分别是$(function(){});,jquery(function(){}),$(document).ready(function(){});而且还有多种方法,列如animate（）这个方法是可以做动画效果。个人非常喜欢，sibling()除了自身的兄弟节点,preall()自己前面的兄弟节点，与之对应的nextall（）,后继所有兄弟节点。而且jquery操作样式也是非常的方便。就像css的属性，可以传入一个对象。js不可以调用jquery对象，但是jquery可以调用js对象。这一点是要注意的。而且jQuery对事件的处理也是非常好，jQuery可以处理委托事件。重点重点（敲黑板！）jQuery不用担心兼容性问题。&lt;/p&gt;
+&lt;h1 id=&quot;三、结尾&quot;&gt;&lt;a href=&quot;#三、结尾&quot; class=&quot;headerlink&quot; title=&quot;三、结尾&quot;&gt;&lt;/a&gt;三、结尾&lt;/h1&gt;&lt;p&gt;实在记不得方法，可以去查看手册。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="分类别" scheme="http://yoursite.com/categories/%E5%88%86%E7%B1%BB%E5%88%AB/"/>
+    
+    
+      <category term="关于某方面的标签" scheme="http://yoursite.com/tags/%E5%85%B3%E4%BA%8E%E6%9F%90%E6%96%B9%E9%9D%A2%E7%9A%84%E6%A0%87%E7%AD%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>国庆安排</title>
