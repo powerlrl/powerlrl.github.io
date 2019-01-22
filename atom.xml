@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-29T14:11:59.879Z</updated>
+  <updated>2019-01-21T12:30:25.571Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/01/22/HTML%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2019/01/22/HTML总结/</id>
+    <published>2019-01-22T11:57:52.465Z</published>
+    <updated>2019-01-21T12:30:25.571Z</updated>
+    
+    <content type="html"><![CDATA[<p>#HTML总结（ps拖了很久的总结~）</p><p>##HTML </p><ul><li>HTML简介 </li></ul><blockquote><p>html又可称之为超文本标记语言（Http text mark language）是网络上应用最广泛的语言。最新的版本已经到了h5 HTML5又增加了许多新特性不如canvas svg 等等标签，整个前端可以分为HTML CSS JS 其中html是骨架部分，css是外形，而js是行为和方法。我们把html编写出来，拿到浏览器中去渲染。常用的浏览器有Google friefix IE     </p></blockquote><ul><li>HTML标签<br> html的标签有双标签和单标签，例如h1标签就是双标签，input这类标签就是单标签便签是具有属性的。虽然html不区分大小写，但是我们推荐标签使用小写形式。</li><li>HTML的基本结构</li></ul><p><img src="https://i.imgur.com/dPaeqei.png" alt=""></p><p>在上面的例子中，第一个标签<html>是告诉浏览器这是html文档的开始。Html文档的最后一个标签是</html>，是告诉浏览器这是html的终止。标签<head></head>之间的文本是头部信息，在<title></title>之间的文本是文档标题，会显示在浏览器的窗口的标题栏。<body></body>之间的文本是正文。</p><ul><li>链接和锚点</li></ul><p>1、URL同一资源定位符,万维网的每一个文件都有一个URL</p><p>2、a标签属性：  href的值是URL、target新网页从哪个窗口打开（_self/_blank）、title 提示、download下载（H5新增）</p><p>3、锚点<a name="锚点的名字"></a>、使用超链接#跳到指定位置</p><ul><li><p>行内与块级标签    </p><p>  行内标签与块级标签可以互相转换。</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#HTML总结（ps拖了很久的总结~）&lt;/p&gt;
+&lt;p&gt;##HTML &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML简介 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;html又可称之为超文本标记语言（Http text mark language）是网络上应用最广泛的语言。
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>jquery总结</title>
