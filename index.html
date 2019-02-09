@@ -371,7 +371,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  869
+                  1,890
                 </span>
               
 
@@ -387,7 +387,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  8
                 </span>
               
             </div>
@@ -961,7 +961,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,345
+                  1,703
                 </span>
               
 
@@ -977,7 +977,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  7
                 </span>
               
             </div>
@@ -999,15 +999,11 @@
 
       
         
-          <blockquote>
+          <h2 id="JS-JavaScript（小小的简介一下）"><a href="#JS-JavaScript（小小的简介一下）" class="headerlink" title="JS   JavaScript（小小的简介一下）"></a>JS   JavaScript（小小的简介一下）</h2><blockquote>
 <p>js代码用标签包裹起来，js代码可以放在行内，body的后面，或者body之前，外部，但是通常我们会将js代码放在title的标签之下，但是如果这样的话，浏览器会先加载js代码，而不会先加载html的部分。由此，我们可以用window.onload = function(){js..代码}这种写法，但请不要忘记script标签。</p>
 </blockquote>
 <h6 id="一、attributes-属性"><a href="#一、attributes-属性" class="headerlink" title="一、attributes 属性"></a>一、attributes 属性</h6><p>该属性是获取标签中的属性，列如class，id，和href之类的属性，如果一个标签中包含多个属性则使用attributes[num]获取的是第几个属性。该属性还可以有length和value属性。</p>
 <h6 id="二、cookie属性"><a href="#二、cookie属性" class="headerlink" title="二、cookie属性"></a>二、cookie属性</h6><p>是浏览器存储信息的东西document.cookie().</p>
-<h3 id="一、JS原型"><a href="#一、JS原型" class="headerlink" title="一、JS原型"></a>一、JS原型</h3><h5 id="首先我们看一个例子："><a href="#首先我们看一个例子：" class="headerlink" title="首先我们看一个例子："></a>首先我们看一个例子：</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">age,name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.age = age;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.eat=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"我是构造函数中吃"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> (<span class="number">13</span>,<span class="string">"小红"</span>);</span><br><span class="line"><span class="keyword">var</span> p2 = <span class="keyword">new</span> (<span class="number">15</span>,<span class="string">"小明"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(p1 == p2);<span class="comment">//结果会是什么呢？  false</span></span><br></pre></td></tr></table></figure>
-<p>为什么会是false呢？不都是构造函数中的方法嘛，因为实例化对象不同，所以调用的方法也不同，有一百个对象，那么就要调用一百次这个方法，那么这不浪费内存空间嘛，由此引出————原型（prototype）</p>
-<h5 id="原型的作用：数据共享，节省内存空间。"><a href="#原型的作用：数据共享，节省内存空间。" class="headerlink" title="原型的作用：数据共享，节省内存空间。"></a>原型的作用：数据共享，节省内存空间。</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">age,name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//向原型中添加方法</span></span><br><span class="line">Person.prototype.eat=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"我是原型中的方法"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> (<span class="number">13</span>,<span class="string">"小红"</span>);</span><br><span class="line"><span class="keyword">var</span> p2 = <span class="keyword">new</span> (<span class="number">15</span>,<span class="string">"小明"</span>);</span><br><span class="line">p1.eat();</span><br><span class="line">p2.eat();<span class="comment">//这样我们就调用的是同一个方法了。</span></span><br></pre></td></tr></table></figure>
-<p>首先我们实例化对象的时候，如果构造函数中没有对应的方法或者属性，那么我们就要到原型中去寻找。如过没有找到，就会报错，如果在构造函数中找到，则输出相应的结果。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/08/04/js篇/#more" rel="contents">
@@ -1463,7 +1459,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.7k字</span>
+  <span class="post-count">博客全站共4.1k字</span>
 </div>
 
         
