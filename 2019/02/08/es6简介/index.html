@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -86,7 +86,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Lrl'Blog" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="LinYo." type="application/atom+xml" />
 
 
 
@@ -98,11 +98,11 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6简介">
 <meta property="og:url" content="http://yoursite.com/2019/02/08/es6简介/index.html">
-<meta property="og:site_name" content="Lrl&#39;Blog">
+<meta property="og:site_name" content="LinYo.">
 <meta property="og:description" content="ES6简介 Es6（ECMASCRIPT 6）是继ES5的新一代web前端开发的一个标准语法，JavaScript 和 ECMAScript 是神马关系呢？ 我只记得阮一峰老师的ES6标准入门的一句话  前者是后者的一种实现，后者是前者的一种规范  一、用let定义变量在es5中我们使用的用var定义变量这样带来的不好的问题有一下几点。  用var定义的变量提升  123456789window.">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="c:/Users/LRY-NB/Desktop/u=2013839739,3971030568&fm=27&gp=0.jpg">
-<meta property="og:updated_time" content="2019-02-09T14:43:19.330Z">
+<meta property="og:updated_time" content="2019-02-10T04:06:50.071Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6简介">
 <meta name="twitter:description" content="ES6简介 Es6（ECMASCRIPT 6）是继ES5的新一代web前端开发的一个标准语法，JavaScript 和 ECMAScript 是神马关系呢？ 我只记得阮一峰老师的ES6标准入门的一句话  前者是后者的一种实现，后者是前者的一种规范  一、用let定义变量在es5中我们使用的用var定义变量这样带来的不好的问题有一下几点。  用var定义的变量提升  123456789window.">
@@ -114,7 +114,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -142,7 +142,7 @@
 
 
 
-  <title>ES6简介 | Lrl'Blog</title>
+  <title>ES6简介 | LinYo.</title>
   
 
 
@@ -172,7 +172,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Lrl'Blog</span>
+        <span class="site-title">LinYo.</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -282,13 +282,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/08/es6简介/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="林仁连">
+      <meta itemprop="name" content="小白">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/1.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lrl'Blog">
+      <meta itemprop="name" content="LinYo.">
     </span>
 
     
@@ -372,7 +372,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,890
+                  2,304
                 </span>
               
 
@@ -388,7 +388,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  8
+                  10
                 </span>
               
             </div>
@@ -470,6 +470,10 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//es5中我们是这个样子的</span></span><br><span class="line"><span class="keyword">let</span> name = <span class="string">"木木"</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"我的名字叫"</span>+name);</span><br><span class="line"></span><br><span class="line"><span class="comment">//再es6中</span></span><br><span class="line"><span class="keyword">let</span> name = <span class="string">"二人"</span>；</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">`我的名字是<span class="subst">$&#123;name&#125;</span>`</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str);</span><br><span class="line"></span><br><span class="line"><span class="comment">//二者等价</span></span><br></pre></td></tr></table></figure>
 <p><strong>当然还有标签模板</strong>，这个啊，我可能要不是太了解，只知道它会把反引号解析成函数的单引号，从而生成一个数组。像这样</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name =<span class="string">"nn"</span>;</span><br><span class="line"><span class="keyword">let</span> age = <span class="number">13</span>；</span><br><span class="line"><span class="built_in">console</span>.log<span class="string">`我的名字<span class="subst">$&#123;name&#125;</span>我今年<span class="subst">$&#123;age&#125;</span>岁`</span></span><br><span class="line"><span class="comment">//结果是生成了一个数组</span></span><br><span class="line"><span class="built_in">Array</span>(<span class="number">3</span>)</span><br><span class="line"><span class="number">0</span>: <span class="string">"我的名字"</span></span><br><span class="line"><span class="number">1</span>: <span class="string">"我今年"</span></span><br><span class="line"><span class="number">2</span>: <span class="string">"岁"</span></span><br><span class="line">length: <span class="number">3</span></span><br><span class="line"><span class="string">"nn"</span><span class="number">13</span></span><br></pre></td></tr></table></figure>
+<h3 id="九、新增数据类型Set和Map"><a href="#九、新增数据类型Set和Map" class="headerlink" title="九、新增数据类型Set和Map"></a>九、新增数据类型Set和Map</h3><p>set集合主要是去重，没有重复的值，类似于数组key和value的值是相等的。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> set = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="string">"张三"</span>,<span class="string">"李四"</span>,<span class="string">"王二"</span>]);</span><br><span class="line">        <span class="built_in">console</span>.log(set);</span><br><span class="line">        <span class="comment">//一个属性集合的长度3</span></span><br><span class="line">        <span class="built_in">console</span>.log(set.size);</span><br><span class="line">        <span class="comment">//四个方法 </span></span><br><span class="line">        <span class="comment">//add</span></span><br><span class="line">        set.add(<span class="string">"麻子"</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(set);</span><br><span class="line">        <span class="comment">//delete</span></span><br><span class="line">        set.delete(<span class="string">"麻子"</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(set);</span><br><span class="line">        <span class="comment">//has  是否包含该值</span></span><br><span class="line">        set.has(<span class="string">"麻子"</span>);</span><br><span class="line">        <span class="comment">//clear没有返回值</span></span><br><span class="line">        set.clear();</span><br><span class="line">        <span class="built_in">console</span>.log(set);</span><br><span class="line"></span><br><span class="line"><span class="comment">//以下是测试结果</span></span><br><span class="line"></span><br><span class="line">        <span class="built_in">Set</span>(<span class="number">3</span>) &#123;<span class="string">"张三"</span>, <span class="string">"李四"</span>, <span class="string">"王二"</span>&#125;</span><br><span class="line">         <span class="number">3</span></span><br><span class="line">        <span class="built_in">Set</span>(<span class="number">4</span>) &#123;<span class="string">"张三"</span>, <span class="string">"李四"</span>, <span class="string">"王二"</span>, <span class="string">"麻子"</span>&#125;</span><br><span class="line">        <span class="built_in">Set</span>(<span class="number">3</span>) &#123;<span class="string">"张三"</span>, <span class="string">"李四"</span>, <span class="string">"王二"</span>&#125;</span><br><span class="line">        <span class="built_in">Set</span>(<span class="number">0</span>) &#123;&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>下面我们重点介绍下Map这个令人头疼的集合。个人觉得有点乱啊！</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj1 = &#123;<span class="attr">a</span>:<span class="number">1</span>&#125;,obj2=&#123;<span class="attr">b</span>:<span class="number">2</span>&#125;;</span><br><span class="line">      <span class="keyword">let</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>([</span><br><span class="line">        [<span class="string">'name'</span>,<span class="string">'zs'</span>],</span><br><span class="line">        [<span class="string">'age'</span>,<span class="number">13</span>],</span><br><span class="line">        [obj1,<span class="string">'今天气很好'</span>],</span><br><span class="line">        [obj2,<span class="string">'适合睡觉'</span>],</span><br><span class="line">        [[<span class="number">1</span>,<span class="number">2</span>],<span class="string">'hh'</span>],</span><br><span class="line">      ]);</span><br><span class="line">      <span class="built_in">console</span>.log(map);</span><br><span class="line">      <span class="comment">//属性</span></span><br><span class="line">      <span class="built_in">console</span>.log(map.size);</span><br><span class="line">      <span class="comment">//add delete clear不在叙述和set一样下面说说set和get</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">//向map集合后面追加键和值。</span></span><br><span class="line">      map.set(<span class="string">'friends'</span>,[<span class="string">'赵六'</span>,<span class="string">'力气'</span>]).set([<span class="string">'dog'</span>],<span class="string">'夏鸥'</span>);</span><br><span class="line">      <span class="comment">//获取name的值zs</span></span><br><span class="line">      <span class="built_in">console</span>.log(map.get(<span class="string">'name'</span>));</span><br><span class="line"></span><br><span class="line">      <span class="comment">//构造器MapIterator</span></span><br><span class="line">      <span class="built_in">console</span>.log(map.keys());</span><br><span class="line">      <span class="built_in">console</span>.log(map.values());</span><br><span class="line">      <span class="built_in">console</span>.log(map.entries());</span><br><span class="line"></span><br><span class="line">      <span class="comment">//详细叙述一下集合的遍历</span></span><br><span class="line">      map.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">value,index</span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(index+value);</span><br><span class="line">      &#125;);</span><br><span class="line">      map.set(&#123;&#125;,<span class="string">"hhh"</span>);</span><br><span class="line">      map.set(&#123;&#125;,<span class="string">"666"</span>);</span><br><span class="line">      <span class="comment">//思考一下会只出现第一个吗？显然是不会的。</span></span><br><span class="line">      <span class="comment">//记住是地址不同。第二个虽然看似和第一个相同。但是指向的内存地址不同，所以是两个不同的对象</span></span><br><span class="line">      <span class="built_in">console</span>.log(&#123;&#125;===&#123;&#125;);<span class="comment">//false</span></span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -595,9 +599,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/1.jpg"
-                alt="林仁连" />
+                alt="小白" />
             
-              <p class="site-author-name" itemprop="name">林仁连</p>
+              <p class="site-author-name" itemprop="name">小白</p>
               <p class="site-description motion-element" itemprop="description">专注比广博更重要。</p>
           </div>
 
@@ -608,7 +612,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -732,7 +736,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ES6简介"><span class="nav-number">1.</span> <span class="nav-text">ES6简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、用let定义变量"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">一、用let定义变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、对象的简洁写法"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">二、对象的简洁写法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、rest参数"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">三、rest参数</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#why？为什么是3和5呢？这里的rest参数搭配一个变量名使用，参数一个获取函数多余的参数生成一个数组。这里我也不是太清楚，至于arguments则是获取实参的长度。rest参数不能放在其他的位置，只能作为最后一个参数。"><span class="nav-number">1.0.0.3.0.1.</span> <span class="nav-text">why？为什么是3和5呢？这里的rest参数搭配一个变量名使用，参数一个获取函数多余的参数生成一个数组。这里我也不是太清楚，至于arguments则是获取实参的长度。rest参数不能放在其他的位置，只能作为最后一个参数。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、函数默认参数值"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">四、函数默认参数值</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#如果没有那两句代码，则运行结果是NaN-那让我们看看在es6中的骚操作吧！"><span class="nav-number">1.0.0.4.1.</span> <span class="nav-text">如果没有那两句代码，则运行结果是NaN 那让我们看看在es6中的骚操作吧！</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#没错了，结果是3，帅不帅气竟然可以在括号中直接赋值。是挺神奇的哈！如果传了参数，则会覆盖默认值的。这点要注意下。"><span class="nav-number">1.0.0.4.2.</span> <span class="nav-text">没错了，结果是3，帅不帅气竟然可以在括号中直接赋值。是挺神奇的哈！如果传了参数，则会覆盖默认值的。这点要注意下。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、箭头函数"><span class="nav-number">1.0.1.</span> <span class="nav-text">五、箭头函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#当当当，盼望着盼望着。终于到了箭头函数了，这个可是es6语法中超级重要的部分了哟"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">当当当，盼望着盼望着。终于到了箭头函数了，这个可是es6语法中超级重要的部分了哟</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#箭头函数不会绑定this（以上如果打印this则都会指向Window对象）箭头函数内部没有this！使用的父级作用域的this不能和new一起使用，不能作为构造函数，没有arguments，那怎么办，我们可以使用rest参数。-。以下是摘录摘录。"><span class="nav-number">1.0.2.</span> <span class="nav-text">箭头函数不会绑定this（以上如果打印this则都会指向Window对象）箭头函数内部没有this！使用的父级作用域的this不能和new一起使用，不能作为构造函数，没有arguments，那怎么办，我们可以使用rest参数。    。以下是摘录摘录。</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#六、解构赋值"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">六、解构赋值</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七、扩展运算符"><span class="nav-number">1.0.3.</span> <span class="nav-text">七、扩展运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八、字符串扩展"><span class="nav-number">1.0.4.</span> <span class="nav-text">八、字符串扩展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串模板（也是挺main）"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">字符串模板（也是挺main）</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ES6简介"><span class="nav-number">1.</span> <span class="nav-text">ES6简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、用let定义变量"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">一、用let定义变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、对象的简洁写法"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">二、对象的简洁写法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、rest参数"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">三、rest参数</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#why？为什么是3和5呢？这里的rest参数搭配一个变量名使用，参数一个获取函数多余的参数生成一个数组。这里我也不是太清楚，至于arguments则是获取实参的长度。rest参数不能放在其他的位置，只能作为最后一个参数。"><span class="nav-number">1.0.0.3.0.1.</span> <span class="nav-text">why？为什么是3和5呢？这里的rest参数搭配一个变量名使用，参数一个获取函数多余的参数生成一个数组。这里我也不是太清楚，至于arguments则是获取实参的长度。rest参数不能放在其他的位置，只能作为最后一个参数。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、函数默认参数值"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">四、函数默认参数值</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#如果没有那两句代码，则运行结果是NaN-那让我们看看在es6中的骚操作吧！"><span class="nav-number">1.0.0.4.1.</span> <span class="nav-text">如果没有那两句代码，则运行结果是NaN 那让我们看看在es6中的骚操作吧！</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#没错了，结果是3，帅不帅气竟然可以在括号中直接赋值。是挺神奇的哈！如果传了参数，则会覆盖默认值的。这点要注意下。"><span class="nav-number">1.0.0.4.2.</span> <span class="nav-text">没错了，结果是3，帅不帅气竟然可以在括号中直接赋值。是挺神奇的哈！如果传了参数，则会覆盖默认值的。这点要注意下。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、箭头函数"><span class="nav-number">1.0.1.</span> <span class="nav-text">五、箭头函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#当当当，盼望着盼望着。终于到了箭头函数了，这个可是es6语法中超级重要的部分了哟"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">当当当，盼望着盼望着。终于到了箭头函数了，这个可是es6语法中超级重要的部分了哟</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#箭头函数不会绑定this（以上如果打印this则都会指向Window对象）箭头函数内部没有this！使用的父级作用域的this不能和new一起使用，不能作为构造函数，没有arguments，那怎么办，我们可以使用rest参数。-。以下是摘录摘录。"><span class="nav-number">1.0.2.</span> <span class="nav-text">箭头函数不会绑定this（以上如果打印this则都会指向Window对象）箭头函数内部没有this！使用的父级作用域的this不能和new一起使用，不能作为构造函数，没有arguments，那怎么办，我们可以使用rest参数。    。以下是摘录摘录。</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#六、解构赋值"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">六、解构赋值</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七、扩展运算符"><span class="nav-number">1.0.3.</span> <span class="nav-text">七、扩展运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八、字符串扩展"><span class="nav-number">1.0.4.</span> <span class="nav-text">八、字符串扩展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串模板（也是挺main）"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">字符串模板（也是挺main）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#九、新增数据类型Set和Map"><span class="nav-number">1.0.5.</span> <span class="nav-text">九、新增数据类型Set和Map</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -757,7 +761,7 @@
   <span class="with-love">
     <i class="fa fa-snowflake-o"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">林仁连</span>
+  <span class="author" itemprop="copyrightHolder">小白</span>
 
   
 </div>
@@ -771,7 +775,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -791,7 +795,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共4.6k字</span>
+  <span class="post-count">博客全站共36.7k字</span>
 </div>
 
         
