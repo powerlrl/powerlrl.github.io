@@ -101,12 +101,12 @@
 <meta property="og:site_name" content="LinYo.">
 <meta property="og:description" content="ES6简介 Es6（ECMASCRIPT 6）是继ES5的新一代web前端开发的一个标准语法，JavaScript 和 ECMAScript 是神马关系呢？ 我只记得阮一峰老师的ES6标准入门的一句话  前者是后者的一种实现，后者是前者的一种规范  一、用let定义变量在es5中我们使用的用var定义变量这样带来的不好的问题有一下几点。  用var定义的变量提升  123456789window.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="c:/Users/LRY-NB/Desktop/u=2013839739,3971030568&fm=27&gp=0.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/02/08/es6简介/C:/Users/LRY-NB/Desktop/u=2013839739,3971030568&fm=27&gp=0.jpg">
 <meta property="og:updated_time" content="2019-02-11T07:11:13.961Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6简介">
 <meta name="twitter:description" content="ES6简介 Es6（ECMASCRIPT 6）是继ES5的新一代web前端开发的一个标准语法，JavaScript 和 ECMAScript 是神马关系呢？ 我只记得阮一峰老师的ES6标准入门的一句话  前者是后者的一种实现，后者是前者的一种规范  一、用let定义变量在es5中我们使用的用var定义变量这样带来的不好的问题有一下几点。  用var定义的变量提升  123456789window.">
-<meta name="twitter:image" content="c:/Users/LRY-NB/Desktop/u=2013839739,3971030568&fm=27&gp=0.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2019/02/08/es6简介/C:/Users/LRY-NB/Desktop/u=2013839739,3971030568&fm=27&gp=0.jpg">
 
 
 
@@ -442,7 +442,7 @@
   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">a,b=<span class="number">0</span></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(a+b);</span><br><span class="line">          &#125;</span><br><span class="line">          fn(<span class="number">3</span>);</span><br><span class="line">		fn(<span class="number">3</span>,<span class="number">4</span>);</span><br></pre></td></tr></table></figure>
 <h5 id="没错了，结果是3，帅不帅气竟然可以在括号中直接赋值。是挺神奇的哈！如果传了参数，则会覆盖默认值的。这点要注意下。"><a href="#没错了，结果是3，帅不帅气竟然可以在括号中直接赋值。是挺神奇的哈！如果传了参数，则会覆盖默认值的。这点要注意下。" class="headerlink" title="没错了，结果是3，帅不帅气竟然可以在括号中直接赋值。是挺神奇的哈！如果传了参数，则会覆盖默认值的。这点要注意下。"></a>没错了，结果是3，帅不帅气竟然可以在括号中直接赋值。是挺神奇的哈！如果传了参数，则会覆盖默认值的。这点要注意下。</h5><h3 id="五、箭头函数"><a href="#五、箭头函数" class="headerlink" title="五、箭头函数"></a>五、箭头函数</h3><h4 id="当当当，盼望着盼望着。终于到了箭头函数了，这个可是es6语法中超级重要的部分了哟"><a href="#当当当，盼望着盼望着。终于到了箭头函数了，这个可是es6语法中超级重要的部分了哟" class="headerlink" title="当当当，盼望着盼望着。终于到了箭头函数了，这个可是es6语法中超级重要的部分了哟"></a>当当当，盼望着盼望着。终于到了箭头函数了，这个可是es6语法中超级重要的部分了哟</h4>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">value,key</span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(value,key);</span><br><span class="line">          &#125;</span><br><span class="line">       fn(<span class="number">3</span>,<span class="number">4</span>);<span class="comment">//3 4</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> fn = <span class="function">(<span class="params">value,key</span>)=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(value,key);</span><br><span class="line">          &#125;</span><br><span class="line">          fn(<span class="number">3</span>,<span class="number">3</span>);  <span class="comment">//3 3</span></span><br></pre></td></tr></table></figure>
 <p>  恩？Excuse me？？还可以这样玩吗？这是针对有两个参数的必须用括号包裹起来，如果没有参数，或者只有一个参数我们还可以这样.</p>
-<p>  <img src="C:\Users\LRY-NB\Desktop\u=2013839739,3971030568&amp;fm=27&amp;gp=0.jpg" alt="u=2013839739,3971030568&amp;fm=27&amp;gp=0"></p>
+<p>  <img src="/2019/02/08/es6简介/C:/Users\LRY-NB\Desktop\u=2013839739,3971030568&amp;fm=27&amp;gp=0.jpg" alt="u=2013839739,3971030568&amp;fm=27&amp;gp=0"></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">()=&gt;&#123;</span><br><span class="line">            statement</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
 <p>甚至还可以这样只有一个参数，省略括号    或者返回值是一个表达式</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">value =&gt; &#123;</span><br><span class="line">            statement</span><br><span class="line">          &#125;</span><br><span class="line"></span><br><span class="line">value =&gt; expression</span><br></pre></td></tr></table></figure>
@@ -616,7 +616,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -627,7 +627,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -791,7 +791,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共37.8k字</span>
+  <span class="post-count">博客全站共40.7k字</span>
 </div>
 
         

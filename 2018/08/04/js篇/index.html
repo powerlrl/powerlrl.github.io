@@ -101,12 +101,12 @@
 <meta property="og:site_name" content="LinYo.">
 <meta property="og:description" content="JS   JavaScript（小小的简介一下） js代码用标签包裹起来，js代码可以放在行内，body的后面，或者body之前，外部，但是通常我们会将js代码放在title的标签之下，但是如果这样的话，浏览器会先加载js代码，而不会先加载html的部分。由此，我们可以用window.onload = function(){js..代码}这种写法，但请不要忘记script标签。  一、attrib">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="c:/Users/LRY-NB/Desktop/QQ图片20190209175749.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/04/js篇/C:/Users/LRY-NB/Desktop/QQ图片20190209175749.png">
 <meta property="og:updated_time" content="2019-02-09T14:15:04.722Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js篇">
 <meta name="twitter:description" content="JS   JavaScript（小小的简介一下） js代码用标签包裹起来，js代码可以放在行内，body的后面，或者body之前，外部，但是通常我们会将js代码放在title的标签之下，但是如果这样的话，浏览器会先加载js代码，而不会先加载html的部分。由此，我们可以用window.onload = function(){js..代码}这种写法，但请不要忘记script标签。  一、attrib">
-<meta name="twitter:image" content="c:/Users/LRY-NB/Desktop/QQ图片20190209175749.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/04/js篇/C:/Users/LRY-NB/Desktop/QQ图片20190209175749.png">
 
 
 
@@ -421,7 +421,7 @@
 <p>为什么会是false呢？不都是构造函数中的方法嘛，因为实例化对象不同，所以调用的方法也不同，有一百个对象，那么就要调用一百次这个方法，那么这不浪费内存空间嘛，由此引出————原型（prototype）函数都有原型，不是只有构造函数才有原型。</p>
 <h5 id="原型的作用：数据共享，节省内存空间。"><a href="#原型的作用：数据共享，节省内存空间。" class="headerlink" title="原型的作用：数据共享，节省内存空间。"></a>原型的作用：数据共享，节省内存空间。</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">age,name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//向原型中添加方法</span></span><br><span class="line">Person.prototype.eat=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"我是原型中的方法"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> (<span class="number">13</span>,<span class="string">"小红"</span>);</span><br><span class="line"><span class="keyword">var</span> p2 = <span class="keyword">new</span> (<span class="number">15</span>,<span class="string">"小明"</span>);</span><br><span class="line">p1.eat();</span><br><span class="line">p2.eat();<span class="comment">//这样我们就调用的是同一个方法了。</span></span><br></pre></td></tr></table></figure>
 <h4 id="原型链（最终结果：Object-Prototype）"><a href="#原型链（最终结果：Object-Prototype）" class="headerlink" title="原型链（最终结果：Object.Prototype）"></a>原型链（最终结果：Object.Prototype）</h4><p>首先我们实例化对象的时候，如果构造函数中没有对应的方法或者属性，那么我们就要到原型中去寻找。如过没有找到，就会报错，如果在构造函数中找到，则输出相应的结果。自身=&gt;构造函数中的原型=&gt;原型中构造函数中的原型</p>
-<p><img src="C:\Users\LRY-NB\Desktop\QQ图片20190209175749.png" alt="QQ图片20190209175749"></p>
+<p><img src="/2018/08/04/js篇/C:/Users\LRY-NB\Desktop\QQ图片20190209175749.png" alt="QQ图片20190209175749"></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="number">34</span>;</span><br><span class="line">    <span class="keyword">this</span>.age = <span class="number">32</span>;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.name = <span class="number">450</span>;</span><br><span class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> Person();</span><br><span class="line"><span class="built_in">console</span>.log(p1.name);<span class="comment">//是34没错了</span></span><br></pre></td></tr></table></figure>
 <h3 id="三、JS-dom-操作"><a href="#三、JS-dom-操作" class="headerlink" title="三、JS dom 操作"></a>三、JS dom 操作</h3><p>众说周知JS其实可以分为两个大块，dom和bom部分，今天我们就来说说dom部分。document代表的是整个文档。</p>
 <h5 id="1-dom选择器"><a href="#1-dom选择器" class="headerlink" title="1. dom选择器"></a>1. dom选择器</h5><ol>
@@ -436,7 +436,7 @@
 <li><p>parentNode-&gt;父节点<strong>（body-&gt;html-&gt;document-&gt;null）</strong></p>
 </li>
 <li><p>childNodes-&gt;子节点们</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;section&gt;<span class="xml"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></span></span><br><span class="line">    &lt;span&gt;<span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line">    &lt;p&gt;<span class="xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;script&gt;</span></span><br><span class="line"><span class="regexp">      window.onload = function()&#123;</span></span><br><span class="line"><span class="regexp">        var odiv = document.getElementsByTagName("div")[0];</span></span><br><span class="line"><span class="regexp">        console.log(odiv.childNodes.length);</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>script&gt;</span><br><span class="line"><span class="comment">//猜猜结果是什么？ 是7为什么呢？因为里面包含了文本节点，不可能是3的哟。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;section&gt;&lt;/section&gt;</span><br><span class="line">    &lt;span&gt;&lt;/span&gt;</span><br><span class="line">    &lt;p&gt;&lt;/p&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;script&gt;</span></span><br><span class="line"><span class="regexp">      window.onload = function()&#123;</span></span><br><span class="line"><span class="regexp">        var odiv = document.getElementsByTagName("div")[0];</span></span><br><span class="line"><span class="regexp">        console.log(odiv.childNodes.length);</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>script&gt;</span><br><span class="line"><span class="comment">//猜猜结果是什么？ 是7为什么呢？因为里面包含了文本节点，不可能是3的哟。</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>lastChild-&gt;最后一个子节点</p>
 </li>
@@ -665,7 +665,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -676,7 +676,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -840,7 +840,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共37.8k字</span>
+  <span class="post-count">博客全站共40.7k字</span>
 </div>
 
         

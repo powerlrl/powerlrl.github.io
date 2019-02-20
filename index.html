@@ -276,6 +276,572 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/20/vue-cli脚手架搭建项目步骤/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小白">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LinYo.">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/20/vue-cli脚手架搭建项目步骤/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-20T09:47:31+08:00">
+                2019-02-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/20/vue-cli脚手架搭建项目步骤/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/20/vue-cli脚手架搭建项目步骤/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  390
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="1-脚手架的搭建我们所依赖的环境有：node-js可自行武"><a href="#1-脚手架的搭建我们所依赖的环境有：node-js可自行武" class="headerlink" title="1.脚手架的搭建我们所依赖的环境有：node.js可自行武"></a>1.脚手架的搭建我们所依赖的环境有：node.js可自行武</h3><h2 id="vue脚手架的搭建我们所依赖的环境有：node-js可自行去官网下载。"><a href="#vue脚手架的搭建我们所依赖的环境有：node-js可自行去官网下载。" class="headerlink" title="vue脚手架的搭建我们所依赖的环境有：node.js可自行去官网下载。"></a>vue脚手架的搭建我们所依赖的环境有：node.js可自行去官网下载。</h2><h3 id="第一步-npm-i-g-vue-cli"><a href="#第一步-npm-i-g-vue-cli" class="headerlink" title="第一步 npm i -g vue -cli"></a>第一步 npm i -g vue -cli</h3><blockquote>
+<p>我们需要打开我们的终端cmd，或者打开powershell窗口也可。你先测试一下你的node和npm是否安装成功，</p>
+<p>node -v 和npm -v如果node或者npm版本过低也不可以安装vue脚手架。我们需要更新npm&gt;3.1的版本（npm install npm@latest -g）</p>
+</blockquote>
+<blockquote>
+<p>我默认你第一步都完成了，在我们终端输入 npm install  -g vue-cli(-g默认为全局)</p>
+</blockquote>
+<p><img src="/2019/02/20/vue-cli脚手架搭建项目步骤/QQ图片20190220095019.png" alt=""></p>
+<p>安装会有几分钟，请等待（安装一次就行了，不必多次安装）</p>
+<h3 id="第二步-vue-init-webpack-你的项目名称"><a href="#第二步-vue-init-webpack-你的项目名称" class="headerlink" title="第二步 vue init webpack (你的项目名称)"></a>第二步 vue init webpack (你的项目名称)</h3><p><img src="/2019/02/20/vue-cli脚手架搭建项目步骤/QQ图片20190220095038.png" alt="QQ图片20190220095038"></p>
+<p>然后会出现 项目的名称。我们点击回车，将会默认。然后将会出现一下的信息，project description是对项目的描述，author是作者，反正只要我们一直敲回车即可。</p>
+<p><img src="/2019/02/20/vue-cli脚手架搭建项目步骤/QQ图片20190220095042.png" alt="QQ图片20190220095042"></p>
+<p>有一个图片没有，询问我们是否安装vue-router和vue-rescource这里我们回答n,如果我们需要安装的话我们可以：前提是我们必须在这个项目文件夹下</p>
+<p><img src="/2019/02/20/vue-cli脚手架搭建项目步骤/QQ图片20190220095056.png" alt="QQ图片20190220095056"></p>
+<p>Ok到这里我们出现一下图片的信息，我们就默认为安装好了。我们只要cd到文件目录下，然后输入npm run dev 即可，如果端口号有冲突的话，我们可以在dev-server中修改。</p>
+<p><img src="/2019/02/20/vue-cli脚手架搭建项目步骤/QQ图片20190220095045.png" alt="QQ图片20190220095045"></p>
+<p>这一步就是初始化我们需要安装的依赖。</p>
+<p><img src="/2019/02/20/vue-cli脚手架搭建项目步骤/QQ图片20190220095049.png" alt="QQ图片20190220095049"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+    <div>
+  
+</div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/12/测试图片-md/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小白">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LinYo.">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/12/测试图片-md/" itemprop="url">测试图片.md</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T18:20:18+08:00">
+                2019-02-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/分类别/" itemprop="url" rel="index">
+                    <span itemprop="name">分类别</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/12/测试图片-md/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/12/测试图片-md/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  12
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+<p><img src="/2019/02/12/测试图片-md/20170226153729569.jpg" alt=""></p>
+<h1 id="二、正文"><a href="#二、正文" class="headerlink" title="二、正文"></a>二、正文</h1><p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+<h1 id="三、结尾"><a href="#三、结尾" class="headerlink" title="三、结尾"></a>三、结尾</h1><p>xxxxxxxxxxxxxxxx</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/12/测试图片-md/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+    <div>
+  
+</div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/12/容易忘记的东西/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小白">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LinYo.">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/12/容易忘记的东西/" itemprop="url">容易忘记的东西</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T13:24:48+08:00">
+                2019-02-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂项/" itemprop="url" rel="index">
+                    <span itemprop="name">杂项</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/12/容易忘记的东西/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/12/容易忘记的东西/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  254
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="年纪大了容易忘记很多东西，那我就记下来吧！"><a href="#年纪大了容易忘记很多东西，那我就记下来吧！" class="headerlink" title="年纪大了容易忘记很多东西，那我就记下来吧！"></a>年纪大了容易忘记很多东西，那我就记下来吧！</h2><h2 id="vscode快捷键"><a href="#vscode快捷键" class="headerlink" title="vscode快捷键"></a>vscode快捷键</h2><p>alt+shift+down是向下复制一行</p>
+<p>ctrl+enter是将光标快速移动到下一行</p>
+<p>alt+shift是选中多行</p>
+<p>alt+b在浏览器中运行</p>
+<p>ctrl+shift+right/left是向左或者向右选中</p>
+<h2 id="终端中的命令"><a href="#终端中的命令" class="headerlink" title="终端中的命令"></a>终端中的命令</h2><p>live -server可以不用刷新，直接保存即可在浏览器中看到运行结果，但前提的html文件必须是index.html。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/12/容易忘记的东西/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+    <div>
+  
+</div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/11/实例/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -371,7 +937,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  469
+                  931
                 </span>
               
 
@@ -387,7 +953,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  5
                 </span>
               
             </div>
@@ -411,9 +977,190 @@
         
           
             <h2 id="一、绚丽小球实例"><a href="#一、绚丽小球实例" class="headerlink" title="一、绚丽小球实例"></a>一、绚丽小球实例</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'node_modules/underscore/underscore-min.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    body&#123;</span></span><br><span class="line"><span class="undefined">      margin: 150px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    #canvas&#123;</span></span><br><span class="line"><span class="undefined">      box-shadow: 0 0  0px #000;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">'canvas'</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="comment">//获取当前画布</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>);</span></span><br><span class="line"><span class="javascript">    <span class="comment">//设置画笔</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> ctx = canvas.getContext(<span class="string">'2d'</span>);</span></span><br><span class="line"><span class="undefined">    canvas.width = 1250;</span></span><br><span class="line"><span class="undefined">    canvas.height = 900;</span></span><br><span class="line"><span class="javascript">    canvas.style.backgroundColor = <span class="string">'black'</span>;</span></span><br><span class="line"><span class="undefined">    /*</span></span><br><span class="line"><span class="undefined">    小球 </span></span><br><span class="line"><span class="undefined">     */</span></span><br><span class="line"><span class="javascript">     <span class="class"><span class="keyword">class</span> <span class="title">Ball</span></span>&#123;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">constructor</span>(x,y,color)&#123;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.x = x;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.y = y;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.color = color;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.r = <span class="number">40</span>;</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="javascript">       <span class="comment">/* 开始绘制小球的方法 */</span></span></span><br><span class="line"><span class="undefined">       render()&#123;</span></span><br><span class="line"><span class="javascript">         <span class="comment">//保持当前环境</span></span></span><br><span class="line"><span class="undefined">         ctx.save();</span></span><br><span class="line"><span class="javascript">         <span class="comment">//开启路径</span></span></span><br><span class="line"><span class="undefined">         ctx.beginPath();</span></span><br><span class="line"><span class="javascript">         <span class="comment">//开始画小球坐标 x ,y ,物体半径，开始角度，结束角度，Math.Pi是180度。乘以二正好是360</span></span></span><br><span class="line"><span class="javascript">         ctx.arc(<span class="keyword">this</span>.x,<span class="keyword">this</span>.y,<span class="keyword">this</span>.r,<span class="number">0</span>,<span class="built_in">Math</span>.PI*<span class="number">2</span>);</span></span><br><span class="line"><span class="javascript">         <span class="comment">//为小球设置颜色</span></span></span><br><span class="line"><span class="javascript">         ctx.fillStyle = <span class="keyword">this</span>.color;</span></span><br><span class="line"><span class="javascript">         <span class="comment">//为小球填充颜色</span></span></span><br><span class="line"><span class="undefined">         ctx.fill();</span></span><br><span class="line"><span class="javascript">         <span class="comment">//返回之前保存过的路径状态和属性</span></span></span><br><span class="line"><span class="undefined">         ctx.restore();</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="undefined">     &#125;</span></span><br><span class="line"><span class="javascript">     <span class="comment">//可以移动的小球类</span></span></span><br><span class="line"><span class="javascript">     <span class="class"><span class="keyword">class</span> <span class="title">MoseBall</span> <span class="keyword">extends</span> <span class="title">Ball</span></span>&#123;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">constructor</span>(x,y,color)&#123;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">super</span>(x,y,color);</span></span><br><span class="line"><span class="javascript">        <span class="comment">//增量</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">this</span>.dX = _.random(<span class="number">-5</span>,<span class="number">5</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">this</span>.dY = _.random(<span class="number">-5</span>,<span class="number">5</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">this</span>.dR = _.random(<span class="number">1</span>,<span class="number">3</span>);</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="javascript">       <span class="comment">//update 更新小球</span></span></span><br><span class="line"><span class="undefined">       upDate()&#123;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.x += <span class="keyword">this</span>.dX;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.y += <span class="keyword">this</span>.dY;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.r -= <span class="keyword">this</span>.dR;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">if</span>(<span class="keyword">this</span>.r &lt; <span class="number">0</span>)&#123;</span></span><br><span class="line"><span class="javascript">           <span class="keyword">this</span>.r = <span class="number">0</span>;</span></span><br><span class="line"><span class="undefined">         &#125;</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="undefined">     &#125;</span></span><br><span class="line"><span class="javascript">     <span class="comment">//实例化小球</span></span></span><br><span class="line"><span class="javascript">     <span class="keyword">let</span> ballArr = [];</span></span><br><span class="line"><span class="javascript">     <span class="comment">//小球的颜色</span></span></span><br><span class="line"><span class="javascript">     <span class="keyword">let</span> ballColor = [<span class="string">'red'</span>,<span class="string">'lightgreen'</span>,<span class="string">'purple'</span>,<span class="string">'pink'</span>,<span class="string">'orange'</span>,<span class="string">'yellow'</span>,<span class="string">'blue'</span>,<span class="string">'white'</span>];</span></span><br><span class="line"><span class="javascript">     <span class="comment">//监听鼠标的移动</span></span></span><br><span class="line"><span class="javascript">     canvas.addEventListener(<span class="string">'mousemove'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">       ballArr.push(<span class="keyword">new</span> MoseBall(e.offsetX,e.offsetY,ballColor[_.random(<span class="number">0</span>,ballColor.length<span class="number">-1</span>)]));</span></span><br><span class="line"><span class="javascript">       <span class="built_in">console</span>.log(ballArr);</span></span><br><span class="line"><span class="undefined">     &#125;);</span></span><br><span class="line"><span class="javascript">     <span class="comment">//开启定时器</span></span></span><br><span class="line"><span class="javascript">     setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="undefined">       ctx.clearRect(0,0,canvas.width,canvas.height);</span></span><br><span class="line"><span class="javascript">       <span class="comment">//绘制小球</span></span></span><br><span class="line"><span class="javascript">       <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>;i &lt; ballArr.length;i++)&#123;</span></span><br><span class="line"><span class="undefined">         ballArr[i].render();</span></span><br><span class="line"><span class="undefined">         ballArr[i].upDate();</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="undefined">     &#125;,40)</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="C:\Users\LRY-NB\AppData\Roaming\Typora\typora-user-images\1549868848257.png" alt="1549868848257"></p>
+<h2 id="二、vue综合小实例"><a href="#二、vue综合小实例" class="headerlink" title="二、vue综合小实例"></a>二、vue综合小实例</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'node_modules/vue/dist/vue.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    #app&#123;</span></span><br><span class="line"><span class="undefined">      width: 500px;</span></span><br><span class="line"><span class="undefined">      margin: 100px auto;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    fieldset&#123;</span></span><br><span class="line"><span class="undefined">      border: 2px solid palevioletred;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    fieldset input&#123;</span></span><br><span class="line"><span class="undefined">      width: 200px;</span></span><br><span class="line"><span class="undefined">      margin-bottom: 10px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    table&#123;</span></span><br><span class="line"><span class="undefined">      margin-top: 50px;</span></span><br><span class="line"><span class="undefined">      width: 500px;</span></span><br><span class="line"><span class="undefined">      text-align: center;</span></span><br><span class="line"><span class="undefined">      border: 2px solid palevioletred;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    thead&#123;</span></span><br><span class="line"><span class="undefined">      background: palevioletred;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    td&#123;</span></span><br><span class="line"><span class="undefined">      border: 1px solid black;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'app'</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 第一部分 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">legend</span>&gt;</span>学生管理系统<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>姓名：<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-model</span>=<span class="string">'newStudent.name'</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>年龄：<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"请输入年龄："</span> <span class="attr">v-model</span>=<span class="string">'newStudent.age'</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>性别：<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">select</span> <span class="attr">v-model</span>=<span class="string">'newStudent.sex'</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"男"</span>&gt;</span>男<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"女"</span>&gt;</span>女<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">'createNewStudent()'</span>&gt;</span>创建新用户<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 第二部分 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>年龄<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>性别<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>手机<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>删除<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span> <span class="attr">v-for</span>=<span class="string">'(list,index) in lists'</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;list.name&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;list.age&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;list.sex&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">'deleteStudent(index)'</span>&gt;</span>删除<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">      el: <span class="string">'#app'</span>,</span></span><br><span class="line"><span class="undefined">      data:&#123;</span></span><br><span class="line"><span class="undefined">        lists: [</span></span><br><span class="line"><span class="javascript">          &#123;<span class="attr">name</span>:<span class="string">'张三'</span>,<span class="attr">age</span>: <span class="number">23</span>,<span class="attr">sex</span>:<span class="string">'男'</span>&#125;,</span></span><br><span class="line"><span class="javascript">          &#123;<span class="attr">name</span>:<span class="string">'王二'</span>,<span class="attr">age</span>: <span class="number">23</span>,<span class="attr">sex</span>:<span class="string">'女'</span>&#125;,</span></span><br><span class="line"><span class="javascript">          &#123;<span class="attr">name</span>:<span class="string">'赵六'</span>,<span class="attr">age</span>: <span class="number">23</span>,<span class="attr">sex</span>:<span class="string">'男'</span>&#125;</span></span><br><span class="line"><span class="undefined">        ],</span></span><br><span class="line"><span class="undefined">        newStudent:</span></span><br><span class="line"><span class="javascript">          &#123;<span class="attr">name</span>:<span class="string">''</span>,<span class="attr">age</span>:<span class="string">''</span>,<span class="attr">sex</span>:<span class="string">'男'</span>&#125;,</span></span><br><span class="line"><span class="undefined">      &#125;,</span></span><br><span class="line"><span class="undefined">      methods:&#123;</span></span><br><span class="line"><span class="javascript">        <span class="comment">// 创建方法</span></span></span><br><span class="line"><span class="undefined">        createNewStudent()&#123;</span></span><br><span class="line"><span class="javascript">          <span class="comment">// 判断年龄</span></span></span><br><span class="line"><span class="javascript">          <span class="keyword">if</span>(<span class="keyword">this</span>.newStudent.name === <span class="string">''</span>)&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">'姓名不正确'</span>);</span></span><br><span class="line"><span class="javascript">            <span class="keyword">return</span>;</span></span><br><span class="line"><span class="undefined">          &#125;</span></span><br><span class="line"><span class="javascript">          <span class="comment">//  判断年龄</span></span></span><br><span class="line"><span class="javascript">          <span class="keyword">if</span>(<span class="keyword">this</span>.newStudent.age &lt; <span class="number">0</span>)&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">'年龄不正确'</span>);</span></span><br><span class="line"><span class="javascript">            <span class="keyword">return</span>;</span></span><br><span class="line"><span class="undefined">          &#125;</span></span><br><span class="line"><span class="undefined">          /* 向数组中插入一个新对象不能用push所以我们用unshift </span></span><br><span class="line"><span class="undefined">          你以为这样就可以了吗，这样创建出来的都是空对象，所以我们要是向数据双向绑定。</span></span><br><span class="line"><span class="undefined">          */</span></span><br><span class="line"><span class="javascript">          <span class="keyword">this</span>.lists.unshift(<span class="keyword">this</span>.newStudent);</span></span><br><span class="line"><span class="javascript">          <span class="comment">// 清除</span></span></span><br><span class="line"><span class="javascript">          <span class="keyword">this</span>.newStudent = &#123;<span class="attr">name</span>:<span class="string">''</span>,<span class="attr">age</span>:<span class="string">''</span>,<span class="attr">sex</span>:<span class="string">'男'</span>&#125;</span></span><br><span class="line"><span class="javascript">          <span class="comment">/* 删除学生信息记录 */</span></span></span><br><span class="line"><span class="undefined">        &#125;,</span></span><br><span class="line"><span class="undefined">        deleteStudent(index)&#123;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">this</span>.lists.splice(index,<span class="number">1</span>);</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">      &#125;,</span></span><br><span class="line"><span class="undefined">    &#125;);</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2019/02/11/实例/D:/Hexo\source\_posts\实例\QQ图片20190212212351.png" alt="QQ图片20190212212351"></p>
 
           
+        
+      
+    </div>
+    
+    
+    
+    <div>
+  
+</div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/10/Git与npm总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小白">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LinYo.">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/10/Git与npm总结/" itemprop="url">Git与npm</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-10T21:36:34+08:00">
+                2019-02-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/10/Git与npm总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/10/Git与npm总结/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  186
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="Git与npm小结"><a href="#Git与npm小结" class="headerlink" title="Git与npm小结"></a>Git与npm小结</h1><h3 id="npm包管理工具，node版本LTS长期维护型，Current最新版本"><a href="#npm包管理工具，node版本LTS长期维护型，Current最新版本" class="headerlink" title="npm包管理工具，node版本LTS长期维护型，Current最新版本"></a>npm包管理工具，node版本LTS长期维护型，Current最新版本</h3><blockquote>
+<p>如果我们想查看node版本号可以在cmd中输入node -v命令，同理查看npm则是npm -v</p>
+<p>我们想要更新npm版本。那么我们就可以更新自己。npm install npm@latest(也可以直接加入版本号)-g（安装到全局）</p>
+</blockquote>
+<h3 id="npm-常用命令"><a href="#npm-常用命令" class="headerlink" title="npm 常用命令"></a>npm 常用命令</h3><ul>
+<li>在我们打开终端的时候我们需要对npm初始化 npm init -y会生成pakeage.json</li>
+<li>然后我们可以下载了例如下载jquery npm i(instal的简写)jquery</li>
+<li>假设我们不需要某个依赖 npm uninstall jquery</li>
+<li>更新 npm update jquery</li>
+<li>安装旧版本npm i jqurey@版本号</li>
+</ul>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><ul>
+<li>git config -l （可以查看邮箱和名称）</li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/10/Git与npm总结/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -577,7 +1324,7 @@
 <h1 id="CSS-网页的美容师"><a href="#CSS-网页的美容师" class="headerlink" title="CSS 网页的美容师"></a>CSS 网页的美容师</h1><p>CSS的出现，拯救了混乱的HTML，当让更加拯救了我们web开发者。 让我们的网页更加丰富多彩。   </p>
 <p>CSS的最大贡献就是：  让 HTML 从样式中解脱苦海，  实现了 HTML 专注去做 结构呈现。 而样式交给 CSS 后，你完全可以放心的早点洗洗睡了！</p>
 <p>而且。。。。。 CSS 做的很出色，如果JavaScript是网页的魔法师，那么CSS它是我们网页的美容师，不信，你看:</p>
-<p><img src="media/baby.jpeg"></p>
+<p><img src="/2019/02/10/CSS/media/baby.jpeg"></p>
 <p>ps:  你跟Angelababy只差了一个妆容的距离</p>
 <p>有人说， 没有不漂亮的女人，只有不会打扮的女人。</p>
 <p>我想说， 没有不好看的网页，只有不会CSS的前端。</p>
@@ -731,7 +1478,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  538
+                  2,093
                 </span>
               
 
@@ -747,7 +1494,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  10
                 </span>
               
             </div>
@@ -772,7 +1519,7 @@
           <h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><blockquote>
 <p>众所周知，现在前端领域最火的三大框架是React、Vue、Angular。其中Vue是最容易上手的。也是最流行的框架之一。相对于其他两个框架而言，vue更加容易。</p>
 </blockquote>
-<h4 id="一、实现HelloWorld"><a href="#一、实现HelloWorld" class="headerlink" title="一、实现HelloWorld"></a>一、实现HelloWorld</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//第一步我们需要引用vue.js</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'node_modules/vue/dist/vue.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">//第二步在标签中绑定el为实例提供挂载符，可以是css，html选择符</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123;message&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        //创建一个vue实例对象</span></span><br><span class="line"><span class="undefined">        var vm = new Vue(&#123;</span></span><br><span class="line"><span class="undefined">            el:'#app',</span></span><br><span class="line"><span class="undefined">            date:&#123;</span></span><br><span class="line"><span class="undefined">                message:'hello world'</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;)</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="一、实现HelloWorld"><a href="#一、实现HelloWorld" class="headerlink" title="一、实现HelloWorld"></a>一、实现HelloWorld</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//第一步我们需要引用vue.js</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'node_modules/vue/dist/vue.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">//第二步在标签中绑定el为实例提供挂载符，可以是css，html选择符</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123;message&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="comment">//创建一个vue实例对象</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">            el:<span class="string">'#app'</span>,</span></span><br><span class="line"><span class="undefined">            date:&#123;</span></span><br><span class="line"><span class="javascript">                message:<span class="string">'hello world'</span></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;)</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/02/10/Vue2.X/#more" rel="contents">
@@ -1406,587 +2153,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/29/jquery总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小白">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LinYo.">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/29/jquery总结/" itemprop="url">jquery总结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-29T21:59:48+08:00">
-                2018-11-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/分类别/" itemprop="url" rel="index">
-                    <span itemprop="name">分类别</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/11/29/jquery总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/29/jquery总结/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  305
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>总体来说总结一下jquery</p>
-<h1 id="二、正文"><a href="#二、正文" class="headerlink" title="二、正文"></a>二、正文</h1><blockquote>
-<p>学习了大约一个多月的jQuery,我发现jQuery的特性就是用更小的代码，实现很强大的功能，就像它的那句话，The Write Less, Do More。</p>
-</blockquote>
-<h6 id="一、首先是它的入口函数就有三种，"><a href="#一、首先是它的入口函数就有三种，" class="headerlink" title="一、首先是它的入口函数就有三种，"></a>一、首先是它的入口函数就有三种，</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第一种</span></span><br><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"入口函数1"</span>);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//第二种</span></span><br><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"入口函数2"</span>);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//第三种</span></span><br><span class="line">jquery.(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"入口函数3"</span>)；</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/29/jquery总结/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    <div>
-  
-</div>
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/04/js篇/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小白">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LinYo.">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/04/js篇/" itemprop="url">js篇</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-04T20:57:40+08:00">
-                2018-08-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/分类别/" itemprop="url" rel="index">
-                    <span itemprop="name">分类别</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/08/04/js篇/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/04/js篇/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1,703
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  7
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="JS-JavaScript（小小的简介一下）"><a href="#JS-JavaScript（小小的简介一下）" class="headerlink" title="JS   JavaScript（小小的简介一下）"></a>JS   JavaScript（小小的简介一下）</h2><blockquote>
-<p>js代码用标签包裹起来，js代码可以放在行内，body的后面，或者body之前，外部，但是通常我们会将js代码放在title的标签之下，但是如果这样的话，浏览器会先加载js代码，而不会先加载html的部分。由此，我们可以用window.onload = function(){js..代码}这种写法，但请不要忘记script标签。</p>
-</blockquote>
-<h6 id="一、attributes-属性"><a href="#一、attributes-属性" class="headerlink" title="一、attributes 属性"></a>一、attributes 属性</h6><p>该属性是获取标签中的属性，列如class，id，和href之类的属性，如果一个标签中包含多个属性则使用attributes[num]获取的是第几个属性。该属性还可以有length和value属性。</p>
-<h6 id="二、cookie属性"><a href="#二、cookie属性" class="headerlink" title="二、cookie属性"></a>二、cookie属性</h6><p>是浏览器存储信息的东西document.cookie().</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/04/js篇/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    <div>
-  
-</div>
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/26/纪念博客搭载完成/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小白">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LinYo.">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/26/纪念博客搭载完成/" itemprop="url">纪念博客搭载完成</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-26T19:19:39+08:00">
-                2018-07-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂谈/" itemprop="url" rel="index">
-                    <span itemprop="name">杂谈</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/26/纪念博客搭载完成/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/26/纪念博客搭载完成/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  186
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="一、工具"><a href="#一、工具" class="headerlink" title="一、工具"></a>一、工具</h1><p>博客是利用github+hexo搭建而成。<br>首先你想的pc里面要有git，其次你还要下载nodeJS（非常强大的一款软件，适合前端同学学习！）</p>
-<h1 id="二、发展"><a href="#二、发展" class="headerlink" title="二、发展"></a>二、发展</h1><p>搭建博客路遇到非常多的坑，期间有想过放弃。<br>只要功夫深，铁锤磨成针。一开始照着网上的教程勉勉强强的只能在本地运行。并不能部署到GitHub上感到非常的烦躁，就放在了那里。最后经过同学的指点，一步一步搭载出今天的博客，详情请参照<a href="https://limjk.tech/2018/07/25/Hexo%E6%90%AD%E5%BB%BA%E6%89%8B%E5%86%8C/
-" target="_blank" rel="noopener">博客链接</a>很不错的一篇博客，强烈推荐。</p>
-<h1 id="三、致谢"><a href="#三、致谢" class="headerlink" title="三、致谢"></a>三、致谢</h1><p>感谢百度+阿里云+GitHub+hexo+git+nodeJS+同学技术支持。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/26/纪念博客搭载完成/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    <div>
-  
-</div>
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -2038,7 +2211,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2049,7 +2222,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2197,7 +2370,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共37.8k字</span>
+  <span class="post-count">博客全站共40.7k字</span>
 </div>
 
         
