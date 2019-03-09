@@ -102,7 +102,7 @@
 <meta property="og:description" content="JS   JavaScript（小小的简介一下） js代码用标签包裹起来，js代码可以放在行内，body的后面，或者body之前，外部，但是通常我们会将js代码放在title的标签之下，但是如果这样的话，浏览器会先加载js代码，而不会先加载html的部分。由此，我们可以用window.onload = function(){js..代码}这种写法，但请不要忘记script标签。  一、attrib">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/08/04/js篇/C:/Users/LRY-NB/Desktop/QQ图片20190209175749.png">
-<meta property="og:updated_time" content="2019-02-09T14:15:04.722Z">
+<meta property="og:updated_time" content="2019-03-09T07:06:21.268Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js篇">
 <meta name="twitter:description" content="JS   JavaScript（小小的简介一下） js代码用标签包裹起来，js代码可以放在行内，body的后面，或者body之前，外部，但是通常我们会将js代码放在title的标签之下，但是如果这样的话，浏览器会先加载js代码，而不会先加载html的部分。由此，我们可以用window.onload = function(){js..代码}这种写法，但请不要忘记script标签。  一、attrib">
@@ -282,7 +282,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/04/js篇/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小白">
+      <meta itemprop="name" content="LinYo.">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/1.jpg">
     </span>
@@ -372,7 +372,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,703
+                  1,996
                 </span>
               
 
@@ -388,7 +388,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  7
+                  8
                 </span>
               
             </div>
@@ -436,7 +436,7 @@
 <li><p>parentNode-&gt;父节点<strong>（body-&gt;html-&gt;document-&gt;null）</strong></p>
 </li>
 <li><p>childNodes-&gt;子节点们</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;section&gt;<span class="xml"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></span></span><br><span class="line">    &lt;span&gt;<span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line">    &lt;p&gt;<span class="xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;script&gt;</span></span><br><span class="line"><span class="regexp">      window.onload = function()&#123;</span></span><br><span class="line"><span class="regexp">        var odiv = document.getElementsByTagName("div")[0];</span></span><br><span class="line"><span class="regexp">        console.log(odiv.childNodes.length);</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>script&gt;</span><br><span class="line"><span class="comment">//猜猜结果是什么？ 是7为什么呢？因为里面包含了文本节点，不可能是3的哟。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;section&gt;&lt;/section&gt;</span><br><span class="line">    &lt;span&gt;&lt;/span&gt;</span><br><span class="line">    &lt;p&gt;&lt;/p&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;script&gt;</span></span><br><span class="line"><span class="regexp">      window.onload = function()&#123;</span></span><br><span class="line"><span class="regexp">        var odiv = document.getElementsByTagName("div")[0];</span></span><br><span class="line"><span class="regexp">        console.log(odiv.childNodes.length);</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>script&gt;</span><br><span class="line"><span class="comment">//猜猜结果是什么？ 是7为什么呢？因为里面包含了文本节点，不可能是3的哟。</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>lastChild-&gt;最后一个子节点</p>
 </li>
@@ -527,6 +527,11 @@
 <p>两种定义方式，如果不引入变量则使用最多的还是第一种方式，如果字符串中包含\则需要使用转义字符/\即可~</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> patt = <span class="regexp">/e/g</span>;</span><br><span class="line">patt.test(<span class="string">"this is best"</span>);<span class="comment">//test的方法返回值是Boolean型如果查找对则返回true否则反之。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//要引入变量的话</span></span><br><span class="line"><span class="keyword">let</span> x = <span class="string">"abc"</span>;</span><br><span class="line"><span class="keyword">let</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(x);</span><br><span class="line"><span class="built_in">console</span>.log(reg.test());</span><br></pre></td></tr></table></figure>
 <h5 id="3-举个例子（验证QQ号）"><a href="#3-举个例子（验证QQ号）" class="headerlink" title="3. 举个例子（验证QQ号）"></a>3. 举个例子（验证QQ号）</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="keyword">var</span> input_qq = <span class="built_in">document</span>.getElementById(<span class="string">"text"</span>);</span><br><span class="line">    <span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"btn"</span>);</span><br><span class="line">    btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> input_value = input_qq.value;</span><br><span class="line">        <span class="keyword">var</span> reg = <span class="regexp">/^[1-9][0-9]&#123;4,11&#125;$/g</span>;</span><br><span class="line">        <span class="keyword">var</span> result = reg.test(input_value);</span><br><span class="line">        <span class="keyword">if</span>(result)&#123;</span><br><span class="line">            alert(<span class="string">"正确的qq号"</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            alert(<span class="string">"qq号不对哦"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="五、target事件机制"><a href="#五、target事件机制" class="headerlink" title="五、target事件机制"></a>五、target事件机制</h4><p>有这么一个问题，有很多的li我需要点击某个li标签，来打印对应的li值。恩，这我们该怎么做？</p>
+<p>首先我们先想到的就是就是获取的ul的id，然后获取所有的li，遍历每一个li，给li注册点击事件。弹出值。</p>
+<p>但是在这里我们不能使用var来定义变量，我们需要使用let。这也是一种方法。但是我们可以使用target</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">'ul'</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>43<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>44<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>45<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>46<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>47<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>48<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>49<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>50<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> ul = <span class="built_in">document</span>.getElementById(<span class="string">'ul'</span>);</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> li = ul.children;</span></span><br><span class="line"><span class="javascript">    ul.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(e.target.innerText);</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这里我们无需为li注册点击事件，如果我们li没有点击事件的话，我们就是向上一层寻找事件，上一层再没有再找，这就是事件冒泡。target 属性规定哪个 DOM 元素触发了该事件。这个 <em>event</em> 参数来自事件绑定函数。而这个e就相当于我们点击了哪一个li。</p>
 
       
     </div>
@@ -652,9 +657,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/1.jpg"
-                alt="小白" />
+                alt="LinYo." />
             
-              <p class="site-author-name" itemprop="name">小白</p>
+              <p class="site-author-name" itemprop="name">LinYo.</p>
               <p class="site-description motion-element" itemprop="description">专注比广博更重要。</p>
           </div>
 
@@ -665,7 +670,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -676,7 +681,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -687,7 +692,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -766,6 +771,10 @@
                     <a href="https://limjk.tech/" title="友情链接" target="_blank">友情链接</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="https://marmomento.github.io/" title="友情链接2" target="_blank">友情链接2</a>
+                  </li>
+                
               </ul>
             </div>
           
@@ -785,7 +794,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JS-JavaScript（小小的简介一下）"><span class="nav-number">1.</span> <span class="nav-text">JS   JavaScript（小小的简介一下）</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#一、attributes-属性"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">一、attributes 属性</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#二、cookie属性"><span class="nav-number">1.0.0.0.2.</span> <span class="nav-text">二、cookie属性</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一、面向对象"><span class="nav-number">1.1.</span> <span class="nav-text">一、面向对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、JS原型"><span class="nav-number">1.2.</span> <span class="nav-text">二、JS原型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#首先我们看一个例子："><span class="nav-number">1.2.0.1.</span> <span class="nav-text">首先我们看一个例子：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#原型的作用：数据共享，节省内存空间。"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">原型的作用：数据共享，节省内存空间。</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#原型链（最终结果：Object-Prototype）"><span class="nav-number">1.2.1.</span> <span class="nav-text">原型链（最终结果：Object.Prototype）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、JS-dom-操作"><span class="nav-number">1.3.</span> <span class="nav-text">三、JS dom 操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-dom选择器"><span class="nav-number">1.3.0.1.</span> <span class="nav-text">1. dom选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-dom节点类型"><span class="nav-number">1.3.0.2.</span> <span class="nav-text">2. dom节点类型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-基于元素节点树的遍历"><span class="nav-number">1.3.0.3.</span> <span class="nav-text">3. 基于元素节点树的遍历</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-节点的四个属性"><span class="nav-number">1.3.0.4.</span> <span class="nav-text">4. 节点的四个属性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-节点的增删改查"><span class="nav-number">1.3.0.5.</span> <span class="nav-text">5. 节点的增删改查</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、JS-正则部分"><span class="nav-number">1.4.</span> <span class="nav-text">四、JS 正则部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#js中的正则又很多种方法不过常用的还是"><span class="nav-number">1.4.1.</span> <span class="nav-text">js中的正则又很多种方法不过常用的还是</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-正则表达式模式"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">1. 正则表达式模式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-使用RegExp对象"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">2. 使用RegExp对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-举个例子（验证QQ号）"><span class="nav-number">1.4.1.3.</span> <span class="nav-text">3. 举个例子（验证QQ号）</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JS-JavaScript（小小的简介一下）"><span class="nav-number">1.</span> <span class="nav-text">JS   JavaScript（小小的简介一下）</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#一、attributes-属性"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">一、attributes 属性</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#二、cookie属性"><span class="nav-number">1.0.0.0.2.</span> <span class="nav-text">二、cookie属性</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一、面向对象"><span class="nav-number">1.1.</span> <span class="nav-text">一、面向对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、JS原型"><span class="nav-number">1.2.</span> <span class="nav-text">二、JS原型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#首先我们看一个例子："><span class="nav-number">1.2.0.1.</span> <span class="nav-text">首先我们看一个例子：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#原型的作用：数据共享，节省内存空间。"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">原型的作用：数据共享，节省内存空间。</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#原型链（最终结果：Object-Prototype）"><span class="nav-number">1.2.1.</span> <span class="nav-text">原型链（最终结果：Object.Prototype）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、JS-dom-操作"><span class="nav-number">1.3.</span> <span class="nav-text">三、JS dom 操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-dom选择器"><span class="nav-number">1.3.0.1.</span> <span class="nav-text">1. dom选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-dom节点类型"><span class="nav-number">1.3.0.2.</span> <span class="nav-text">2. dom节点类型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-基于元素节点树的遍历"><span class="nav-number">1.3.0.3.</span> <span class="nav-text">3. 基于元素节点树的遍历</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-节点的四个属性"><span class="nav-number">1.3.0.4.</span> <span class="nav-text">4. 节点的四个属性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-节点的增删改查"><span class="nav-number">1.3.0.5.</span> <span class="nav-text">5. 节点的增删改查</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、JS-正则部分"><span class="nav-number">1.4.</span> <span class="nav-text">四、JS 正则部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#js中的正则又很多种方法不过常用的还是"><span class="nav-number">1.4.1.</span> <span class="nav-text">js中的正则又很多种方法不过常用的还是</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-正则表达式模式"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">1. 正则表达式模式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-使用RegExp对象"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">2. 使用RegExp对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-举个例子（验证QQ号）"><span class="nav-number">1.4.1.3.</span> <span class="nav-text">3. 举个例子（验证QQ号）</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、target事件机制"><span class="nav-number">1.4.2.</span> <span class="nav-text">五、target事件机制</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -810,7 +819,7 @@
   <span class="with-love">
     <i class="fa fa-snowflake-o"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">小白</span>
+  <span class="author" itemprop="copyrightHolder">LinYo.</span>
 
   
 </div>
@@ -844,7 +853,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共41.8k字</span>
+  <span class="post-count">博客全站共43.0k字</span>
 </div>
 
         
