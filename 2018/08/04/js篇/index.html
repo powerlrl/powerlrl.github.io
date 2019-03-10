@@ -436,7 +436,7 @@
 <li><p>parentNode-&gt;父节点<strong>（body-&gt;html-&gt;document-&gt;null）</strong></p>
 </li>
 <li><p>childNodes-&gt;子节点们</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;section&gt;&lt;/section&gt;</span><br><span class="line">    &lt;span&gt;&lt;/span&gt;</span><br><span class="line">    &lt;p&gt;&lt;/p&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;script&gt;</span></span><br><span class="line"><span class="regexp">      window.onload = function()&#123;</span></span><br><span class="line"><span class="regexp">        var odiv = document.getElementsByTagName("div")[0];</span></span><br><span class="line"><span class="regexp">        console.log(odiv.childNodes.length);</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>script&gt;</span><br><span class="line"><span class="comment">//猜猜结果是什么？ 是7为什么呢？因为里面包含了文本节点，不可能是3的哟。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;section&gt;<span class="xml"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></span></span><br><span class="line">    &lt;span&gt;<span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line">    &lt;p&gt;<span class="xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;script&gt;</span></span><br><span class="line"><span class="regexp">      window.onload = function()&#123;</span></span><br><span class="line"><span class="regexp">        var odiv = document.getElementsByTagName("div")[0];</span></span><br><span class="line"><span class="regexp">        console.log(odiv.childNodes.length);</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>script&gt;</span><br><span class="line"><span class="comment">//猜猜结果是什么？ 是7为什么呢？因为里面包含了文本节点，不可能是3的哟。</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>lastChild-&gt;最后一个子节点</p>
 </li>
@@ -670,7 +670,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -853,7 +853,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共43.0k字</span>
+  <span class="post-count">博客全站共43.8k字</span>
 </div>
 
         
