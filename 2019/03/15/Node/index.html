@@ -80,7 +80,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="node," />
 
 
 
@@ -93,17 +93,18 @@
 
 
 
-<meta name="description" content="Git与npm小结npm包管理工具，node版本LTS长期维护型，Current最新版本 如果我们想查看node版本号可以在cmd中输入node -v命令，同理查看npm则是npm -v 我们想要更新npm版本。那么我们就可以更新自己。npm install npm@latest(也可以直接加入版本号)-g（安装到全局）  npm 常用命令 npm init -y（初始化npm）无需配置 npm">
+<meta name="description" content="node是什么，node可以干什么？ node既不是一种语言，也不是一个框架，更不是一个库。而是一种能让JavaScript运行在服务器上的一个平台。  node day01 首先要下载node.js 自行到官网中下载。注意两个版本的区别  node中是以模块来划分作用域 node里面分为两个作用域，全局作用域（glogbal）和模块作用域   require（’模块标识符’） —–我们需引入模块">
+<meta name="keywords" content="node">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git与npm">
-<meta property="og:url" content="http://yoursite.com/2019/02/10/Git与npm总结/index.html">
+<meta property="og:title" content="Node">
+<meta property="og:url" content="http://yoursite.com/2019/03/15/Node/index.html">
 <meta property="og:site_name" content="LinYo.">
-<meta property="og:description" content="Git与npm小结npm包管理工具，node版本LTS长期维护型，Current最新版本 如果我们想查看node版本号可以在cmd中输入node -v命令，同理查看npm则是npm -v 我们想要更新npm版本。那么我们就可以更新自己。npm install npm@latest(也可以直接加入版本号)-g（安装到全局）  npm 常用命令 npm init -y（初始化npm）无需配置 npm">
+<meta property="og:description" content="node是什么，node可以干什么？ node既不是一种语言，也不是一个框架，更不是一个库。而是一种能让JavaScript运行在服务器上的一个平台。  node day01 首先要下载node.js 自行到官网中下载。注意两个版本的区别  node中是以模块来划分作用域 node里面分为两个作用域，全局作用域（glogbal）和模块作用域   require（’模块标识符’） —–我们需引入模块">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-23T10:02:23.487Z">
+<meta property="og:updated_time" content="2019-03-23T12:09:08.979Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git与npm">
-<meta name="twitter:description" content="Git与npm小结npm包管理工具，node版本LTS长期维护型，Current最新版本 如果我们想查看node版本号可以在cmd中输入node -v命令，同理查看npm则是npm -v 我们想要更新npm版本。那么我们就可以更新自己。npm install npm@latest(也可以直接加入版本号)-g（安装到全局）  npm 常用命令 npm init -y（初始化npm）无需配置 npm">
+<meta name="twitter:title" content="Node">
+<meta name="twitter:description" content="node是什么，node可以干什么？ node既不是一种语言，也不是一个框架，更不是一个库。而是一种能让JavaScript运行在服务器上的一个平台。  node day01 首先要下载node.js 自行到官网中下载。注意两个版本的区别  node中是以模块来划分作用域 node里面分为两个作用域，全局作用域（glogbal）和模块作用域   require（’模块标识符’） —–我们需引入模块">
 
 
 
@@ -133,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/10/Git与npm总结/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/15/Node/"/>
 
 
 
 
 
-  <title>Git与npm | LinYo.</title>
+  <title>Node | LinYo.</title>
   
 
 
@@ -276,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/10/Git与npm总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/Node/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LinYo.">
@@ -293,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Git与npm</h1>
+          <h1 class="post-title" itemprop="name headline">Node</h1>
         
 
         <div class="post-meta">
@@ -305,8 +306,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-10T21:36:34+08:00">
-                2019-02-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-15T14:31:06+08:00">
+                2019-03-15
               </time>
             
 
@@ -316,6 +317,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/node/" itemprop="url" rel="index">
+                    <span itemprop="name">node</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -324,8 +347,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/02/10/Git与npm总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/10/Git与npm总结/" itemprop="commentCount"></span>
+                <a href="/2019/03/15/Node/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/15/Node/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -347,7 +370,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  217
+                  704
                 </span>
               
 
@@ -363,7 +386,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -384,32 +407,47 @@
       
 
       
-        <h1 id="Git与npm小结"><a href="#Git与npm小结" class="headerlink" title="Git与npm小结"></a>Git与npm小结</h1><h3 id="npm包管理工具，node版本LTS长期维护型，Current最新版本"><a href="#npm包管理工具，node版本LTS长期维护型，Current最新版本" class="headerlink" title="npm包管理工具，node版本LTS长期维护型，Current最新版本"></a>npm包管理工具，node版本LTS长期维护型，Current最新版本</h3><blockquote>
-<p>如果我们想查看node版本号可以在cmd中输入node -v命令，同理查看npm则是npm -v</p>
-<p>我们想要更新npm版本。那么我们就可以更新自己。npm install npm@latest(也可以直接加入版本号)-g（安装到全局）</p>
+        <h2 id="node是什么，node可以干什么？"><a href="#node是什么，node可以干什么？" class="headerlink" title="node是什么，node可以干什么？"></a>node是什么，node可以干什么？</h2><blockquote>
+<p>node既不是一种语言，也不是一个框架，更不是一个库。而是一种能让JavaScript运行在服务器上的一个平台。</p>
 </blockquote>
-<h3 id="npm-常用命令"><a href="#npm-常用命令" class="headerlink" title="npm 常用命令"></a>npm 常用命令</h3><ul>
-<li>npm init -y（初始化npm）无需配置<ul>
-<li>npm i （需要配置）</li>
-</ul>
-</li>
-<li>npm i 包名 –save(将依赖模块添加到pakeage.json)<ul>
-<li>npm i 包名（不把依赖模块添加到pakeage.json）</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>二者区别是，如果我们无意中删除了文件夹则我们需要npm init即可（只针对–save）</p>
+<h3 id="node-day01"><a href="#node-day01" class="headerlink" title="node day01"></a>node day01</h3><blockquote>
+<p>首先要下载node.js 自行到官网中下载。注意两个版本的区别</p>
+</blockquote>
+<h4 id="node中是以模块来划分作用域"><a href="#node中是以模块来划分作用域" class="headerlink" title="node中是以模块来划分作用域"></a>node中是以模块来划分作用域</h4><blockquote>
+<p>node里面分为两个作用域，全局作用域（glogbal）和模块作用域</p>
 </blockquote>
 <ul>
-<li>假设我们不需要某个依赖 npm uninstall jquery</li>
-<li>更新 npm update jquery</li>
-<li>安装旧版本npm i jqurey@版本号</li>
+<li><p>require（’模块标识符’） —–我们需引入模块需要用到的方法</p>
+</li>
+<li><p>模块</p>
+<ul>
+<li><p>用户自定义模块—-自己定义的一个js文件模块</p>
+</li>
+<li><p>系统提供模块—例如:fs,http…</p>
+</li>
 </ul>
-<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><ul>
-<li>git config -l （可以查看邮箱和名称）</li>
+</li>
+</ul>
+<h6 id="例如我们想要读取一个txt文件-JavaScript中是不可能实现的"><a href="#例如我们想要读取一个txt文件-JavaScript中是不可能实现的" class="headerlink" title="例如我们想要读取一个txt文件,JavaScript中是不可能实现的"></a>例如我们想要读取一个txt文件,JavaScript中是不可能实现的</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line"><span class="comment">//如果读取成功，则返回一个回调函数，erro----null，data----一串16进制，否则的话，erro----报错，data---undefined</span></span><br><span class="line">fs.readFile(<span class="string">'txt路径'</span>,(erro,data)=&gt;&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(erro)</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line">    <span class="comment">//如果想要获取文件中的内容，只需要把16进制转换为字符串即可</span></span><br><span class="line">    <span class="built_in">console</span>.log(data.toString())</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>基本上路径如果，对的话是没有问题的，还有可能文件不存在。</li>
+</ul>
+<h5 id="现在我们不止想要读一个文件，我还想写入一个文件"><a href="#现在我们不止想要读一个文件，我还想写入一个文件" class="headerlink" title="现在我们不止想要读一个文件，我还想写入一个文件"></a>现在我们不止想要读一个文件，我还想写入一个文件</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line">fs.writeFile(<span class="string">'路径'</span>,<span class="string">'文件内容'</span>,error=&gt;&#123;</span><br><span class="line">    <span class="comment">//写入文件，如果成功则 error为null null又默认为0</span></span><br><span class="line">    <span class="keyword">if</span>(error)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'文件写入失败'</span>)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'文件写入成功'</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="http模块"><a href="#http模块" class="headerlink" title="http模块"></a>http模块</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引入http模块</span></span><br><span class="line"><span class="keyword">let</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>)</span><br><span class="line"><span class="comment">//创建服务器</span></span><br><span class="line"><span class="keyword">let</span> server = http.createServer(<span class="function">(<span class="params">req,res</span>)=&gt;</span>&#123;</span><br><span class="line">    url = req.url</span><br><span class="line">    <span class="comment">//查找url</span></span><br><span class="line">    <span class="keyword">if</span>(url === <span class="string">'/'</span>)&#123;</span><br><span class="line">        res.end(<span class="string">'http 的使用'</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//开启服务器</span></span><br><span class="line">server.on(<span class="number">3000</span>,()=&gt;&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'running is server...'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="exports和module-exports的区别"><a href="#exports和module-exports的区别" class="headerlink" title="exports和module exports的区别"></a>exports和module exports的区别</h4><blockquote>
+<p>很多时候我们需要引入到别的模块中的变量，这个时候我们就需要使用的exports或者module.exports来暴露我们需要使用的变量或者对象。每一个模块中都有一个module.exports对象，每一个module.exports对象都有一个exports对象，所以我们把需要暴露的对象都挂载在module.exports对象上。所以每次暴露都是module.exports.xxx = xxx但是为了方便同时又在每一个模块中提供了一个exports成员，还有exports === module.exports是为true假如我们只需要暴露xxx我们可以直接exports.xxx即可</p>
+<p>如果我们暴露单个成员则需要使用module.exports不能使用exports因为最终返回的都是module.exports即使exports=xxx也不行，</p>
+<p>但是有一种特别的特殊方法 exports=module.exports是可以的，</p>
+<p>多次暴露使用exports</p>
+<p>单次暴露使用module.exports</p>
+<p>module.exports也可以多个暴露（module.exports={}即可）</p>
+</blockquote>
+<h4 id="Express"><a href="#Express" class="headerlink" title="Express"></a>Express</h4><h4 id="一、安装express框架（npm-i-S-express）"><a href="#一、安装express框架（npm-i-S-express）" class="headerlink" title="一、安装express框架（npm i -S express）"></a>一、安装express框架（npm i -S express）</h4><ul>
+<li>引入express模块</li>
+<li></li>
 </ul>
 <a id="more"></a>
+
       
     </div>
     
@@ -432,6 +470,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/node/" rel="tag"><i class="fa fa-tag"></i> node</a>
+          
+        </div>
+      
 
       
       
@@ -441,8 +485,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/10/CSS/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2019/03/10/面试题集合/" rel="next" title="面试题集合">
+                <i class="fa fa-chevron-left"></i> 面试题集合
               </a>
             
           </div>
@@ -450,10 +494,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/11/实例/" rel="prev" title="实例">
-                实例 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -665,7 +705,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git与npm小结"><span class="nav-number">1.</span> <span class="nav-text">Git与npm小结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#npm包管理工具，node版本LTS长期维护型，Current最新版本"><span class="nav-number">1.0.1.</span> <span class="nav-text">npm包管理工具，node版本LTS长期维护型，Current最新版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm-常用命令"><span class="nav-number">1.0.2.</span> <span class="nav-text">npm 常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git"><span class="nav-number">1.0.3.</span> <span class="nav-text">Git</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#node是什么，node可以干什么？"><span class="nav-number">1.</span> <span class="nav-text">node是什么，node可以干什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#node-day01"><span class="nav-number">1.1.</span> <span class="nav-text">node day01</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#node中是以模块来划分作用域"><span class="nav-number">1.1.1.</span> <span class="nav-text">node中是以模块来划分作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#例如我们想要读取一个txt文件-JavaScript中是不可能实现的"><span class="nav-number">1.1.1.0.1.</span> <span class="nav-text">例如我们想要读取一个txt文件,JavaScript中是不可能实现的</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#现在我们不止想要读一个文件，我还想写入一个文件"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">现在我们不止想要读一个文件，我还想写入一个文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http模块"><span class="nav-number">1.2.</span> <span class="nav-text">http模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#exports和module-exports的区别"><span class="nav-number">1.2.1.</span> <span class="nav-text">exports和module exports的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Express"><span class="nav-number">1.2.2.</span> <span class="nav-text">Express</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一、安装express框架（npm-i-S-express）"><span class="nav-number">1.2.3.</span> <span class="nav-text">一、安装express框架（npm i -S express）</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
