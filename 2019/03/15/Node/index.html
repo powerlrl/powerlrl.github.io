@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="LinYo.">
 <meta property="og:description" content="node是什么，node可以干什么？ node既不是一种语言，也不是一个框架，更不是一个库。而是一种能让JavaScript运行在服务器上的一个平台。  node day01 首先要下载node.js 自行到官网中下载。注意两个版本的区别  node中是以模块来划分作用域 node里面分为两个作用域，全局作用域（glogbal）和模块作用域   require（’模块标识符’） —–我们需引入模块">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-23T12:09:08.979Z">
+<meta property="og:updated_time" content="2019-03-27T11:05:57.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Node">
 <meta name="twitter:description" content="node是什么，node可以干什么？ node既不是一种语言，也不是一个框架，更不是一个库。而是一种能让JavaScript运行在服务器上的一个平台。  node day01 首先要下载node.js 自行到官网中下载。注意两个版本的区别  node中是以模块来划分作用域 node里面分为两个作用域，全局作用域（glogbal）和模块作用域   require（’模块标识符’） —–我们需引入模块">
@@ -370,7 +370,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  704
+                  1,166
                 </span>
               
 
@@ -386,7 +386,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  5
                 </span>
               
             </div>
@@ -432,6 +432,7 @@
 <ul>
 <li>基本上路径如果，对的话是没有问题的，还有可能文件不存在。</li>
 </ul>
+<a id="more"></a>
 <h5 id="现在我们不止想要读一个文件，我还想写入一个文件"><a href="#现在我们不止想要读一个文件，我还想写入一个文件" class="headerlink" title="现在我们不止想要读一个文件，我还想写入一个文件"></a>现在我们不止想要读一个文件，我还想写入一个文件</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line">fs.writeFile(<span class="string">'路径'</span>,<span class="string">'文件内容'</span>,error=&gt;&#123;</span><br><span class="line">    <span class="comment">//写入文件，如果成功则 error为null null又默认为0</span></span><br><span class="line">    <span class="keyword">if</span>(error)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'文件写入失败'</span>)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'文件写入成功'</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <h3 id="http模块"><a href="#http模块" class="headerlink" title="http模块"></a>http模块</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引入http模块</span></span><br><span class="line"><span class="keyword">let</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>)</span><br><span class="line"><span class="comment">//创建服务器</span></span><br><span class="line"><span class="keyword">let</span> server = http.createServer(<span class="function">(<span class="params">req,res</span>)=&gt;</span>&#123;</span><br><span class="line">    url = req.url</span><br><span class="line">    <span class="comment">//查找url</span></span><br><span class="line">    <span class="keyword">if</span>(url === <span class="string">'/'</span>)&#123;</span><br><span class="line">        res.end(<span class="string">'http 的使用'</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//开启服务器</span></span><br><span class="line">server.on(<span class="number">3000</span>,()=&gt;&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'running is server...'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <h4 id="exports和module-exports的区别"><a href="#exports和module-exports的区别" class="headerlink" title="exports和module exports的区别"></a>exports和module exports的区别</h4><blockquote>
@@ -442,11 +443,26 @@
 <p>单次暴露使用module.exports</p>
 <p>module.exports也可以多个暴露（module.exports={}即可）</p>
 </blockquote>
-<h4 id="Express"><a href="#Express" class="headerlink" title="Express"></a>Express</h4><h4 id="一、安装express框架（npm-i-S-express）"><a href="#一、安装express框架（npm-i-S-express）" class="headerlink" title="一、安装express框架（npm i -S express）"></a>一、安装express框架（npm i -S express）</h4><ul>
+<h2 id="Express"><a href="#Express" class="headerlink" title="Express"></a>Express</h2><h4 id="一、安装express框架（npm-i-S-express）"><a href="#一、安装express框架（npm-i-S-express）" class="headerlink" title="一、安装express框架（npm i -S express）"></a>一、安装express框架（npm i -S express）</h4><ul>
 <li>引入express模块</li>
-<li></li>
+<li>定义变量接受express（）方法</li>
 </ul>
-<a id="more"></a>
+<p>利用express实现helloworld</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">let</span> app = express()</span><br><span class="line"><span class="comment">//使用路由</span></span><br><span class="line">app.get(<span class="string">'/'</span>,(req,res)=&gt;&#123;</span><br><span class="line">  res.send(<span class="string">'hello world'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//使用路由</span></span><br><span class="line">app.get(<span class="string">'/login'</span>,(req,res)=&gt;&#123;</span><br><span class="line">  res.send(<span class="string">'login'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//开启服务器</span></span><br><span class="line">app.listen(<span class="number">3000</span>,()=&gt;&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'server is running'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>总的来说比我们之前写原生简单易懂的多。</p>
+<h3 id="二、nodemon的使用"><a href="#二、nodemon的使用" class="headerlink" title="二、nodemon的使用"></a>二、nodemon的使用</h3><p>每一次修改完代码是不是每一次都要node app.js 还要每一次都要开启服务器。nodemon是我们每一次修改完代码后只要ctrl+s然后刷新浏览器就可以更改。</p>
+<ul>
+<li>npm i -g nodemon（安装nodemon）</li>
+<li>nodenom -v （查看版本号）</li>
+<li>nodemon xxx.js（运行js文件）</li>
+</ul>
+<h4 id="三、模板引擎的使用"><a href="#三、模板引擎的使用" class="headerlink" title="三、模板引擎的使用"></a>三、模板引擎的使用</h4><ul>
+<li>先下载art-template</li>
+<li>使用engine（’以什么文件后缀’，’express-art-template’）引入express-art-template包</li>
+<li>使用路由get（）方式</li>
+<li>使用render(‘渲染的文件’，{对象数据}) 默认到views文件夹中去寻找，若要修改则app.set(‘views’,’文件夹路径’)</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">let</span> app = express()</span><br><span class="line">app.engine(<span class="string">'html'</span>,<span class="built_in">require</span>(<span class="string">'art-template-express'</span>))</span><br><span class="line">app.get(<span class="string">'index.html'</span>,(req,res)=&gt;&#123;</span><br><span class="line">    res.render(<span class="string">'index.html'</span>)<span class="comment">//没有数据就无需写第二个参数</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//配置插件开始</span></span><br><span class="line"><span class="keyword">let</span> bodyParser = <span class="built_in">require</span>(<span class="string">'body-parser'</span>)</span><br><span class="line"><span class="comment">//配置body-parser</span></span><br><span class="line">app.use(bodyParser.urlencoded(&#123; <span class="attr">extended</span>: <span class="literal">false</span> &#125;))</span><br><span class="line"><span class="comment">// parse application/json</span></span><br><span class="line">app.use(bodyParser.json())</span><br><span class="line"><span class="comment">//插件配置结束</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//使用get方法获取数据，这个/pinglung是表单的action='/pinglun'，methond='get'</span></span><br><span class="line">app.get(<span class="string">'/pinglun'</span>,(req,res)=&gt;&#123;</span><br><span class="line"> <span class="keyword">let</span> comment = req.query</span><br><span class="line">  comment.dataTime = <span class="string">'2019-5-1'</span></span><br><span class="line">   comments.unshift(comment)</span><br><span class="line">  res.redirect(<span class="string">'/'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 使用post方法获取数据需要借助中间的插件body-parser才可以获取数据，不想get有一个内置的api (req.query),需要借助第三方插件，还需要配置</span></span><br><span class="line">app.post(<span class="string">'/post'</span>,(req,res)=&gt;&#123;</span><br><span class="line">  <span class="keyword">let</span> comment = req.body</span><br><span class="line">  comment.dataTime = <span class="string">'2018-3-5'</span></span><br><span class="line">  comments.unshift(comment)</span><br><span class="line">  res.redirect(<span class="string">'/'</span>)<span class="comment">//重定向</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -585,7 +601,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -596,7 +612,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -607,7 +623,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -709,7 +725,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#node是什么，node可以干什么？"><span class="nav-number">1.</span> <span class="nav-text">node是什么，node可以干什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#node-day01"><span class="nav-number">1.1.</span> <span class="nav-text">node day01</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#node中是以模块来划分作用域"><span class="nav-number">1.1.1.</span> <span class="nav-text">node中是以模块来划分作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#例如我们想要读取一个txt文件-JavaScript中是不可能实现的"><span class="nav-number">1.1.1.0.1.</span> <span class="nav-text">例如我们想要读取一个txt文件,JavaScript中是不可能实现的</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#现在我们不止想要读一个文件，我还想写入一个文件"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">现在我们不止想要读一个文件，我还想写入一个文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http模块"><span class="nav-number">1.2.</span> <span class="nav-text">http模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#exports和module-exports的区别"><span class="nav-number">1.2.1.</span> <span class="nav-text">exports和module exports的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Express"><span class="nav-number">1.2.2.</span> <span class="nav-text">Express</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一、安装express框架（npm-i-S-express）"><span class="nav-number">1.2.3.</span> <span class="nav-text">一、安装express框架（npm i -S express）</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#node是什么，node可以干什么？"><span class="nav-number">1.</span> <span class="nav-text">node是什么，node可以干什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#node-day01"><span class="nav-number">1.1.</span> <span class="nav-text">node day01</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#node中是以模块来划分作用域"><span class="nav-number">1.1.1.</span> <span class="nav-text">node中是以模块来划分作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#例如我们想要读取一个txt文件-JavaScript中是不可能实现的"><span class="nav-number">1.1.1.0.1.</span> <span class="nav-text">例如我们想要读取一个txt文件,JavaScript中是不可能实现的</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#现在我们不止想要读一个文件，我还想写入一个文件"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">现在我们不止想要读一个文件，我还想写入一个文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http模块"><span class="nav-number">1.2.</span> <span class="nav-text">http模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#exports和module-exports的区别"><span class="nav-number">1.2.1.</span> <span class="nav-text">exports和module exports的区别</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Express"><span class="nav-number">2.</span> <span class="nav-text">Express</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、安装express框架（npm-i-S-express）"><span class="nav-number">2.0.1.</span> <span class="nav-text">一、安装express框架（npm i -S express）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、nodemon的使用"><span class="nav-number">2.1.</span> <span class="nav-text">二、nodemon的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#三、模板引擎的使用"><span class="nav-number">2.1.1.</span> <span class="nav-text">三、模板引擎的使用</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -768,7 +784,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共45.3k字</span>
+  <span class="post-count">博客全站共46.4k字</span>
 </div>
 
         
