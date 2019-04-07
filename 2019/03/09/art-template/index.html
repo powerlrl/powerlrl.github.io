@@ -93,18 +93,20 @@
 
 
 
-<meta name="description" content="一、如何引用 可以使用npm方式 可以使用script标签   这里我们使用script标签   12345678910&amp;lt;script type=&apos;text/template&apos; id=&apos;box&apos;&amp;gt;      &amp;lt;p&amp;gt;&amp;#123;&amp;#123;test&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;script&amp;gt;    let obj">
+<meta name="description" content="一、前端如何引用 可以使用npm方式 可以使用script标签   这里我们使用script标签   12345678910&amp;lt;script type=&apos;text/template&apos; id=&apos;box&apos;&amp;gt;      &amp;lt;p&amp;gt;&amp;#123;&amp;#123;test&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;script&amp;gt;    let ob">
 <meta name="keywords" content="js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="art-template">
 <meta property="og:url" content="http://yoursite.com/2019/03/09/art-template/index.html">
 <meta property="og:site_name" content="LinYo.">
-<meta property="og:description" content="一、如何引用 可以使用npm方式 可以使用script标签   这里我们使用script标签   12345678910&amp;lt;script type=&apos;text/template&apos; id=&apos;box&apos;&amp;gt;      &amp;lt;p&amp;gt;&amp;#123;&amp;#123;test&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;script&amp;gt;    let obj">
+<meta property="og:description" content="一、前端如何引用 可以使用npm方式 可以使用script标签   这里我们使用script标签   12345678910&amp;lt;script type=&apos;text/template&apos; id=&apos;box&apos;&amp;gt;      &amp;lt;p&amp;gt;&amp;#123;&amp;#123;test&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;script&amp;gt;    let ob">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-09T06:50:32.578Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/art-template/QQ图片20190407122814.png">
+<meta property="og:updated_time" content="2019-04-07T04:39:28.462Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="art-template">
-<meta name="twitter:description" content="一、如何引用 可以使用npm方式 可以使用script标签   这里我们使用script标签   12345678910&amp;lt;script type=&apos;text/template&apos; id=&apos;box&apos;&amp;gt;      &amp;lt;p&amp;gt;&amp;#123;&amp;#123;test&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;script&amp;gt;    let obj">
+<meta name="twitter:description" content="一、前端如何引用 可以使用npm方式 可以使用script标签   这里我们使用script标签   12345678910&amp;lt;script type=&apos;text/template&apos; id=&apos;box&apos;&amp;gt;      &amp;lt;p&amp;gt;&amp;#123;&amp;#123;test&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;script&amp;gt;    let ob">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/09/art-template/QQ图片20190407122814.png">
 
 
 
@@ -370,7 +372,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  309
+                  732
                 </span>
               
 
@@ -386,7 +388,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -407,7 +409,7 @@
       
 
       
-        <h2 id="一、如何引用"><a href="#一、如何引用" class="headerlink" title="一、如何引用"></a>一、如何引用</h2><ul>
+        <h2 id="一、前端如何引用"><a href="#一、前端如何引用" class="headerlink" title="一、前端如何引用"></a>一、前端如何引用</h2><ul>
 <li>可以使用npm方式</li>
 <li>可以使用script标签</li>
 </ul>
@@ -422,6 +424,32 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">'text/template'</span> id=<span class="string">'wrap'</span>&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">      &#123;&#123;each test&#125;&#125;</span><br><span class="line">        &lt;li&gt;&#123;&#123;$value&#125;&#125;&lt;li&gt;</span><br><span class="line">      &#123;&#123;/each&#125;&#125;</span><br><span class="line"> &lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">  </span></span><br><span class="line"><span class="regexp">  let obj = &#123;</span></span><br><span class="line"><span class="regexp">       test : ['z','h','s'],</span></span><br><span class="line"><span class="regexp">     &#125;</span></span><br><span class="line"><span class="regexp">     let value = template('wrap',obj);</span></span><br><span class="line"><span class="regexp">     console.log(value);</span></span><br><span class="line"><span class="regexp">     document.body.innerHTML = value;</span></span><br></pre></td></tr></table></figure>
 <p>这样就可在页面中创建三个li标签，他们的值分别是数组中的值，当然出来each遍历，我们还有判断</p>
 <p>if （可去官方文档中查阅）对于模板引擎也只是一点点的了解！😭</p>
+<h2 id="二、node中的模板引擎"><a href="#二、node中的模板引擎" class="headerlink" title="二、node中的模板引擎"></a>二、node中的模板引擎</h2><blockquote>
+<p>最近发现模板引擎真是个好东西，它竟然还可以继承和引入？？牛批，这里的挖坑和填坑，我又感觉像是vue中的插槽。。</p>
+</blockquote>
+<h4 id="1-先看下我们的目录树"><a href="#1-先看下我们的目录树" class="headerlink" title="1. 先看下我们的目录树"></a>1. 先看下我们的目录树</h4><p><img src="/2019/03/09/art-template/QQ图片20190407122814.png" alt=""></p>
+<ul>
+<li>public 是存放我们的静态资源库</li>
+<li><p>views 存放我们的视图</p>
+<ul>
+<li>_ layout文件夹存放我们的母版_</li>
+<li>_ partials 存放我们的公共头部，尾部，导航栏</li>
+<li>index .html login.html register.html（渲染文件默认到views文件夹下）</li>
+</ul>
+</li>
+<li><p>app.js 入口文件</p>
+</li>
+</ul>
+<h4 id="2-如何用公共的头部和尾部"><a href="#2-如何用公共的头部和尾部" class="headerlink" title="2.如何用公共的头部和尾部"></a>2.如何用公共的头部和尾部</h4><p>​    app.js中</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">app.engine(<span class="string">'html'</span>,<span class="built_in">require</span>(<span class="string">'express-art-template'</span>))</span><br><span class="line"><span class="comment">//配置插件开始</span></span><br><span class="line"><span class="keyword">let</span> bodyParser = <span class="built_in">require</span>(<span class="string">'body-parser'</span>)</span><br><span class="line"><span class="comment">//配置body-parser</span></span><br><span class="line">app.use(bodyParser.urlencoded(&#123; <span class="attr">extended</span>: <span class="literal">false</span> &#125;))</span><br><span class="line"><span class="comment">// parse application/json</span></span><br><span class="line">app.use(bodyParser.json())</span><br><span class="line"><span class="comment">//插件配置结束</span></span><br><span class="line">app.get(<span class="string">'/'</span>,(req,res)=&gt;&#123;</span><br><span class="line">  res.render(<span class="string">'index.html'</span>,&#123;</span><br><span class="line">    title: <span class="string">'hello wolrd'</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(<span class="number">3000</span>,()=&gt;&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'server is running'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>​    home.html</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  &#123;&#123;include '../_partials/header.html'&#125;&#125;</span><br><span class="line">  <span class="comment">&lt;!-- 一个页面基本的头部和尾部都有，但是只有我们的内容不一样，所以我们就要留个坑，无论哪一个页面需要的话，填坑就行了 --&gt;</span></span><br><span class="line">  &#123;&#123;block 'content'&#125;&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>默认坑里的内容<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">  &#123;&#123;/block&#125;&#125;</span><br><span class="line">  &#123;&#123;include '../_partials/footer.html'&#125;&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>​    index.html</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 继承home模板 --&gt;</span></span><br><span class="line">&#123;&#123;extend './_layout/home.html'&#125;&#125;</span><br><span class="line"><span class="comment">&lt;!-- 填坑操作 --&gt;</span></span><br><span class="line">&#123;&#123;block 'content'&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>主要内容，我会把默认内容覆盖掉<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">&#123;&#123;/block&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>​    footer.html</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h4</span>&gt;</span>公共尾部<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>​    header.html</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h3</span>&gt;</span>公共的头部<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -684,7 +712,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、如何引用"><span class="nav-number">1.</span> <span class="nav-text">一、如何引用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、前端如何引用"><span class="nav-number">1.</span> <span class="nav-text">一、前端如何引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、node中的模板引擎"><span class="nav-number">2.</span> <span class="nav-text">二、node中的模板引擎</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-先看下我们的目录树"><span class="nav-number">2.0.1.</span> <span class="nav-text">1. 先看下我们的目录树</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-如何用公共的头部和尾部"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.如何用公共的头部和尾部</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -743,7 +771,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共46.4k字</span>
+  <span class="post-count">博客全站共48.7k字</span>
 </div>
 
         
