@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="Vue 众所周知，现在前端领域最火的三大框架是React、Vue、Angular。其中Vue是最容易上手的。也是最流行的框架之一。相对于其他两个框架而言，vue更加容易。  一、实现HelloWorld1234567891011121314151617//第一步我们需要引用vue.js&amp;lt;script src=&apos;node_modules/vue/dist/vue.js&apos;&amp;gt;&amp;lt;/scr">
+<meta name="description" content="Vue 众所周知，现在前端领域最火的三大框架是React、Vue、Angular。其中Vue是最容易上手的。也是最流行的框架之一。相对于其他两个框架而言，vue更加容易。 vue是一种基于mvvm的设计模式框架。我们使用vue的话，我们不必要操作dom，直接操作数据来改变我们的页面  一、实现HelloWorld1234567891011121314151617//第一步我们需要引用vue.js&amp;">
 <meta name="keywords" content="vue">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue2.X">
 <meta property="og:url" content="http://yoursite.com/2019/02/10/Vue2.X/index.html">
 <meta property="og:site_name" content="LinYo.">
-<meta property="og:description" content="Vue 众所周知，现在前端领域最火的三大框架是React、Vue、Angular。其中Vue是最容易上手的。也是最流行的框架之一。相对于其他两个框架而言，vue更加容易。  一、实现HelloWorld1234567891011121314151617//第一步我们需要引用vue.js&amp;lt;script src=&apos;node_modules/vue/dist/vue.js&apos;&amp;gt;&amp;lt;/scr">
+<meta property="og:description" content="Vue 众所周知，现在前端领域最火的三大框架是React、Vue、Angular。其中Vue是最容易上手的。也是最流行的框架之一。相对于其他两个框架而言，vue更加容易。 vue是一种基于mvvm的设计模式框架。我们使用vue的话，我们不必要操作dom，直接操作数据来改变我们的页面  一、实现HelloWorld1234567891011121314151617//第一步我们需要引用vue.js&amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-20T10:20:52.138Z">
+<meta property="og:updated_time" content="2019-04-14T05:22:00.119Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue2.X">
-<meta name="twitter:description" content="Vue 众所周知，现在前端领域最火的三大框架是React、Vue、Angular。其中Vue是最容易上手的。也是最流行的框架之一。相对于其他两个框架而言，vue更加容易。  一、实现HelloWorld1234567891011121314151617//第一步我们需要引用vue.js&amp;lt;script src=&apos;node_modules/vue/dist/vue.js&apos;&amp;gt;&amp;lt;/scr">
+<meta name="twitter:description" content="Vue 众所周知，现在前端领域最火的三大框架是React、Vue、Angular。其中Vue是最容易上手的。也是最流行的框架之一。相对于其他两个框架而言，vue更加容易。 vue是一种基于mvvm的设计模式框架。我们使用vue的话，我们不必要操作dom，直接操作数据来改变我们的页面  一、实现HelloWorld1234567891011121314151617//第一步我们需要引用vue.js&amp;">
 
 
 
@@ -370,7 +370,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,464
+                  2,506
                 </span>
               
 
@@ -409,6 +409,7 @@
       
         <h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><blockquote>
 <p>众所周知，现在前端领域最火的三大框架是React、Vue、Angular。其中Vue是最容易上手的。也是最流行的框架之一。相对于其他两个框架而言，vue更加容易。</p>
+<p>vue是一种基于mvvm的设计模式框架。我们使用vue的话，我们不必要操作dom，直接操作数据来改变我们的页面</p>
 </blockquote>
 <h4 id="一、实现HelloWorld"><a href="#一、实现HelloWorld" class="headerlink" title="一、实现HelloWorld"></a>一、实现HelloWorld</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//第一步我们需要引用vue.js</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'node_modules/vue/dist/vue.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">//第二步在标签中绑定el为实例提供挂载符，可以是css，html选择符</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123;message&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="comment">//创建一个vue实例对象</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">            el:<span class="string">'#app'</span>,</span></span><br><span class="line"><span class="undefined">            date:&#123;</span></span><br><span class="line"><span class="javascript">                message:<span class="string">'hello world'</span></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;)</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -640,7 +641,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">23</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -823,7 +824,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共48.7k字</span>
+  <span class="post-count">博客全站共50.2k字</span>
 </div>
 
         

@@ -100,10 +100,18 @@
 <meta property="og:site_name" content="LinYo.">
 <meta property="og:description" content="Git与npm小结npm包管理工具，node版本LTS长期维护型，Current最新版本 如果我们想查看node版本号可以在cmd中输入node -v命令，同理查看npm则是npm -v 我们想要更新npm版本。那么我们就可以更新自己。npm install npm@latest(也可以直接加入版本号)-g（安装到全局）  npm 常用命令 npm init -y（初始化npm）无需配置 npm">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-23T10:02:23.487Z">
+<meta property="og:image" content="http://yoursite.com/2019/02/10/Git与npm总结/C:/Users/LRY-NB/AppData/Roaming/Typora/typora-user-images/1556954868722.png">
+<meta property="og:image" content="http://yoursite.com/2019/02/10/Git与npm总结/C:/Users/LRY-NB/AppData/Roaming/Typora/typora-user-images/1556954987610.png">
+<meta property="og:image" content="http://yoursite.com/2019/02/10/Git与npm总结/C:/Users/LRY-NB/AppData/Roaming/Typora/typora-user-images/1556955230152.png">
+<meta property="og:image" content="http://yoursite.com/2019/02/10/Git与npm总结/C:/Users/LRY-NB/AppData/Roaming/Typora/typora-user-images/1556955960831.png">
+<meta property="og:image" content="http://yoursite.com/2019/02/10/Git与npm总结/C:/Users/LRY-NB/AppData/Roaming/Typora/typora-user-images/1556956072287.png">
+<meta property="og:image" content="http://yoursite.com/2019/02/10/Git与npm总结/C:/Users/LRY-NB/AppData/Roaming/Typora/typora-user-images/1556956131532.png">
+<meta property="og:image" content="http://yoursite.com/2019/02/10/Git与npm总结/C:/Users/LRY-NB/AppData/Roaming/Typora/typora-user-images/1556961327027.png">
+<meta property="og:updated_time" content="2019-05-04T09:54:56.999Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git与npm">
 <meta name="twitter:description" content="Git与npm小结npm包管理工具，node版本LTS长期维护型，Current最新版本 如果我们想查看node版本号可以在cmd中输入node -v命令，同理查看npm则是npm -v 我们想要更新npm版本。那么我们就可以更新自己。npm install npm@latest(也可以直接加入版本号)-g（安装到全局）  npm 常用命令 npm init -y（初始化npm）无需配置 npm">
+<meta name="twitter:image" content="http://yoursite.com/2019/02/10/Git与npm总结/C:/Users/LRY-NB/AppData/Roaming/Typora/typora-user-images/1556954868722.png">
 
 
 
@@ -347,7 +355,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  217
+                  648
                 </span>
               
 
@@ -363,7 +371,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -406,10 +414,45 @@
 <li>更新 npm update jquery</li>
 <li>安装旧版本npm i jqurey@版本号</li>
 </ul>
-<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><ul>
+<h3 id="初始Git及其应用"><a href="#初始Git及其应用" class="headerlink" title="初始Git及其应用"></a>初始Git及其应用</h3><ul>
 <li>git config -l （可以查看邮箱和名称）</li>
+<li>touch  index.html（可以创建一个index.html的文件）</li>
+<li>mkdir 文件夹名</li>
+<li>git add  文件名/.（把文件添加到缓冲区，. 是把所有的文件添加到缓冲区）</li>
+<li>git rm –cached 文件名（把文件从缓冲区中移除）</li>
 </ul>
 <a id="more"></a>
+<p><img src="/2019/02/10/Git与npm总结/C:/Users\LRY-NB\AppData\Roaming\Typora\typora-user-images\1556954868722.png" alt="1556954868722"></p>
+<ul>
+<li>git status （查看提交的状态）</li>
+</ul>
+<p><img src="/2019/02/10/Git与npm总结/C:/Users\LRY-NB\AppData\Roaming\Typora\typora-user-images\1556954987610.png" alt="1556954987610"></p>
+<ul>
+<li>git commit (提交文件到本地的仓库，需要编辑，wq才能退出编辑的状态)</li>
+<li>git commit -m “文件提示”（这一步是把上面的两步变为一步）</li>
+</ul>
+<p><img src="/2019/02/10/Git与npm总结/C:/Users\LRY-NB\AppData\Roaming\Typora\typora-user-images\1556955230152.png" alt="1556955230152"></p>
+<h4 id="Git中忽视文件或者文件夹"><a href="#Git中忽视文件或者文件夹" class="headerlink" title="Git中忽视文件或者文件夹"></a>Git中忽视文件或者文件夹</h4><p>一般的日志文件或者是文件夹我们都需要忽略掉。但是我们git status 的时候都会显示出来，那么我们该如何去隐藏掉呢</p>
+<p><img src="/2019/02/10/Git与npm总结/C:/Users\LRY-NB\AppData\Roaming\Typora\typora-user-images\1556955960831.png" alt="1556955960831"></p>
+<p>这个时候我们需要创建一个.gitignore把我们所有需要隐藏的文件或者文件夹写在里面。</p>
+<p><img src="/2019/02/10/Git与npm总结/C:/Users\LRY-NB\AppData\Roaming\Typora\typora-user-images\1556956072287.png" alt="1556956072287"></p>
+<p>在.gitignore文件中我们需要这个样子写</p>
+<p><img src="/2019/02/10/Git与npm总结/C:/Users\LRY-NB\AppData\Roaming\Typora\typora-user-images\1556956131532.png" alt="1556956131532"></p>
+<p>同样的文件夹，我们如果需要隐藏，只要写成/文件夹名称</p>
+<h4 id="Git分支上的应用"><a href="#Git分支上的应用" class="headerlink" title="Git分支上的应用"></a>Git分支上的应用</h4><ul>
+<li>创建分支—————git branch “分支 名”</li>
+<li>切换分支—————-git checkout “分支名”</li>
+<li>合并分支（需要切换到主分支上）—————-git merge “子分支”</li>
+<li>查看当前分支———————git branch</li>
+</ul>
+<h4 id="Git与GitHub连接"><a href="#Git与GitHub连接" class="headerlink" title="Git与GitHub连接"></a>Git与GitHub连接</h4><p>在我们的GitHub中创建了一个仓库，我们会一开始会生成一个文档，这里有我们需要的两条命令。这两个命令用于我们和GitHub的远程仓库进行连接。如果第二条出现错误，你先要检查一下是否当前仓库的GitHub地址是否和git连接的地址一样。</p>
+<p>然后git push</p>
+<p><img src="/2019/02/10/Git与npm总结/C:/Users\LRY-NB\AppData\Roaming\Typora\typora-user-images\1556961327027.png" alt="1556961327027"></p>
+<ul>
+<li>git pull 把线上的分支拉下来</li>
+<li>git push 把本地的分支提交到线上</li>
+</ul>
+
       
     </div>
     
@@ -541,7 +584,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">23</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -665,7 +708,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git与npm小结"><span class="nav-number">1.</span> <span class="nav-text">Git与npm小结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#npm包管理工具，node版本LTS长期维护型，Current最新版本"><span class="nav-number">1.0.1.</span> <span class="nav-text">npm包管理工具，node版本LTS长期维护型，Current最新版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm-常用命令"><span class="nav-number">1.0.2.</span> <span class="nav-text">npm 常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git"><span class="nav-number">1.0.3.</span> <span class="nav-text">Git</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git与npm小结"><span class="nav-number">1.</span> <span class="nav-text">Git与npm小结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#npm包管理工具，node版本LTS长期维护型，Current最新版本"><span class="nav-number">1.0.1.</span> <span class="nav-text">npm包管理工具，node版本LTS长期维护型，Current最新版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm-常用命令"><span class="nav-number">1.0.2.</span> <span class="nav-text">npm 常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始Git及其应用"><span class="nav-number">1.0.3.</span> <span class="nav-text">初始Git及其应用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Git中忽视文件或者文件夹"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">Git中忽视文件或者文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Git分支上的应用"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">Git分支上的应用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Git与GitHub连接"><span class="nav-number">1.0.3.3.</span> <span class="nav-text">Git与GitHub连接</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -724,7 +767,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共48.7k字</span>
+  <span class="post-count">博客全站共50.2k字</span>
 </div>
 
         
