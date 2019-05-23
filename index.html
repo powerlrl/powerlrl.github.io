@@ -276,7 +276,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/测试图片2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/23/webpack/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LinYo.">
@@ -295,7 +295,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/05/14/测试图片2/" itemprop="url">测试图片2</a></h1>
+                <a class="post-title-link" href="/2019/05/23/webpack/" itemprop="url">webpack</a></h1>
         
 
         <div class="post-meta">
@@ -307,8 +307,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-14T19:53:26+08:00">
-                2019-05-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-23T19:26:23+08:00">
+                2019-05-23
               </time>
             
 
@@ -348,8 +348,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/05/14/测试图片2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/14/测试图片2/" itemprop="commentCount"></span>
+                <a href="/2019/05/23/webpack/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/23/webpack/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -371,7 +371,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  12
+                  504
                 </span>
               
 
@@ -387,7 +387,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -409,13 +409,34 @@
 
       
         
-          <h1 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-<h1 id="二、正文"><a href="#二、正文" class="headerlink" title="二、正文"></a>二、正文</h1><p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-<p><img src="/2019/05/14/测试图片2/QQ图片20190514195556.jpg" alt=""></p>
-<h1 id="三、结尾"><a href="#三、结尾" class="headerlink" title="三、结尾"></a>三、结尾</h1><p>xxxxxxxxxxxxxxxx</p>
+          <h4 id="webpack的安装及其使用"><a href="#webpack的安装及其使用" class="headerlink" title="webpack的安装及其使用"></a>webpack的安装及其使用</h4><h4 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h4><p>安装webpack之前必须要安装nodejs，而且nodejs必须为最新的版本，要不然可能会有一个些问题。接下来就要全局的安装webpack，可以使用yarn或者npm包管理器，这里我们使用npm管理器。</p>
+<ul>
+<li>npm i webpack -g（全局安装webpack）</li>
+<li>npm i –save-dev webpack@（版本号）（如果没有全局安装webpck，则这条语句就会报错）</li>
+<li>npm i -D webpack-dev-server（安装webpack热更新）</li>
+<li>npm i -D css-loader（此处只是举一个例子，并不一定非要是css-loader也有可能是别的loader）</li>
+<li>npm i -D webpack-cli -g（全局安装webpack-cli）</li>
+</ul>
+<h4 id="二、使用"><a href="#二、使用" class="headerlink" title="二、使用"></a>二、使用</h4><ul>
+<li><p>首先第一步要初始化npm Init -y（生成package.json）</p>
+</li>
+<li><p>利用npm安装webpack</p>
+<ul>
+<li><p>安装webpack-cli和webpack-dev-server（可以去pakeage.json的文件中确定是否安装该依赖）</p>
+</li>
+<li><p>创建一个webpack.config.js的文件</p>
+</li>
+</ul>
+</li>
+<li><p>接下来就是配置webpack.config.js文件</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">"path"</span>)</span><br><span class="line"><span class="keyword">const</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">"html-webpack-plugin"</span>)</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="comment">// 设置以开发者模式</span></span><br><span class="line">  mode: <span class="string">'development'</span>,</span><br><span class="line">  <span class="comment">//设置一个入口的文件</span></span><br><span class="line">  entry: <span class="string">'./src/index.js'</span>,</span><br><span class="line">    <span class="comment">//出口文件的名称和路径，并把出口文件都放在dist文件夹，这个文件如果没有则会创建</span></span><br><span class="line">  output: &#123;</span><br><span class="line">    filename : <span class="string">'bundle.js'</span>,</span><br><span class="line">    <span class="comment">// 在当前的路径下创建一个dist文件夹，并把出口文件生成一个前面为任意8为哈希值-bundle.js</span></span><br><span class="line">    path: path.join(__dirname,<span class="string">'dist'</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">    <span class="comment">//配置热更新</span></span><br><span class="line">  devServer: &#123;</span><br><span class="line">    contentBase: <span class="string">'./dist'</span>,</span><br><span class="line">    hot: <span class="literal">true</span>,</span><br><span class="line">    port: <span class="number">3000</span></span><br><span class="line">  &#125;,</span><br><span class="line">    <span class="comment">//可以加载css和图片还有html文件</span></span><br><span class="line">  <span class="built_in">module</span>: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.css$/</span>,</span><br><span class="line">        use: [</span><br><span class="line">          <span class="string">'style-loader'</span>,</span><br><span class="line">          <span class="string">'css-loader'</span></span><br><span class="line">        ]</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.(htm|html)/</span>,</span><br><span class="line">        use: [<span class="string">'html-withimg-loader'</span>,<span class="string">'raw-loader'</span>]</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.(png|jpeg|gif|webp|jpg)$/</span>,</span><br><span class="line">        use: [</span><br><span class="line">          <span class="string">'file-loader'</span></span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">    <span class="comment">//配置模板，在index.html中会使用模板来应用title</span></span><br><span class="line">  plugins: [</span><br><span class="line">    <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</span><br><span class="line">      title: <span class="string">'hello webpack'</span>,</span><br><span class="line">      filename: <span class="string">'index.html'</span>,</span><br><span class="line">      template: <span class="string">'./src/index.html'</span></span><br><span class="line">    &#125;)</span><br><span class="line">  ]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>index.js文件中（入口文件）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'./style.css'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'./index.html'</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'hello webpack2'</span>)</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/05/14/测试图片2/#more" rel="contents">
+            <a class="btn" href="/2019/05/23/webpack/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1351,7 +1372,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,045
+                  1,096
                 </span>
               
 
@@ -1389,7 +1410,13 @@
 
       
         
-          <h3 id="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"><a href="#一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。" class="headerlink" title="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"></a>一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。</h3><h3 id="二、源生的ajax请求纯文本"><a href="#二、源生的ajax请求纯文本" class="headerlink" title="二、源生的ajax请求纯文本"></a>二、源生的ajax请求纯文本</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 源生ajax --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    let xhr = new XMLHttpRequest();</span></span><br><span class="line"><span class="undefined">    xhr.open('GET','./simple.txt',true);</span></span><br><span class="line"><span class="undefined">    // xhr.onload = function()&#123;</span></span><br><span class="line"><span class="undefined">    //   console.log(this.status);</span></span><br><span class="line"><span class="undefined">    //   console.log(this.readyState);</span></span><br><span class="line"><span class="undefined">    // &#125;</span></span><br><span class="line"><span class="undefined">    xhr.onreadystatechange = function()&#123;</span></span><br><span class="line"><span class="undefined">      // console.log(this.status);</span></span><br><span class="line"><span class="undefined">      // console.log(this.readyState);</span></span><br><span class="line"><span class="undefined">      document.body.innerHTML = this.responseText;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">      xhr.send();</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+          <h1 id="为什么会发生Ajax跨域？"><a href="#为什么会发生Ajax跨域？" class="headerlink" title="为什么会发生Ajax跨域？"></a>为什么会发生Ajax跨域？</h1><ul>
+<li>浏览器限制</li>
+<li>跨域（不是本地）同源策略</li>
+<li>XHR请求</li>
+</ul>
+<p>所以解决思路：利用jsonp，利用jsonp解决跨域，后台需要改动代码</p>
+<h3 id="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"><a href="#一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。" class="headerlink" title="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"></a>一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。</h3><h3 id="二、源生的ajax请求纯文本"><a href="#二、源生的ajax请求纯文本" class="headerlink" title="二、源生的ajax请求纯文本"></a>二、源生的ajax请求纯文本</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 源生ajax --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span></span><br><span class="line"><span class="javascript">    xhr.open(<span class="string">'GET'</span>,<span class="string">'./simple.txt'</span>,<span class="literal">true</span>);</span></span><br><span class="line"><span class="javascript">    <span class="comment">// xhr.onload = function()&#123;</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">//   console.log(this.status);</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">//   console.log(this.readyState);</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// &#125;</span></span></span><br><span class="line"><span class="javascript">    xhr.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// console.log(this.status);</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">// console.log(this.readyState);</span></span></span><br><span class="line"><span class="javascript">      <span class="built_in">document</span>.body.innerHTML = <span class="keyword">this</span>.responseText;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">      xhr.send();</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/03/10/Ajax/#more" rel="contents">
@@ -2431,7 +2458,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共50.2k字</span>
+  <span class="post-count">博客全站共51.1k字</span>
 </div>
 
         
