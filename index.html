@@ -46,7 +46,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="./asset/avatar.jpg" class="js-avatar">
+			<img src="https://i0.hdslb.com/bfs/face/243993e096573c5c75f10e2e24cf4685bf2b54e0.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">LinYo.</a></h1>
@@ -57,8 +57,6 @@
 			<ul>
 			
 				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/tags/随笔/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -104,15 +102,13 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="./asset/avatar.jpg" class="js-avatar">
+				<img src="https://i0.hdslb.com/bfs/face/243993e096573c5c75f10e2e24cf4685bf2b54e0.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">LinYo.</h1>
 			</hgroup>
 			
 			
-			
-				
 			
 				
 			
@@ -136,9 +132,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 100%"><a href="/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -875,7 +869,7 @@
 <li>XHR请求</li>
 </ul>
 <p>所以解决思路：利用jsonp，利用jsonp解决跨域，后台需要改动代码</p>
-<h3 id="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"><a href="#一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。" class="headerlink" title="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"></a>一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。</h3><h3 id="二、源生的ajax请求纯文本"><a href="#二、源生的ajax请求纯文本" class="headerlink" title="二、源生的ajax请求纯文本"></a>二、源生的ajax请求纯文本</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 源生ajax --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span></span><br><span class="line"><span class="javascript">    xhr.open(<span class="string">'GET'</span>,<span class="string">'./simple.txt'</span>,<span class="literal">true</span>);</span></span><br><span class="line"><span class="javascript">    <span class="comment">// xhr.onload = function()&#123;</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">//   console.log(this.status);</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">//   console.log(this.readyState);</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// &#125;</span></span></span><br><span class="line"><span class="javascript">    xhr.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// console.log(this.status);</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">// console.log(this.readyState);</span></span></span><br><span class="line"><span class="javascript">      <span class="built_in">document</span>.body.innerHTML = <span class="keyword">this</span>.responseText;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">      xhr.send();</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"><a href="#一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。" class="headerlink" title="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"></a>一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。</h3><h3 id="二、源生的ajax请求纯文本"><a href="#二、源生的ajax请求纯文本" class="headerlink" title="二、源生的ajax请求纯文本"></a>二、源生的ajax请求纯文本</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 源生ajax --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    let xhr = new XMLHttpRequest();</span></span><br><span class="line"><span class="undefined">    xhr.open('GET','./simple.txt',true);</span></span><br><span class="line"><span class="undefined">    // xhr.onload = function()&#123;</span></span><br><span class="line"><span class="undefined">    //   console.log(this.status);</span></span><br><span class="line"><span class="undefined">    //   console.log(this.readyState);</span></span><br><span class="line"><span class="undefined">    // &#125;</span></span><br><span class="line"><span class="undefined">    xhr.onreadystatechange = function()&#123;</span></span><br><span class="line"><span class="undefined">      // console.log(this.status);</span></span><br><span class="line"><span class="undefined">      // console.log(this.readyState);</span></span><br><span class="line"><span class="undefined">      document.body.innerHTML = this.responseText;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">      xhr.send();</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
         
           <a class="article-more-a" href="/2019/03/10/Ajax/#more">more >></a>
         
@@ -1227,6 +1221,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
@@ -1235,7 +1233,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1243,19 +1241,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json-server</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1267,15 +1261,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">实例</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">技术</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">h5与c3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">实例</a>
               </li>
              
               <li class="article-tag-list-item">
