@@ -62,7 +62,7 @@
 			</ul>
 		</nav>
 		<nav>
-			<a>Articles count25</a> 
+			<a>Articles count26</a> 
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -153,31 +153,53 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-小小小例子" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-node/node" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/27/小小小例子/">小小小例子</a>
+      <a class="article-title" href="/2019/03/15/node/node/">Node</a>
     </h1>
   
 
         
-        <a href="/2019/02/27/小小小例子/" class="archive-article-date">
-  	<time datetime="2019-02-27T14:04:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-27</time>
+        <a href="/2019/03/15/node/node/" class="archive-article-date">
+  	<time datetime="2019-03-15T06:31:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="你真的了解border嘛？？？？恩。。。，好像只知道它是边框而已"><a href="#你真的了解border嘛？？？？恩。。。，好像只知道它是边框而已" class="headerlink" title="你真的了解border嘛？？？？恩。。。，好像只知道它是边框而已"></a>你真的了解border嘛？？？？恩。。。，好像只知道它是边框而已</h2><h3 id="利用border-style-solid-构建三角形。"><a href="#利用border-style-solid-构建三角形。" class="headerlink" title="利用border-style:solid 构建三角形。"></a>利用border-style:solid 构建三角形。</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">.box&#123;</span></span><br><span class="line"><span class="undefined">        width: 0;</span></span><br><span class="line"><span class="undefined">        border-left: 120px solid brown;</span></span><br><span class="line"><span class="undefined">    /* border-right: 120px solid lightblue transparent;*/</span></span><br><span class="line"><span class="undefined">        border-right: 120px solid lightblue;</span></span><br><span class="line"><span class="undefined">        border-bottom: 120px solid gold;</span></span><br><span class="line"><span class="undefined">        border-top: 120px solid black;</span></span><br><span class="line"><span class="undefined">      &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- &lt;span class='wrap'&gt;ios&lt;/span&gt; --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<p><img src="/2019/02/27/小小小例子/QQ图片20190227221215.png" alt=""></p>
+        <h1 id="第一篇"><a href="#第一篇" class="headerlink" title="第一篇"></a>第一篇</h1><h2 id="node是什么，node可以干什么？"><a href="#node是什么，node可以干什么？" class="headerlink" title="node是什么，node可以干什么？"></a>node是什么，node可以干什么？</h2><blockquote>
+<p>node既不是一种语言，也不是一个框架，更不是一个库。而是一种能让JavaScript运行在服务器上的一个平台</p>
+</blockquote>
+<blockquote>
+<p>首先要下载node.js 自行到官网中下载。注意两个版本的区别</p>
+</blockquote>
+<h3 id="node中是以模块来划分作用域"><a href="#node中是以模块来划分作用域" class="headerlink" title="node中是以模块来划分作用域"></a>node中是以模块来划分作用域</h3><blockquote>
+<p>node里面分为两个作用域，全局作用域（glogbal）和模块作用域</p>
+</blockquote>
+<ul>
+<li><p>require（’模块标识符’） —–我们需引入模块需要用到的方法</p>
+</li>
+<li><p>模块</p>
+<ul>
+<li><p>用户自定义模块—-自己定义的一个js文件模块</p>
+</li>
+<li><p>系统提供模块—例如:fs,http…</p>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="例如我们想要读取一个txt文件-JavaScript中是不可能实现的"><a href="#例如我们想要读取一个txt文件-JavaScript中是不可能实现的" class="headerlink" title="例如我们想要读取一个txt文件,JavaScript中是不可能实现的"></a>例如我们想要读取一个txt文件,JavaScript中是不可能实现的</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line"><span class="comment">//如果读取成功，则返回一个回调函数，erro----null，data----一串16进制，否则的话，erro----报错，data---undefined</span></span><br><span class="line">fs.readFile(<span class="string">'txt路径'</span>,(erro,data)=&gt;&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(erro)</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line">    <span class="comment">//如果想要获取文件中的内容，只需要把16进制转换为字符串即可</span></span><br><span class="line">    <span class="built_in">console</span>.log(data.toString())</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>基本上路径如果，对的话是没有问题的，还有可能文件不存在。</li>
+</ul>
         
-          <a class="article-more-a" href="/2019/02/27/小小小例子/#more">more >></a>
+          <a class="article-more-a" href="/2019/03/15/node/node/#more">more >></a>
         
       
 
@@ -191,7 +213,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
       		
 		</ul>
@@ -203,7 +225,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/杂项//" class="article-tag-list-link color3">杂项</a>
+        			<a href="/categories/node//" class="article-tag-list-link color5">node</a>
         		</li>
       		
 		</ul>
@@ -212,7 +234,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/27/小小小例子/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/03/15/node/node/">展开全文 >></a>
         </p>
       
 
@@ -242,19 +264,300 @@
 
 
   
-    <article id="post-json-sever" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-JavaScript/Ajax" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/27/json-sever/">json-sever</a>
+      <a class="article-title" href="/2019/03/10/JavaScript/Ajax/">Ajax</a>
     </h1>
   
 
         
-        <a href="/2019/02/27/json-sever/" class="archive-article-date">
+        <a href="/2019/03/10/JavaScript/Ajax/" class="archive-article-date">
+  	<time datetime="2019-03-10T07:14:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1、AJAX"><a href="#1、AJAX" class="headerlink" title="1、AJAX"></a>1、AJAX</h1><h2 id="为什么会发生Ajax跨域？"><a href="#为什么会发生Ajax跨域？" class="headerlink" title="为什么会发生Ajax跨域？"></a>为什么会发生Ajax跨域？</h2><ul>
+<li>浏览器限制</li>
+<li>跨域（不是本地）同源策略</li>
+<li>XHR请求</li>
+</ul>
+<p>所以解决思路：利用jsonp，利用jsonp解决跨域，后台需要改动代码</p>
+<h3 id="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"><a href="#一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。" class="headerlink" title="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"></a>一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。</h3><h3 id="二、源生的ajax请求纯文本"><a href="#二、源生的ajax请求纯文本" class="headerlink" title="二、源生的ajax请求纯文本"></a>二、源生的ajax请求纯文本</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 源生ajax --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span></span><br><span class="line"><span class="javascript">    xhr.open(<span class="string">'GET'</span>,<span class="string">'./simple.txt'</span>,<span class="literal">true</span>);</span></span><br><span class="line"><span class="javascript">    <span class="comment">// xhr.onload = function()&#123;</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">//   console.log(this.status);</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">//   console.log(this.readyState);</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// &#125;</span></span></span><br><span class="line"><span class="javascript">    xhr.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// console.log(this.status);</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">// console.log(this.readyState);</span></span></span><br><span class="line"><span class="javascript">      <span class="built_in">document</span>.body.innerHTML = <span class="keyword">this</span>.responseText;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">      xhr.send();</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2019/03/10/JavaScript/Ajax/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/10/JavaScript/Ajax/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-工具类/art-template" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/09/工具类/art-template/">art-template</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/09/工具类/art-template/" class="archive-article-date">
+  	<time datetime="2019-03-09T06:35:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、前端如何引用"><a href="#一、前端如何引用" class="headerlink" title="一、前端如何引用"></a>一、前端如何引用</h2><ul>
+<li>可以使用npm方式</li>
+<li>可以使用script标签</li>
+</ul>
+<blockquote>
+<p>这里我们使用script标签</p>
+<script src="https://unpkg.com/art-template@4.13.2/lib/template-web.js"></script>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">'text/template'</span> <span class="attr">id</span>=<span class="string">'box'</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123;test&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> obj = &#123;</span></span><br><span class="line"><span class="javascript">      test: <span class="string">'h'</span>,</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> html = template(<span class="string">'box'</span>,obj);</span></span><br><span class="line"><span class="javascript">    <span class="built_in">document</span>.body.innerHTML = html;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>以上就是一个模板引擎的基本使用。首先我们先写一个模板，注意不要忘记给id值，里面是我们要创建的模板，接着我们要创建一个模板对象（一定要是对象）然后创建一个模板，第一个参数是id值，第二参数是创建模板对象名。向文档中插入模板。</p>
+<p>如果我们想要多个模板，这时候就可以使用到遍历，（个人感觉这里 有点像vue中的v-for指令）</p>
+        
+          <a class="article-more-a" href="/2019/03/09/工具类/art-template/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/09/工具类/art-template/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-实战类/jsonp百度跨域搜索" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/08/实战类/jsonp百度跨域搜索/">jsonp百度跨域搜索</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/08/实战类/jsonp百度跨域搜索/" class="archive-article-date">
+  	<time datetime="2019-03-08T05:18:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="jsonp百度跨域搜索"><a href="#jsonp百度跨域搜索" class="headerlink" title="jsonp百度跨域搜索"></a>jsonp百度跨域搜索</h1><p>恩？好像有很久没有更新博客了吧？最近了解到一点点的（也只有一点点）jsonp跨域的操作，差不多我们每天都会打开这个网页，当然不包括那些打开Google的人（没翻墙软件）那么我们是如何实现这个效果的呢？</p>
+<p><img src="/2019/03/08/实战类/jsonp百度跨域搜索/QQ图片20190308132734.png" alt=""></p>
+<h2 id="一、骨架"><a href="#一、骨架" class="headerlink" title="一、骨架"></a>一、骨架</h2><p>那么我们的一个基本骨架就搭建好了</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'box'</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">'text'</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">'btn'</span> &gt;</span>百度一下<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'show'</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="二、功能"><a href="#二、功能" class="headerlink" title="二、功能"></a>二、功能</h2>
+        
+          <a class="article-more-a" href="/2019/03/08/实战类/jsonp百度跨域搜索/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/08/实战类/jsonp百度跨域搜索/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-工具类/json-sever" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/27/工具类/json-sever/">json-sever</a>
+    </h1>
+  
+
+        
+        <a href="/2019/02/27/工具类/json-sever/" class="archive-article-date">
   	<time datetime="2019-02-27T08:09:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-27</time>
 </a>
         
@@ -262,11 +565,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="json-server的作用是什么呢？"><a href="#json-server的作用是什么呢？" class="headerlink" title="json-server的作用是什么呢？"></a>json-server的作用是什么呢？</h2><h4 id="搭建一个本地的数据接口，对本地的数据进行增删改查"><a href="#搭建一个本地的数据接口，对本地的数据进行增删改查" class="headerlink" title="搭建一个本地的数据接口，对本地的数据进行增删改查"></a>搭建一个本地的数据接口，对本地的数据进行增删改查</h4><h3 id="配置json-server"><a href="#配置json-server" class="headerlink" title="配置json-server"></a>配置json-server</h3><h4 id="在终端中我们要安装全局的json-server-可以使用命令，npm-i-g-json-server-接着我们在任意目录下创建一个文件夹cd到这个文件夹下。初始化pakeage-json-使用命令-npm-init-y"><a href="#在终端中我们要安装全局的json-server-可以使用命令，npm-i-g-json-server-接着我们在任意目录下创建一个文件夹cd到这个文件夹下。初始化pakeage-json-使用命令-npm-init-y" class="headerlink" title="在终端中我们要安装全局的json-server  可以使用命令，npm i -g json-server.接着我们在任意目录下创建一个文件夹cd到这个文件夹下。初始化pakeage.json 使用命令 npm init -y"></a>在终端中我们要安装全局的json-server  可以使用命令，npm i -g json-server.接着我们在任意目录下创建一个文件夹cd到这个文件夹下。初始化pakeage.json 使用命令 npm init -y</h4><p><img src="/2019/02/27/json-sever/QQ图片20190227155842.png" alt=""></p>
-<h3 id="我们需要在此文件夹下安装一个json-server"><a href="#我们需要在此文件夹下安装一个json-server" class="headerlink" title="我们需要在此文件夹下安装一个json-server"></a>我们需要在此文件夹下安装一个json-server</h3><p><img src="/2019/02/27/json-sever/QQ图片20190227155904.png" alt=""></p>
+        <h2 id="json-server的作用是什么呢？"><a href="#json-server的作用是什么呢？" class="headerlink" title="json-server的作用是什么呢？"></a>json-server的作用是什么呢？</h2><h4 id="搭建一个本地的数据接口，对本地的数据进行增删改查"><a href="#搭建一个本地的数据接口，对本地的数据进行增删改查" class="headerlink" title="搭建一个本地的数据接口，对本地的数据进行增删改查"></a>搭建一个本地的数据接口，对本地的数据进行增删改查</h4><h3 id="配置json-server"><a href="#配置json-server" class="headerlink" title="配置json-server"></a>配置json-server</h3><h4 id="在终端中我们要安装全局的json-server-可以使用命令，npm-i-g-json-server-接着我们在任意目录下创建一个文件夹cd到这个文件夹下。初始化pakeage-json-使用命令-npm-init-y"><a href="#在终端中我们要安装全局的json-server-可以使用命令，npm-i-g-json-server-接着我们在任意目录下创建一个文件夹cd到这个文件夹下。初始化pakeage-json-使用命令-npm-init-y" class="headerlink" title="在终端中我们要安装全局的json-server  可以使用命令，npm i -g json-server.接着我们在任意目录下创建一个文件夹cd到这个文件夹下。初始化pakeage.json 使用命令 npm init -y"></a>在终端中我们要安装全局的json-server  可以使用命令，npm i -g json-server.接着我们在任意目录下创建一个文件夹cd到这个文件夹下。初始化pakeage.json 使用命令 npm init -y</h4><p><img src="/2019/02/27/工具类/json-sever/QQ图片20190227155842.png" alt=""></p>
+<h3 id="我们需要在此文件夹下安装一个json-server"><a href="#我们需要在此文件夹下安装一个json-server" class="headerlink" title="我们需要在此文件夹下安装一个json-server"></a>我们需要在此文件夹下安装一个json-server</h3><p><img src="/2019/02/27/工具类/json-sever/QQ图片20190227155904.png" alt=""></p>
 <p>恩，到这里你就可以看见了一个pakeage.json文件里面有。</p>
         
-          <a class="article-more-a" href="/2019/02/27/json-sever/#more">more >></a>
+          <a class="article-more-a" href="/2019/02/27/工具类/json-sever/#more">more >></a>
         
       
 
@@ -301,7 +604,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/27/json-sever/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/02/27/工具类/json-sever/">展开全文 >></a>
         </p>
       
 
@@ -331,19 +634,19 @@
 
 
   
-    <article id="post-vue-cli脚手架搭建项目步骤" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-库和框架类/vue-cli脚手架搭建项目步骤" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/20/vue-cli脚手架搭建项目步骤/">vue-cli脚手架搭建项目</a>
+      <a class="article-title" href="/2019/02/20/库和框架类/vue-cli脚手架搭建项目步骤/">vue-cli脚手架搭建项目</a>
     </h1>
   
 
         
-        <a href="/2019/02/20/vue-cli脚手架搭建项目步骤/" class="archive-article-date">
+        <a href="/2019/02/20/库和框架类/vue-cli脚手架搭建项目步骤/" class="archive-article-date">
   	<time datetime="2019-02-20T01:47:31.095Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-20</time>
 </a>
         
@@ -358,10 +661,10 @@
 <blockquote>
 <p>我默认你第一步都完成了，在我们终端输入 npm install  -g vue-cli(-g默认为全局)</p>
 </blockquote>
-<p><img src="/2019/02/20/vue-cli脚手架搭建项目步骤/QQ图片20190220095019.png" alt=""></p>
+<p><img src="/2019/02/20/库和框架类/vue-cli脚手架搭建项目步骤/QQ图片20190220095019.png" alt=""></p>
 <p>安装会有几分钟，请等待（安装一次就行了，不必多次安装）</p>
         
-          <a class="article-more-a" href="/2019/02/20/vue-cli脚手架搭建项目步骤/#more">more >></a>
+          <a class="article-more-a" href="/2019/02/20/库和框架类/vue-cli脚手架搭建项目步骤/#more">more >></a>
         
       
 
@@ -396,7 +699,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/20/vue-cli脚手架搭建项目步骤/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/02/20/库和框架类/vue-cli脚手架搭建项目步骤/">展开全文 >></a>
         </p>
       
 
@@ -426,111 +729,19 @@
 
 
   
-    <article id="post-测试图片-md" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-工具类/容易忘记的东西" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/12/测试图片-md/">测试图片.md</a>
+      <a class="article-title" href="/2019/02/12/工具类/容易忘记的东西/">容易忘记的东西</a>
     </h1>
   
 
         
-        <a href="/2019/02/12/测试图片-md/" class="archive-article-date">
-  	<time datetime="2019-02-12T10:20:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-<p><img src="/2019/02/12/测试图片-md/20170226153729569.jpg" alt=""></p>
-<p><img src="/2019/02/12/测试图片-md/20170226153942698.jpg" alt=""></p>
-<p><img src="/2019/02/12/测试图片-md/20170226154012235.jpg" alt=""></p>
-<p><img src="/2019/02/12/测试图片-md/20170226154056704.jpg" alt=""></p>
-<p><img src="/2019/02/12/测试图片-md/20170226154126642.jpg" alt=""></p>
-        
-          <a class="article-more-a" href="/2019/02/12/测试图片-md/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">关于某方面的标签</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/分类别//" class="article-tag-list-link color4">分类别</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/12/测试图片-md/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-容易忘记的东西" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/12/容易忘记的东西/">容易忘记的东西</a>
-    </h1>
-  
-
-        
-        <a href="/2019/02/12/容易忘记的东西/" class="archive-article-date">
+        <a href="/2019/02/12/工具类/容易忘记的东西/" class="archive-article-date">
   	<time datetime="2019-02-12T05:24:48.755Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-12</time>
 </a>
         
@@ -545,7 +756,7 @@
 <p>ctrl+shift+right/left是向左或者向右选中</p>
 <h2 id="终端中的命令"><a href="#终端中的命令" class="headerlink" title="终端中的命令"></a>终端中的命令</h2><p>live -server可以不用刷新，直接保存即可在浏览器中看到运行结果，但前提的html文件必须是index.html。</p>
         
-          <a class="article-more-a" href="/2019/02/12/容易忘记的东西/#more">more >></a>
+          <a class="article-more-a" href="/2019/02/12/工具类/容易忘记的东西/#more">more >></a>
         
       
 
@@ -569,7 +780,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/12/容易忘记的东西/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/02/12/工具类/容易忘记的东西/">展开全文 >></a>
         </p>
       
 
@@ -599,106 +810,19 @@
 
 
   
-    <article id="post-实例" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-工具类/Git与npm总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/11/实例/">实例</a>
+      <a class="article-title" href="/2019/02/10/工具类/Git与npm总结/">Git与npm</a>
     </h1>
   
 
         
-        <a href="/2019/02/11/实例/" class="archive-article-date">
-  	<time datetime="2019-02-11T07:08:16.551Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、绚丽小球实例"><a href="#一、绚丽小球实例" class="headerlink" title="一、绚丽小球实例"></a>一、绚丽小球实例</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'node_modules/underscore/underscore-min.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    body&#123;</span></span><br><span class="line"><span class="undefined">      margin: 150px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    #canvas&#123;</span></span><br><span class="line"><span class="undefined">      box-shadow: 0 0  0px #000;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">'canvas'</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="comment">//获取当前画布</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>);</span></span><br><span class="line"><span class="javascript">    <span class="comment">//设置画笔</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> ctx = canvas.getContext(<span class="string">'2d'</span>);</span></span><br><span class="line"><span class="undefined">    canvas.width = 1250;</span></span><br><span class="line"><span class="undefined">    canvas.height = 900;</span></span><br><span class="line"><span class="javascript">    canvas.style.backgroundColor = <span class="string">'black'</span>;</span></span><br><span class="line"><span class="undefined">    /*</span></span><br><span class="line"><span class="undefined">    小球 </span></span><br><span class="line"><span class="undefined">     */</span></span><br><span class="line"><span class="javascript">     <span class="class"><span class="keyword">class</span> <span class="title">Ball</span></span>&#123;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">constructor</span>(x,y,color)&#123;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.x = x;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.y = y;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.color = color;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.r = <span class="number">40</span>;</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="javascript">       <span class="comment">/* 开始绘制小球的方法 */</span></span></span><br><span class="line"><span class="undefined">       render()&#123;</span></span><br><span class="line"><span class="javascript">         <span class="comment">//保持当前环境</span></span></span><br><span class="line"><span class="undefined">         ctx.save();</span></span><br><span class="line"><span class="javascript">         <span class="comment">//开启路径</span></span></span><br><span class="line"><span class="undefined">         ctx.beginPath();</span></span><br><span class="line"><span class="javascript">         <span class="comment">//开始画小球坐标 x ,y ,物体半径，开始角度，结束角度，Math.Pi是180度。乘以二正好是360</span></span></span><br><span class="line"><span class="javascript">         ctx.arc(<span class="keyword">this</span>.x,<span class="keyword">this</span>.y,<span class="keyword">this</span>.r,<span class="number">0</span>,<span class="built_in">Math</span>.PI*<span class="number">2</span>);</span></span><br><span class="line"><span class="javascript">         <span class="comment">//为小球设置颜色</span></span></span><br><span class="line"><span class="javascript">         ctx.fillStyle = <span class="keyword">this</span>.color;</span></span><br><span class="line"><span class="javascript">         <span class="comment">//为小球填充颜色</span></span></span><br><span class="line"><span class="undefined">         ctx.fill();</span></span><br><span class="line"><span class="javascript">         <span class="comment">//返回之前保存过的路径状态和属性</span></span></span><br><span class="line"><span class="undefined">         ctx.restore();</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="undefined">     &#125;</span></span><br><span class="line"><span class="javascript">     <span class="comment">//可以移动的小球类</span></span></span><br><span class="line"><span class="javascript">     <span class="class"><span class="keyword">class</span> <span class="title">MoseBall</span> <span class="keyword">extends</span> <span class="title">Ball</span></span>&#123;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">constructor</span>(x,y,color)&#123;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">super</span>(x,y,color);</span></span><br><span class="line"><span class="javascript">        <span class="comment">//增量</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">this</span>.dX = _.random(<span class="number">-5</span>,<span class="number">5</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">this</span>.dY = _.random(<span class="number">-5</span>,<span class="number">5</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">this</span>.dR = _.random(<span class="number">1</span>,<span class="number">3</span>);</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="javascript">       <span class="comment">//update 更新小球</span></span></span><br><span class="line"><span class="undefined">       upDate()&#123;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.x += <span class="keyword">this</span>.dX;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.y += <span class="keyword">this</span>.dY;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">this</span>.r -= <span class="keyword">this</span>.dR;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">if</span>(<span class="keyword">this</span>.r &lt; <span class="number">0</span>)&#123;</span></span><br><span class="line"><span class="javascript">           <span class="keyword">this</span>.r = <span class="number">0</span>;</span></span><br><span class="line"><span class="undefined">         &#125;</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="undefined">     &#125;</span></span><br><span class="line"><span class="javascript">     <span class="comment">//实例化小球</span></span></span><br><span class="line"><span class="javascript">     <span class="keyword">let</span> ballArr = [];</span></span><br><span class="line"><span class="javascript">     <span class="comment">//小球的颜色</span></span></span><br><span class="line"><span class="javascript">     <span class="keyword">let</span> ballColor = [<span class="string">'red'</span>,<span class="string">'lightgreen'</span>,<span class="string">'purple'</span>,<span class="string">'pink'</span>,<span class="string">'orange'</span>,<span class="string">'yellow'</span>,<span class="string">'blue'</span>,<span class="string">'white'</span>];</span></span><br><span class="line"><span class="javascript">     <span class="comment">//监听鼠标的移动</span></span></span><br><span class="line"><span class="javascript">     canvas.addEventListener(<span class="string">'mousemove'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">       ballArr.push(<span class="keyword">new</span> MoseBall(e.offsetX,e.offsetY,ballColor[_.random(<span class="number">0</span>,ballColor.length<span class="number">-1</span>)]));</span></span><br><span class="line"><span class="javascript">       <span class="built_in">console</span>.log(ballArr);</span></span><br><span class="line"><span class="undefined">     &#125;);</span></span><br><span class="line"><span class="javascript">     <span class="comment">//开启定时器</span></span></span><br><span class="line"><span class="javascript">     setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="undefined">       ctx.clearRect(0,0,canvas.width,canvas.height);</span></span><br><span class="line"><span class="javascript">       <span class="comment">//绘制小球</span></span></span><br><span class="line"><span class="javascript">       <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>;i &lt; ballArr.length;i++)&#123;</span></span><br><span class="line"><span class="undefined">         ballArr[i].render();</span></span><br><span class="line"><span class="undefined">         ballArr[i].upDate();</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="undefined">     &#125;,40)</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="二、vue综合小实例"><a href="#二、vue综合小实例" class="headerlink" title="二、vue综合小实例"></a>二、vue综合小实例</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'node_modules/vue/dist/vue.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    #app&#123;</span></span><br><span class="line"><span class="undefined">      width: 500px;</span></span><br><span class="line"><span class="undefined">      margin: 100px auto;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    fieldset&#123;</span></span><br><span class="line"><span class="undefined">      border: 2px solid palevioletred;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    fieldset input&#123;</span></span><br><span class="line"><span class="undefined">      width: 200px;</span></span><br><span class="line"><span class="undefined">      margin-bottom: 10px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    table&#123;</span></span><br><span class="line"><span class="undefined">      margin-top: 50px;</span></span><br><span class="line"><span class="undefined">      width: 500px;</span></span><br><span class="line"><span class="undefined">      text-align: center;</span></span><br><span class="line"><span class="undefined">      border: 2px solid palevioletred;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    thead&#123;</span></span><br><span class="line"><span class="undefined">      background: palevioletred;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    td&#123;</span></span><br><span class="line"><span class="undefined">      border: 1px solid black;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'app'</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 第一部分 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">legend</span>&gt;</span>学生管理系统<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>姓名：<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-model</span>=<span class="string">'newStudent.name'</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>年龄：<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"请输入年龄："</span> <span class="attr">v-model</span>=<span class="string">'newStudent.age'</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>性别：<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">select</span> <span class="attr">v-model</span>=<span class="string">'newStudent.sex'</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"男"</span>&gt;</span>男<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"女"</span>&gt;</span>女<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">'createNewStudent()'</span>&gt;</span>创建新用户<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 第二部分 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>年龄<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>性别<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>手机<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>删除<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span> <span class="attr">v-for</span>=<span class="string">'(list,index) in lists'</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;list.name&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;list.age&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;list.sex&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">'deleteStudent(index)'</span>&gt;</span>删除<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">      el: <span class="string">'#app'</span>,</span></span><br><span class="line"><span class="undefined">      data:&#123;</span></span><br><span class="line"><span class="undefined">        lists: [</span></span><br><span class="line"><span class="javascript">          &#123;<span class="attr">name</span>:<span class="string">'张三'</span>,<span class="attr">age</span>: <span class="number">23</span>,<span class="attr">sex</span>:<span class="string">'男'</span>&#125;,</span></span><br><span class="line"><span class="javascript">          &#123;<span class="attr">name</span>:<span class="string">'王二'</span>,<span class="attr">age</span>: <span class="number">23</span>,<span class="attr">sex</span>:<span class="string">'女'</span>&#125;,</span></span><br><span class="line"><span class="javascript">          &#123;<span class="attr">name</span>:<span class="string">'赵六'</span>,<span class="attr">age</span>: <span class="number">23</span>,<span class="attr">sex</span>:<span class="string">'男'</span>&#125;</span></span><br><span class="line"><span class="undefined">        ],</span></span><br><span class="line"><span class="undefined">        newStudent:</span></span><br><span class="line"><span class="javascript">          &#123;<span class="attr">name</span>:<span class="string">''</span>,<span class="attr">age</span>:<span class="string">''</span>,<span class="attr">sex</span>:<span class="string">'男'</span>&#125;,</span></span><br><span class="line"><span class="undefined">      &#125;,</span></span><br><span class="line"><span class="undefined">      methods:&#123;</span></span><br><span class="line"><span class="javascript">        <span class="comment">// 创建方法</span></span></span><br><span class="line"><span class="undefined">        createNewStudent()&#123;</span></span><br><span class="line"><span class="javascript">          <span class="comment">// 判断年龄</span></span></span><br><span class="line"><span class="javascript">          <span class="keyword">if</span>(<span class="keyword">this</span>.newStudent.name === <span class="string">''</span>)&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">'姓名不正确'</span>);</span></span><br><span class="line"><span class="javascript">            <span class="keyword">return</span>;</span></span><br><span class="line"><span class="undefined">          &#125;</span></span><br><span class="line"><span class="javascript">          <span class="comment">//  判断年龄</span></span></span><br><span class="line"><span class="javascript">          <span class="keyword">if</span>(<span class="keyword">this</span>.newStudent.age &lt; <span class="number">0</span>)&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">'年龄不正确'</span>);</span></span><br><span class="line"><span class="javascript">            <span class="keyword">return</span>;</span></span><br><span class="line"><span class="undefined">          &#125;</span></span><br><span class="line"><span class="undefined">          /* 向数组中插入一个新对象不能用push所以我们用unshift </span></span><br><span class="line"><span class="undefined">          你以为这样就可以了吗，这样创建出来的都是空对象，所以我们要是向数据双向绑定。</span></span><br><span class="line"><span class="undefined">          */</span></span><br><span class="line"><span class="javascript">          <span class="keyword">this</span>.lists.unshift(<span class="keyword">this</span>.newStudent);</span></span><br><span class="line"><span class="javascript">          <span class="comment">// 清除</span></span></span><br><span class="line"><span class="javascript">          <span class="keyword">this</span>.newStudent = &#123;<span class="attr">name</span>:<span class="string">''</span>,<span class="attr">age</span>:<span class="string">''</span>,<span class="attr">sex</span>:<span class="string">'男'</span>&#125;</span></span><br><span class="line"><span class="javascript">          <span class="comment">/* 删除学生信息记录 */</span></span></span><br><span class="line"><span class="undefined">        &#125;,</span></span><br><span class="line"><span class="undefined">        deleteStudent(index)&#123;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">this</span>.lists.splice(index,<span class="number">1</span>);</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">      &#125;,</span></span><br><span class="line"><span class="undefined">    &#125;);</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2019/02/11/实例/D:/Hexo\source\_posts\实例\QQ图片20190212212351.png" alt="QQ图片20190212212351"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">实例</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/实例//" class="article-tag-list-link color3">实例</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/11/实例/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Git与npm总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/10/Git与npm总结/">Git与npm</a>
-    </h1>
-  
-
-        
-        <a href="/2019/02/10/Git与npm总结/" class="archive-article-date">
+        <a href="/2019/02/10/工具类/Git与npm总结/" class="archive-article-date">
   	<time datetime="2019-02-10T13:36:34.478Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-10</time>
 </a>
         
@@ -752,7 +876,7 @@
 <li>git rm –cached 文件名（把文件从缓冲区中移除）</li>
 </ul>
         
-          <a class="article-more-a" href="/2019/02/10/Git与npm总结/#more">more >></a>
+          <a class="article-more-a" href="/2019/02/10/工具类/Git与npm总结/#more">more >></a>
         
       
 
@@ -765,7 +889,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/10/Git与npm总结/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/02/10/工具类/Git与npm总结/">展开全文 >></a>
         </p>
       
 
@@ -795,7 +919,7 @@
 
 
   
-    <article id="post-CSS" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-H5C3/CSS" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
@@ -804,12 +928,12 @@
 <h1 id="CSS-网页的美容师"><a href="#CSS-网页的美容师" class="headerlink" title="CSS 网页的美容师"></a>CSS 网页的美容师</h1><p>CSS的出现，拯救了混乱的HTML，当让更加拯救了我们web开发者。 让我们的网页更加丰富多彩。   </p>
 <p>CSS的最大贡献就是：  让 HTML 从样式中解脱苦海，  实现了 HTML 专注去做 结构呈现。 而样式交给 CSS 后，你完全可以放心的早点洗洗睡了！</p>
 <p>而且。。。。。 CSS 做的很出色，如果JavaScript是网页的魔法师，那么CSS它是我们网页的美容师，不信，你看:</p>
-<p><img src="/2019/02/10/CSS/media/baby.jpeg"></p>
+<p><img src="/2019/02/10/H5C3/CSS/media/baby.jpeg"></p>
 <p>ps:  你跟Angelababy只差了一个妆容的距离</p>
 <p>有人说， 没有不漂亮的女人，只有不会打扮的女人。</p>
 <p>我想说， 没有不好看的网页，只有不会CSS的前端。</p>
         
-          <a class="article-more-a" href="/2019/02/10/CSS/#more">more >></a>
+          <a class="article-more-a" href="/2019/02/10/H5C3/CSS/#more">more >></a>
         
       
 
@@ -822,7 +946,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/10/CSS/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/02/10/H5C3/CSS/">展开全文 >></a>
         </p>
       
 
@@ -852,19 +976,19 @@
 
 
   
-    <article id="post-Vue2.X" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-库和框架类/vue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/10/Vue2.X/">Vue2.X</a>
+      <a class="article-title" href="/2019/02/10/库和框架类/vue/">Vue2.X</a>
     </h1>
   
 
         
-        <a href="/2019/02/10/Vue2.X/" class="archive-article-date">
+        <a href="/2019/02/10/库和框架类/vue/" class="archive-article-date">
   	<time datetime="2019-02-10T01:56:14.205Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-10</time>
 </a>
         
@@ -878,7 +1002,7 @@
 </blockquote>
 <h4 id="一、实现HelloWorld"><a href="#一、实现HelloWorld" class="headerlink" title="一、实现HelloWorld"></a>一、实现HelloWorld</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//第一步我们需要引用vue.js</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'node_modules/vue/dist/vue.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">//第二步在标签中绑定el为实例提供挂载符，可以是css，html选择符</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123;message&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="comment">//创建一个vue实例对象</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">            el:<span class="string">'#app'</span>,</span></span><br><span class="line"><span class="undefined">            date:&#123;</span></span><br><span class="line"><span class="javascript">                message:<span class="string">'hello world'</span></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;)</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2019/02/10/Vue2.X/#more">more >></a>
+          <a class="article-more-a" href="/2019/02/10/库和框架类/vue/#more">more >></a>
         
       
 
@@ -913,66 +1037,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/10/Vue2.X/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-es6简介" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="ES6简介"><a href="#ES6简介" class="headerlink" title="ES6简介"></a>ES6简介</h1><blockquote>
-<p>Es6（ECMASCRIPT 6）是继ES5的新一代web前端开发的一个标准语法，JavaScript 和 ECMAScript 是神马关系呢？</p>
-<p>我只记得阮一峰老师的ES6标准入门的一句话  <strong>前者是后者的一种实现，后者是前者的一种规范</strong></p>
-</blockquote>
-<h4 id="一、用let定义变量"><a href="#一、用let定义变量" class="headerlink" title="一、用let定义变量"></a>一、用let定义变量</h4><p>在es5中我们使用的用var定义变量这样带来的不好的问题有一下几点。</p>
-<ol>
-<li>用var定义的变量提升</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(a);</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">5</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(b);</span><br><span class="line">    <span class="keyword">let</span> b = <span class="number">6</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//运行结果： undefined</span></span><br><span class="line"><span class="comment">//报错</span></span><br></pre></td></tr></table></figure>
-<p>按照我们普通的逻辑来说应该是报错的，但是却出现undefined显然不和我们的逻辑。如果是es6显然不会出现这种问题。所以变量在没有申明之前是不可以被使用的，术语称之为 ”暂时性死区“    </p>
-        
-          <a class="article-more-a" href="/2019/02/08/es6简介/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/08/es6简介/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/02/10/库和框架类/vue/">展开全文 >></a>
         </p>
       
 
@@ -1099,15 +1164,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">js(框架)</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">博客搭载过程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">h5与c3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">node</a>
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1119,23 +1192,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">js(框架)</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">实例</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1143,15 +1200,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技术</a>
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">博客搭载过程</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">h5与c3</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
             
             <div class="clearfix"></div>

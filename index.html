@@ -62,7 +62,7 @@
 			</ul>
 		</nav>
 		<nav>
-			<a>Articles count25</a> 
+			<a>Articles count26</a> 
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -153,19 +153,384 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-koa音乐播放项目" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-H5C3/H5和c3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="HTML5新特性"><a href="#HTML5新特性" class="headerlink" title="HTML5新特性"></a>HTML5新特性</h3><ul>
+<li><p>（1）取消了过时的标签如：font和center</p>
+</li>
+<li><p>（2）新表单元素的引入（如email，可以不用写js代码即可验证邮箱）</p>
+</li>
+<li><p>（3）新语义便签的引入（header，section，footer..）</p>
+</li>
+<li><p>（4）canvas标签</p>
+</li>
+<li><p>（5）本地数据库（列如：localstorage）</p>
+</li>
+<li><p>（6）新增API</p>
+</li>
+</ul>
+<h5 id="1、解决语义问题，html5新增的标签在我们的低版本的浏览器中有的是识别不出来的，尤其是ie浏览器。以下是解决的方案"><a href="#1、解决语义问题，html5新增的标签在我们的低版本的浏览器中有的是识别不出来的，尤其是ie浏览器。以下是解决的方案" class="headerlink" title="1、解决语义问题，html5新增的标签在我们的低版本的浏览器中有的是识别不出来的，尤其是ie浏览器。以下是解决的方案"></a>1、解决语义问题，html5新增的标签在我们的低版本的浏览器中有的是识别不出来的，尤其是ie浏览器。以下是解决的方案</h5><ul>
+<li>在script标签中创建列如：（document.createElement(‘nav’));</li>
+<li>利用插件html5shiv.min.js，注意如果只用一个插件的话，我们谷歌浏览器其实是无需加载这个插件的所以我们只需要兼容ie即可（lte是小于）</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--[if lte IE 6]&gt;</span></span><br><span class="line"><span class="comment">       &lt;script src="node_modules/html5shiv.min.js/html5shiv.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="comment"> &lt;![endif]--&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="多媒体标签新属性"><a href="#多媒体标签新属性" class="headerlink" title="多媒体标签新属性"></a>多媒体标签新属性</h4><p>video和audio</p>
+<ul>
+<li><p>添加了状态栏（controls属性）</p>
+</li>
+<li><p>添加了自动播放属性、循环播放（autoplay、loop）</p>
+</li>
+<li><p>解决浏览器兼容问题可以用source</p>
+<p><img src="/2019/07/27/H5C3/H5和c3/C:/Users\LRY-NB\AppData\Roaming\Typora\typora-user-images\1562296060977.png" alt="1562296060977"></p>
+</li>
+</ul>
+<p>表单新特性：</p>
+<p>email、url、color、number、month…..</p>
+<h4 id="类的增加"><a href="#类的增加" class="headerlink" title="类的增加"></a>类的增加</h4><p>以前我们需要增加或者移除一个类，我们需要引用jquery，但是我们h5给我们提供了新特性classList</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        .wrapper&#123;</span></span><br><span class="line"><span class="undefined">            width: 100%;</span></span><br><span class="line"><span class="undefined">            height: 100px;</span></span><br><span class="line"><span class="undefined">            background: palegreen;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"add"</span> <span class="attr">value</span>=<span class="string">"add"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"remove"</span> <span class="attr">value</span>=<span class="string">"remove"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"toggle"</span> <span class="attr">value</span>=<span class="string">"toggle"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"contains"</span> <span class="attr">value</span>=<span class="string">"contains"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">            let obj_div = document.querySelector("div");</span></span><br><span class="line"><span class="undefined">            let add_btn = document.querySelector(".add");</span></span><br><span class="line"><span class="undefined">            let remove_btn = document.querySelector(".remove");</span></span><br><span class="line"><span class="undefined">            let toggle_btn = document.querySelector(".toggle");</span></span><br><span class="line"><span class="undefined">            let contain_btn = document.querySelector(".contains");</span></span><br><span class="line"><span class="undefined">            add_btn.onclick = function ()&#123;</span></span><br><span class="line"><span class="undefined">                obj_div.classList.add("wrapper");</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="自定义属性data"><a href="#自定义属性data" class="headerlink" title="自定义属性data-"></a>自定义属性data-</h4><p>h5中提供自定义属性统一规定以data-开头</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 注意如果是data-test-data则使用驼峰命名法获取数据 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">data-test</span>=<span class="string">"134"</span>&gt;</span>ggg<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">       let list = document.querySelector("div").dataset;</span></span><br><span class="line"><span class="undefined">        console.log(list);</span></span><br><span class="line"><span class="undefined">        // 获取属性值</span></span><br><span class="line"><span class="undefined">        console.log(list.test);</span></span><br><span class="line"><span class="undefined">        // 设置属性值</span></span><br><span class="line"><span class="undefined">        list.resource = 50;</span></span><br><span class="line"><span class="undefined">        // 同样的注意驼峰获取属性</span></span><br><span class="line"><span class="undefined">        console.log(list.resource)</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="获取网络状态"><a href="#获取网络状态" class="headerlink" title="获取网络状态"></a>获取网络状态</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">window.ononline = function()&#123;</span><br><span class="line">            alert("当前处于联网状态");</span><br><span class="line">        &#125;</span><br><span class="line">        window.onoffline = function()&#123;</span><br><span class="line">            alert("当前处于断网状态");</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="获取地理位置"><a href="#获取地理位置" class="headerlink" title="获取地理位置"></a>获取地理位置</h4><p>h5中获取地理位置有实时和一次性</p>
+<p>实时</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.navigator.geolocation.watchPosition(success,error);</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">success</span> (<span class="params">msg,position</span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(msg);</span><br><span class="line">            <span class="built_in">console</span>.log(position);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">error</span> (<span class="params">msg</span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(msg);</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="本地存储"><a href="#本地存储" class="headerlink" title="本地存储"></a>本地存储</h4><p>localStorage（永久）和sessionStorage（临时）</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"添加"</span> <span class="attr">class</span>=<span class="string">"btn1"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"删除"</span> <span class="attr">class</span>=<span class="string">"btn2"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"获取"</span> <span class="attr">class</span>=<span class="string">"btn3"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"清空"</span> <span class="attr">class</span>=<span class="string">"btn4"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">       <span class="keyword">let</span> btn1 = <span class="built_in">document</span>.querySelector(<span class="string">".btn1"</span>);</span></span><br><span class="line"><span class="javascript">       btn1.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">           <span class="built_in">window</span>.localStorage.setItem(<span class="string">"name"</span>,<span class="string">"zs"</span>);</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">let</span> btn2 = <span class="built_in">document</span>.querySelector(<span class="string">".btn2"</span>);</span></span><br><span class="line"><span class="javascript">       btn2.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">           <span class="built_in">window</span>.localStorage.removeItem(<span class="string">"name"</span>);</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">let</span> btn3 = <span class="built_in">document</span>.querySelector(<span class="string">".btn3"</span>);</span></span><br><span class="line"><span class="javascript">       btn3.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">           <span class="built_in">window</span>.localStorage.getItem(<span class="string">"name"</span>);</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">let</span> btn4 = <span class="built_in">document</span>.querySelector(<span class="string">".btn4"</span>);</span></span><br><span class="line"><span class="javascript">       btn4.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">           <span class="built_in">window</span>.localStorage.clear();</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="undefined">   </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/27/H5C3/H5和c3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-后端类/php" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h1><h3 id="变量的定义"><a href="#变量的定义" class="headerlink" title="变量的定义"></a>变量的定义</h3><p>在php中定义变量是以$开头， 不能以其他的字符开头。</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>输出字符串可以用echo，其余的可以用print_r或者var_dump（可以输入其他）</p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><ul>
+<li>普通数组的定义方式</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">array</span> = <span class="keyword">array</span>(<span class="string">"zs"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>);</span><br><span class="line">var_dump(<span class="keyword">array</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>键值对的数组方式</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">array</span> = <span class="keyword">array</span>(<span class="string">"username"</span> =&gt; <span class="string">"zs"</span>, <span class="string">"age"</span> =&gt; <span class="number">17</span>);</span><br><span class="line">var_dump(<span class="keyword">array</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>常用方法 <ul>
+<li>count(数组名) 统计出数组的长度</li>
+<li>in_array(“某元素”,数组名)判断该数组是否包含某元素</li>
+<li>strstr(“字符串”,字符串的某一部分)查看字符串某一部份是否为字符串的一部分。</li>
+</ul>
+</li>
+</ul>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>字符串链接用点进行连接。</p>
+<h3 id="a链接的GET请求（只有）"><a href="#a链接的GET请求（只有）" class="headerlink" title="a链接的GET请求（只有）"></a>a链接的GET请求（只有）</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"02a标签发送get请求.php?username=zs&amp;age=19"</span>&gt;</span>发送给自己的服务器<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $name = $_GET[<span class="string">'username'</span>];</span><br><span class="line">    $age = $_GET[<span class="string">'age'</span>];</span><br><span class="line">    <span class="keyword">echo</span> $name.$age;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="表单的请求"><a href="#表单的请求" class="headerlink" title="表单的请求"></a>表单的请求</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"02a标签发送get请求.php?username=zs"</span> <span class="attr">method</span>=<span class="string">"post"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"提交数据"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $name = $_GET[<span class="string">'username'</span>];</span><br><span class="line">    <span class="comment">// $age = $_GET['age'];</span></span><br><span class="line">    <span class="keyword">echo</span> $name;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>其中$_GET是GET请求获得数据，_POST是post获取数据</strong></p>
+<h3 id="实现文件和图片上传"><a href="#实现文件和图片上传" class="headerlink" title="实现文件和图片上传"></a>实现文件和图片上传</h3><p>前端实现上传文件，后端负责把上传的文件存储起来，然后存储到数据库中</p>
+<p>前端</p>
+<ul>
+<li>必须加入（enctype=”multipart/form-data”）</li>
+<li>method必须为post上传</li>
+<li>上传之后需要提交才行。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"03.php"</span> <span class="attr">enctype</span>=<span class="string">"multipart/form-data"</span> <span class="attr">method</span>=<span class="string">"post"</span>&gt;</span></span><br><span class="line">      上传照片<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"file"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"提交"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>后端（php）</p>
+<ul>
+<li>必须加入请求头（header(“Content-Type:text/html;charset=utf-8”)）防止乱码</li>
+<li>$_FILES是提供的上传的文件的信息的一个数组</li>
+<li>可以取出数组中的对应的文件名和文件临时存放的位置以及文件的类型。</li>
+<li>move_uploaded_file(临时存放的文件的位置，新的文件夹地址和名字)</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="comment">//设置一个请求头防止乱码</span></span><br><span class="line">    header(<span class="string">"Content-Type:text/html;charset=utf-8"</span>);</span><br><span class="line">    $file = $_FILES;</span><br><span class="line">    <span class="comment">// 获取上传文件的名称</span></span><br><span class="line">    $file_name = $file[<span class="string">"file"</span>][<span class="string">"name"</span>];</span><br><span class="line">    <span class="comment">//获取上传文件的临时存储地址</span></span><br><span class="line">    $tmp_name = $file[<span class="string">"file"</span>][<span class="string">"tmp_name"</span>];</span><br><span class="line">    <span class="comment">//将临时存放的文件上传存到我们要存放的目录文件下</span></span><br><span class="line">    move_uploaded_file($tmp_name,<span class="string">"image/"</span>.$file_name);</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"上传成功"</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="请求头处理"><a href="#请求头处理" class="headerlink" title="请求头处理"></a>请求头处理</h3><p>客户端向服务器端请求数据，而服务器端则向客户端响应数据。</p>
+<ul>
+<li>getallheader()获取浏览器的所有请求头</li>
+</ul>
+<p><strong> 查看浏览器是否为谷歌浏览器</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  $arr = getallheaders();</span><br><span class="line">  $userAgent = $arr[<span class="string">"User-Agent"</span>];</span><br><span class="line">  <span class="keyword">if</span>(strstr($userAgent,<span class="string">"Chrome"</span>))&#123;</span><br><span class="line">    var_dump(<span class="string">"谷歌浏览器"</span>);</span><br><span class="line">  &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    var_dump(<span class="string">"其他浏览器"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h3><p>cookie是客户端发送给服务器端的一个字条，当客户端第一次向服务端请求数据的时候，服务端会发送给客户端一个cookie，用以保存数据，客户端接受到cookie会保存起来，如果当客户端再次请求数据的时候会把cookie携带上。并把cookie中的数据写入服务端。</p>
+<p><strong>cookie的生命周期</strong></p>
+<ul>
+<li>存在内存中cookie，当关闭浏览器的时候cookie就会消失。</li>
+<li>存在硬盘上的cookie，即使关闭电脑cookie也不会消失。主要设置方法是（time（））</li>
+<li>追杀cookie。把cookie清除掉</li>
+</ul>
+<p>（1）</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="comment">//向客户端输入cookie，以键值对的方式输入</span></span><br><span class="line">  setcookie(<span class="string">"username"</span>,<span class="string">"zhangshang"</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>（2）</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  setcookie(<span class="string">"password"</span>,<span class="string">"1111"</span>,time() * <span class="number">60</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>（3）再一次请求就会显示passwor deleted，代表cookie被杀死了。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  setcookie(<span class="string">"password"</span>,<span class="string">""</span>,<span class="number">-1</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="cookie记住用户名"><a href="#cookie记住用户名" class="headerlink" title="cookie记住用户名"></a>cookie记住用户名</h4><p><strong>前端获取cookie，并且判断cookie是否存在</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> cookiename = <span class="built_in">document</span>.cookie;</span><br><span class="line">      <span class="keyword">if</span>(cookiename)&#123;</span><br><span class="line">        <span class="built_in">document</span>.querySelector(<span class="string">"input[type='text']"</span>).value = cookiename.split(<span class="string">"="</span>)[<span class="number">1</span>];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>后端发送cookie</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  $cookie = $_GET[<span class="string">"username"</span>];</span><br><span class="line">  setcookie(<span class="string">"username"</span>,$cookie,time()+<span class="number">60</span>*<span class="number">20</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="session"><a href="#session" class="headerlink" title="session"></a>session</h3><p>session存储在服务器中的，依赖于cookie</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  header(<span class="string">"Content-Type:text/html;charset=utf-8"</span>);</span><br><span class="line">  $username = <span class="string">"程式"</span>;</span><br><span class="line">	<span class="comment">//开启会话</span></span><br><span class="line">  session_start();</span><br><span class="line">	<span class="comment">//$_SESSION是一个关联数组</span></span><br><span class="line">  $_SESSION[<span class="string">"username"</span>] = $username;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  header(<span class="string">"Content-Type:text/html;charset=utf-8"</span>);</span><br><span class="line">  session_start();</span><br><span class="line">  <span class="keyword">echo</span> $_SESSION[<span class="string">"username"</span>];</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/27/后端类/php/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-实战类/be-project" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="项目描述"><a href="#项目描述" class="headerlink" title="项目描述"></a>项目描述</h2><blockquote>
+<p>使用nodejs中的koa2框架先实现登录注册功能</p>
+</blockquote>
+<h2 id="项目功能"><a href="#项目功能" class="headerlink" title="项目功能"></a>项目功能</h2><ul>
+<li>用户登录</li>
+<li>用户注册</li>
+<li>增加记录</li>
+<li>删除记录</li>
+<li>修改记录</li>
+<li>查询记录</li>
+</ul>
+<h2 id="项目所依赖的模块"><a href="#项目所依赖的模块" class="headerlink" title="项目所依赖的模块"></a>项目所依赖的模块</h2><ul>
+<li>koa</li>
+<li>co-mysql</li>
+<li>mysql</li>
+<li>koa-session</li>
+<li>koa-art-template</li>
+<li>koa-router</li>
+<li>koa-static</li>
+<li>Koa-better-body</li>
+</ul>
+<h2 id="项目中路由设计"><a href="#项目中路由设计" class="headerlink" title="项目中路由设计"></a>项目中路由设计</h2><h2 id="项目中数据库设计"><a href="#项目中数据库设计" class="headerlink" title="项目中数据库设计"></a>项目中数据库设计</h2><h2 id="项目所遇到坑"><a href="#项目所遇到坑" class="headerlink" title="项目所遇到坑"></a>项目所遇到坑</h2><p>（1）表单提交，后台获取不到数据，以为是中间件的问题，原来是我的type给错</p>
+<p>（2）数据插入不到数据库中</p>
+<p>（3）静态资源库的问题，导致页面渲染不出来。</p>
+<h2 id="项目中session问题"><a href="#项目中session问题" class="headerlink" title="项目中session问题"></a>项目中session问题</h2><p>已解决问题</p>
+<p>（1）注册过后，重定向到登录</p>
+<p>（2）登录过后，重定向到首页</p>
+<p>（3）如何解决点击登录，注册按钮页面异常问题（ps：已解决把html文件中的a标签跳转路径的.html删掉即可）</p>
+<p>（4）登录在postman中测试是用户名和密码正确显示登录成功，但是在）</p>
+<p>（5）ajax发送请求过后，获取到后台发送过来的数据，这时后台如果要重定向页面是不行的，必须由前端来重定向。</p>
+<p>（6）根据用户的sessionid不同，请求的博客文章也不同。用户不登录即访问不到主页和其他页面</p>
+<p>待解决问题</p>
+<p>（1）session、cookie存储和使用</p>
+<p>（2）前端交互数据ing</p>
+<p>（3）首页编写ing</p>
+<p>（4）ajax中post请求获取不到数据ing</p>
+<p>（5）前端利用hash值来使用公共的头部底部区域</p>
+<p>（6）发表博客，需要等模态框弹出来过后，方可重定向。</p>
+<p>（7）实现点击加载刷新很多</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/27/实战类/be-project/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-实战类/微信小程序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h2><blockquote>
+<p>我的微信以前搞过微信公众号，所以微信公众平台显示的是微信公众号的后台，而不是小程序的开发后台。具体我也不知道怎么搞，≧ ﹏ ≦</p>
+</blockquote>
+<h3 id="开发者工具"><a href="#开发者工具" class="headerlink" title="开发者工具"></a>开发者工具</h3><p><code>需要到官网上去下载，可以先下载稳定版本</code></p>
+<p><code>选择小程序开发</code></p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ul>
+<li>目录树</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">C:	app.js</span><br><span class="line">│  app.json</span><br><span class="line">│  app.wxss</span><br><span class="line">│  project.config.json//后添加的</span><br><span class="line">│  sitemap.json//后添加的</span><br><span class="line">│</span><br><span class="line">├─images</span><br><span class="line">│      head.jpg</span><br><span class="line">│</span><br><span class="line">└─pages</span><br><span class="line">    └─index</span><br><span class="line">            index.js</span><br><span class="line">            index.json</span><br><span class="line">            index.wxml</span><br><span class="line">            index.wxss</span><br></pre></td></tr></table></figure>
+<ul>
+<li>其中app.json,app.wxss,app.js这三个文件是全局，对整个项目进行操作</li>
+<li>index.js（页面逻辑）</li>
+<li>index.json（状态信息）</li>
+<li>index.wxml（页面绘制）</li>
+<li>index.wxss（排版布局）</li>
+</ul>
+<h3 id="小程序1"><a href="#小程序1" class="headerlink" title="小程序1"></a>小程序1</h3><blockquote>
+<p>实现获取用户头像和名称</p>
+</blockquote>
+<p>依次建好仨个全局文件和一个项目文件夹。项目文件夹中包括我们的页面文件夹</p>
+<p>在index件四个文件，我们只需要右键–新建pages，输入index，立刻会帮我们生成四个文件。</p>
+<p>这时就可以在全局中的app.json文件中看到对应的页面信息了，（前提是一开始建app.json的时候写了花括号在里面）</p>
+<p><strong>index.wxml</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">'container'</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">image</span> <span class="attr">wx:if</span>=<span class="string">'&#123;&#123;src&#125;&#125;'</span> <span class="attr">class</span>=<span class="string">'imgWrapper'</span> <span class="attr">src</span>=<span class="string">'&#123;&#123;src&#125;&#125;'</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">image</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">text</span>&gt;</span>&#123;&#123;name&#125;&#125;<span class="tag">&lt;/<span class="name">text</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">'btn'</span> <span class="attr">open-type</span>=<span class="string">"getUserInfo"</span> <span class="attr">bindgetuserinfo</span>=<span class="string">"getMyInfo"</span>&gt;</span>点击获取微信头像<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>index.js</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    src: <span class="string">'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=350479878,4015742982&amp;fm=27&amp;gp=0.jpg'</span>,</span><br><span class="line">    name: <span class="string">'null'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  getMyInfo: <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> results = e.detail.userInfo</span><br><span class="line">    <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">      src : results.avatarUrl,</span><br><span class="line">      name : results.nickName</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+<p><strong>index.wxss</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-direction</span>: column;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">  <span class="attribute">justify-content</span>: space-around;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.imgWrapper</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">360</span>rpx;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>app.json</strong></p>
+<p><code>这里的window是对头部状态栏的设置，写一下window敲回车自动生成</code> </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">"window": &#123;</span><br><span class="line">    "navigationBarBackgroundColor": "#ffffff",</span><br><span class="line">    "navigationBarTextStyle": "black",</span><br><span class="line">    "navigationBarTitleText": "获取用户信息",</span><br><span class="line">    "backgroundColor": "#eeeeee",</span><br><span class="line">    "backgroundTextStyle": "light",</span><br><span class="line">    "enablePullDownRefresh": false</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/27/实战类/微信小程序/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-实战类/koa音乐播放项目" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/17/koa音乐播放项目/">koa音乐播放项目</a>
+      <a class="article-title" href="/2019/07/17/实战类/koa音乐播放项目/">koa音乐播放项目</a>
     </h1>
   
 
         
-        <a href="/2019/07/17/koa音乐播放项目/" class="archive-article-date">
+        <a href="/2019/07/17/实战类/koa音乐播放项目/" class="archive-article-date">
   	<time datetime="2019-07-17T08:02:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-17</time>
 </a>
         
@@ -189,7 +554,7 @@
 <li>连接数据库（mysql）</li>
 </ul>
         
-          <a class="article-more-a" href="/2019/07/17/koa音乐播放项目/#more">more >></a>
+          <a class="article-more-a" href="/2019/07/17/实战类/koa音乐播放项目/#more">more >></a>
         
       
 
@@ -224,7 +589,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/17/koa音乐播放项目/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/07/17/实战类/koa音乐播放项目/">展开全文 >></a>
         </p>
       
 
@@ -356,19 +721,121 @@
 
 
   
-    <article id="post-webpack" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-库和框架类/zepto" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/23/webpack/">webpack</a>
+      <a class="article-title" href="/2019/07/12/库和框架类/zepto/">zepto</a>
     </h1>
   
 
         
-        <a href="/2019/05/23/webpack/" class="archive-article-date">
+        <a href="/2019/07/12/库和框架类/zepto/" class="archive-article-date">
+  	<time datetime="2019-07-12T11:52:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>zepto是一款轻量级的框架，其用法和jQuery用法相同，jQuery是pc端比较好一点，但是移动端就不行了，从而诞生了zepto。zepto适用于移动端。</p>
+</blockquote>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol>
+<li>官网<a href="https://www.html.cn/doc/zeptojs_api/" target="_blank" rel="noopener">https://www.html.cn/doc/zeptojs_api/</a></li>
+<li>GitHub地址（<a href="https://github.com/madrobby/zepto" target="_blank" rel="noopener">https://github.com/madrobby/zepto</a>）</li>
+</ol>
+<p>在GitHub中把zepto下载下来之后，在其目录打开命令行窗口或者power shall窗口，（前提是你已经安装了nodejs）执行</p>
+<p>npm i 把所需要的依赖下载下来。</p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><blockquote>
+<p>zepto是一个模块的文件，需要什么我们就要引入什么，所以这里需要我们定制自己zepto。</p>
+</blockquote>
+<p>在下载下来的文件中打开make文件，定位到41行，这里的touch是我们自己添加的，其余的五个是核心模块。</p>
+<p><img src="/2019/07/12/库和框架类/zepto/C:/Users\LRY-NB\AppData\Roaming\Typora\typora-user-images\1562933013137.png" alt="1562933013137"></p>
+<p>接下来我们就可以使用我们的zepto.js</p>
+<p>我们页面需要调到模拟手机的页面，要不然不显示。</p>
+        
+          <a class="article-more-a" href="/2019/07/12/库和框架类/zepto/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">js(框架)</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/12/库和框架类/zepto/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-工具类/webpack" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/23/工具类/webpack/">webpack</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/23/工具类/webpack/" class="archive-article-date">
   	<time datetime="2019-05-23T11:26:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-23</time>
 </a>
         
@@ -402,7 +869,7 @@
 <p>index.js文件中（入口文件）</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'./style.css'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'./index.html'</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'hello webpack2'</span>)</span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2019/05/23/webpack/#more">more >></a>
+          <a class="article-more-a" href="/2019/05/23/工具类/webpack/#more">more >></a>
         
       
 
@@ -437,7 +904,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/23/webpack/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/05/23/工具类/webpack/">展开全文 >></a>
         </p>
       
 
@@ -467,19 +934,19 @@
 
 
   
-    <article id="post-浅谈h5与c3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-H5C3/浅谈h5与c3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/29/浅谈h5与c3/">浅谈h5与c3</a>
+      <a class="article-title" href="/2019/03/29/H5C3/浅谈h5与c3/">浅谈h5与c3</a>
     </h1>
   
 
         
-        <a href="/2019/03/29/浅谈h5与c3/" class="archive-article-date">
+        <a href="/2019/03/29/H5C3/浅谈h5与c3/" class="archive-article-date">
   	<time datetime="2019-03-29T06:47:32.879Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-29</time>
 </a>
         
@@ -491,9 +958,9 @@
 <p>布局的方式有很多种，利用浮动，定位这一类的布局真的是烦。。无力吐槽😧，今天来浅浅的了解一下flex布局</p>
 </blockquote>
 <h2 id="弹性布局（flex）"><a href="#弹性布局（flex）" class="headerlink" title="弹性布局（flex）"></a>弹性布局（flex）</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    .box&#123;</span></span><br><span class="line"><span class="undefined">      border: 1px solid #000;</span></span><br><span class="line"><span class="undefined">      width: 400px;</span></span><br><span class="line"><span class="undefined">      height: 500px;</span></span><br><span class="line"><span class="undefined">      box-sizing: border-box;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .item&#123;</span></span><br><span class="line"><span class="undefined">      width: 100px;</span></span><br><span class="line"><span class="undefined">      height: 100px;</span></span><br><span class="line"><span class="undefined">      font-size: 20px;</span></span><br><span class="line"><span class="undefined">      background: red;</span></span><br><span class="line"><span class="undefined">      color: #fff;</span></span><br><span class="line"><span class="undefined">      text-align: center;</span></span><br><span class="line"><span class="undefined">      line-height: 100px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'box'</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'item'</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'item'</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2019/03/29/浅谈h5与c3/QQ图片20190329145548.png" alt=""></p>
+<p><img src="/2019/03/29/H5C3/浅谈h5与c3/QQ图片20190329145548.png" alt=""></p>
         
-          <a class="article-more-a" href="/2019/03/29/浅谈h5与c3/#more">more >></a>
+          <a class="article-more-a" href="/2019/03/29/H5C3/浅谈h5与c3/#more">more >></a>
         
       
 
@@ -528,7 +995,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/29/浅谈h5与c3/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/03/29/H5C3/浅谈h5与c3/">展开全文 >></a>
         </p>
       
 
@@ -558,19 +1025,19 @@
 
 
   
-    <article id="post-字体图标使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-工具类/字体图标使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/25/字体图标使用/">字体图标使用</a>
+      <a class="article-title" href="/2019/03/25/工具类/字体图标使用/">字体图标使用</a>
     </h1>
   
 
         
-        <a href="/2019/03/25/字体图标使用/" class="archive-article-date">
+        <a href="/2019/03/25/工具类/字体图标使用/" class="archive-article-date">
   	<time datetime="2019-03-25T05:05:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-25</time>
 </a>
         
@@ -580,11 +1047,11 @@
       
         <h3 id="阿里巴巴矢量图标库的使用"><a href="#阿里巴巴矢量图标库的使用" class="headerlink" title="阿里巴巴矢量图标库的使用"></a>阿里巴巴矢量图标库的使用</h3><ol>
 <li><p>选中我们需要使用到的图标，添加到购物车中</p>
-<p><img src="/2019/03/25/字体图标使用/QQ图片20190325130548.png" alt=""></p>
+<p><img src="/2019/03/25/工具类/字体图标使用/QQ图片20190325130548.png" alt=""></p>
 </li>
 </ol>
         
-          <a class="article-more-a" href="/2019/03/25/字体图标使用/#more">more >></a>
+          <a class="article-more-a" href="/2019/03/25/工具类/字体图标使用/#more">more >></a>
         
       
 
@@ -619,486 +1086,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/25/字体图标使用/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Node" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/15/Node/">Node</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/15/Node/" class="archive-article-date">
-  	<time datetime="2019-03-15T06:31:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="node是什么，node可以干什么？"><a href="#node是什么，node可以干什么？" class="headerlink" title="node是什么，node可以干什么？"></a>node是什么，node可以干什么？</h2><blockquote>
-<p>node既不是一种语言，也不是一个框架，更不是一个库。而是一种能让JavaScript运行在服务器上的一个平台</p>
-</blockquote>
-<blockquote>
-<p>首先要下载node.js 自行到官网中下载。注意两个版本的区别</p>
-</blockquote>
-<h3 id="node中是以模块来划分作用域"><a href="#node中是以模块来划分作用域" class="headerlink" title="node中是以模块来划分作用域"></a>node中是以模块来划分作用域</h3><blockquote>
-<p>node里面分为两个作用域，全局作用域（glogbal）和模块作用域</p>
-</blockquote>
-<ul>
-<li><p>require（’模块标识符’） —–我们需引入模块需要用到的方法</p>
-</li>
-<li><p>模块</p>
-<ul>
-<li><p>用户自定义模块—-自己定义的一个js文件模块</p>
-</li>
-<li><p>系统提供模块—例如:fs,http…</p>
-</li>
-</ul>
-</li>
-</ul>
-<h6 id="例如我们想要读取一个txt文件-JavaScript中是不可能实现的"><a href="#例如我们想要读取一个txt文件-JavaScript中是不可能实现的" class="headerlink" title="例如我们想要读取一个txt文件,JavaScript中是不可能实现的"></a>例如我们想要读取一个txt文件,JavaScript中是不可能实现的</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line"><span class="comment">//如果读取成功，则返回一个回调函数，erro----null，data----一串16进制，否则的话，erro----报错，data---undefined</span></span><br><span class="line">fs.readFile(<span class="string">'txt路径'</span>,(erro,data)=&gt;&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(erro)</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line">    <span class="comment">//如果想要获取文件中的内容，只需要把16进制转换为字符串即可</span></span><br><span class="line">    <span class="built_in">console</span>.log(data.toString())</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>基本上路径如果，对的话是没有问题的，还有可能文件不存在。</li>
-</ul>
-        
-          <a class="article-more-a" href="/2019/03/15/Node/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/node//" class="article-tag-list-link color5">node</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/15/Node/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-面试题集合" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/10/面试题集合/">面试题集合</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/10/面试题集合/" class="archive-article-date">
-  	<time datetime="2019-03-10T14:34:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一、请将数组中所有的0移动到数组尾部"><a href="#一、请将数组中所有的0移动到数组尾部" class="headerlink" title="一、请将数组中所有的0移动到数组尾部"></a>一、请将数组中所有的0移动到数组尾部</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">0</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">0</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">2</span>];</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> arr2 = [];</span></span><br><span class="line"><span class="javascript">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>;i &lt; arr.length;i++)&#123;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// console.log(arr[i]);</span></span></span><br><span class="line"><span class="javascript">      <span class="keyword">if</span>(arr[i] === <span class="number">0</span>)&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">let</span> index = i;</span></span><br><span class="line"><span class="undefined">        arr2.push(arr[i]);</span></span><br><span class="line"><span class="undefined">        arr.splice(index,1);</span></span><br><span class="line"><span class="undefined">      &#125;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    arr2 = arr.concat(arr2);</span></span><br><span class="line"><span class="undefined">    alert(arr2);</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/03/10/面试题集合/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">关于某方面的标签</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/分类别//" class="article-tag-list-link color4">分类别</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/10/面试题集合/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Ajax" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/10/Ajax/">Ajax</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/10/Ajax/" class="archive-article-date">
-  	<time datetime="2019-03-10T07:14:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1、AJAX"><a href="#1、AJAX" class="headerlink" title="1、AJAX"></a>1、AJAX</h1><h2 id="为什么会发生Ajax跨域？"><a href="#为什么会发生Ajax跨域？" class="headerlink" title="为什么会发生Ajax跨域？"></a>为什么会发生Ajax跨域？</h2><ul>
-<li>浏览器限制</li>
-<li>跨域（不是本地）同源策略</li>
-<li>XHR请求</li>
-</ul>
-<p>所以解决思路：利用jsonp，利用jsonp解决跨域，后台需要改动代码</p>
-<h3 id="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"><a href="#一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。" class="headerlink" title="一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。"></a>一、Ajax的作用是什么：可以实现网页异步更新，这就意味着我们无需加载整个页面的情况下，实行对网页的某一个部分进行更新。也就是实现了页面与web服务器之间数据的异步传输。好了以上都是废话，言简意赅的就是：可以实现页面的局部刷新。</h3><h3 id="二、源生的ajax请求纯文本"><a href="#二、源生的ajax请求纯文本" class="headerlink" title="二、源生的ajax请求纯文本"></a>二、源生的ajax请求纯文本</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 源生ajax --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    let xhr = new XMLHttpRequest();</span></span><br><span class="line"><span class="undefined">    xhr.open('GET','./simple.txt',true);</span></span><br><span class="line"><span class="undefined">    // xhr.onload = function()&#123;</span></span><br><span class="line"><span class="undefined">    //   console.log(this.status);</span></span><br><span class="line"><span class="undefined">    //   console.log(this.readyState);</span></span><br><span class="line"><span class="undefined">    // &#125;</span></span><br><span class="line"><span class="undefined">    xhr.onreadystatechange = function()&#123;</span></span><br><span class="line"><span class="undefined">      // console.log(this.status);</span></span><br><span class="line"><span class="undefined">      // console.log(this.readyState);</span></span><br><span class="line"><span class="undefined">      document.body.innerHTML = this.responseText;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">      xhr.send();</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/03/10/Ajax/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/js//" class="article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/10/Ajax/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-art-template" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/09/art-template/">art-template</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/09/art-template/" class="archive-article-date">
-  	<time datetime="2019-03-09T06:35:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、前端如何引用"><a href="#一、前端如何引用" class="headerlink" title="一、前端如何引用"></a>一、前端如何引用</h2><ul>
-<li>可以使用npm方式</li>
-<li>可以使用script标签</li>
-</ul>
-<blockquote>
-<p>这里我们使用script标签</p>
-<script src="https://unpkg.com/art-template@4.13.2/lib/template-web.js"></script>
-</blockquote>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">'text/template'</span> <span class="attr">id</span>=<span class="string">'box'</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123;test&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> obj = &#123;</span></span><br><span class="line"><span class="javascript">      test: <span class="string">'h'</span>,</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> html = template(<span class="string">'box'</span>,obj);</span></span><br><span class="line"><span class="javascript">    <span class="built_in">document</span>.body.innerHTML = html;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>以上就是一个模板引擎的基本使用。首先我们先写一个模板，注意不要忘记给id值，里面是我们要创建的模板，接着我们要创建一个模板对象（一定要是对象）然后创建一个模板，第一个参数是id值，第二参数是创建模板对象名。向文档中插入模板。</p>
-<p>如果我们想要多个模板，这时候就可以使用到遍历，（个人感觉这里 有点像vue中的v-for指令）</p>
-        
-          <a class="article-more-a" href="/2019/03/09/art-template/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/js//" class="article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/09/art-template/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-jsonp百度跨域搜索" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/jsonp百度跨域搜索/">jsonp百度跨域搜索</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/08/jsonp百度跨域搜索/" class="archive-article-date">
-  	<time datetime="2019-03-08T05:18:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="jsonp百度跨域搜索"><a href="#jsonp百度跨域搜索" class="headerlink" title="jsonp百度跨域搜索"></a>jsonp百度跨域搜索</h1><p>恩？好像有很久没有更新博客了吧？最近了解到一点点的（也只有一点点）jsonp跨域的操作，差不多我们每天都会打开这个网页，当然不包括那些打开Google的人（没翻墙软件）那么我们是如何实现这个效果的呢？</p>
-<p><img src="/2019/03/08/jsonp百度跨域搜索/QQ图片20190308132734.png" alt=""></p>
-<h2 id="一、骨架"><a href="#一、骨架" class="headerlink" title="一、骨架"></a>一、骨架</h2><p>那么我们的一个基本骨架就搭建好了</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'box'</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">'text'</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">'btn'</span> &gt;</span>百度一下<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'show'</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="二、功能"><a href="#二、功能" class="headerlink" title="二、功能"></a>二、功能</h2>
-        
-          <a class="article-more-a" href="/2019/03/08/jsonp百度跨域搜索/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/08/jsonp百度跨域搜索/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/03/25/工具类/字体图标使用/">展开全文 >></a>
         </p>
       
 
@@ -1225,15 +1213,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">js(框架)</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">博客搭载过程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">h5与c3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">node</a>
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1245,23 +1241,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">js(框架)</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">实例</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1269,15 +1249,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技术</a>
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">博客搭载过程</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">h5与c3</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
             
             <div class="clearfix"></div>
