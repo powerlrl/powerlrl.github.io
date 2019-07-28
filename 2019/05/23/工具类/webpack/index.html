@@ -9,14 +9,14 @@
   <title>webpack | LinYo.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="webpack的安装及其使用一、安装安装webpack之前必须要安装nodejs，而且nodejs必须为最新的版本，要不然可能会有一个些问题。接下来就要全局的安装webpack，可以使用yarn或者npm包管理器，这里我们使用npm管理器。  npm i webpack -g（全局安装webpack） npm i –save-dev webpack@（版本号）（如果没有全局安装webpck，则这条">
-<meta name="keywords" content="关于某方面的标签">
+<meta name="keywords" content="工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack">
 <meta property="og:url" content="http://yoursite.com/2019/05/23/工具类/webpack/index.html">
 <meta property="og:site_name" content="LinYo.">
 <meta property="og:description" content="webpack的安装及其使用一、安装安装webpack之前必须要安装nodejs，而且nodejs必须为最新的版本，要不然可能会有一个些问题。接下来就要全局的安装webpack，可以使用yarn或者npm包管理器，这里我们使用npm管理器。  npm i webpack -g（全局安装webpack） npm i –save-dev webpack@（版本号）（如果没有全局安装webpck，则这条">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-23T11:47:08.906Z">
+<meta property="og:updated_time" content="2019-07-28T05:06:38.003Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack">
 <meta name="twitter:description" content="webpack的安装及其使用一、安装安装webpack之前必须要安装nodejs，而且nodejs必须为最新的版本，要不然可能会有一个些问题。接下来就要全局的安装webpack，可以使用yarn或者npm包管理器，这里我们使用npm管理器。  npm i webpack -g（全局安装webpack） npm i –save-dev webpack@（版本号）（如果没有全局安装webpck，则这条">
@@ -64,7 +64,7 @@
 			</ul>
 		</nav>
 		<nav>
-			<a>Articles count26</a> 
+			<a>Articles count24</a> 
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -181,6 +181,7 @@
 <li>npm i -D css-loader（此处只是举一个例子，并不一定非要是css-loader也有可能是别的loader）</li>
 <li>npm i -D webpack-cli -g（全局安装webpack-cli）</li>
 </ul>
+<a id="more"></a>
 <h4 id="二、使用"><a href="#二、使用" class="headerlink" title="二、使用"></a>二、使用</h4><ul>
 <li><p>首先第一步要初始化npm Init -y（生成package.json）</p>
 </li>
@@ -198,7 +199,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">"path"</span>)</span><br><span class="line"><span class="keyword">const</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">"html-webpack-plugin"</span>)</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="comment">// 设置以开发者模式</span></span><br><span class="line">  mode: <span class="string">'development'</span>,</span><br><span class="line">  <span class="comment">//设置一个入口的文件</span></span><br><span class="line">  entry: <span class="string">'./src/index.js'</span>,</span><br><span class="line">    <span class="comment">//出口文件的名称和路径，并把出口文件都放在dist文件夹，这个文件如果没有则会创建</span></span><br><span class="line">  output: &#123;</span><br><span class="line">    filename : <span class="string">'bundle.js'</span>,</span><br><span class="line">    <span class="comment">// 在当前的路径下创建一个dist文件夹，并把出口文件生成一个前面为任意8为哈希值-bundle.js</span></span><br><span class="line">    path: path.join(__dirname,<span class="string">'dist'</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">    <span class="comment">//配置热更新</span></span><br><span class="line">  devServer: &#123;</span><br><span class="line">    contentBase: <span class="string">'./dist'</span>,</span><br><span class="line">    hot: <span class="literal">true</span>,</span><br><span class="line">    port: <span class="number">3000</span></span><br><span class="line">  &#125;,</span><br><span class="line">    <span class="comment">//可以加载css和图片还有html文件</span></span><br><span class="line">  <span class="built_in">module</span>: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.css$/</span>,</span><br><span class="line">        use: [</span><br><span class="line">          <span class="string">'style-loader'</span>,</span><br><span class="line">          <span class="string">'css-loader'</span></span><br><span class="line">        ]</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.(htm|html)/</span>,</span><br><span class="line">        use: [<span class="string">'html-withimg-loader'</span>,<span class="string">'raw-loader'</span>]</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.(png|jpeg|gif|webp|jpg)$/</span>,</span><br><span class="line">        use: [</span><br><span class="line">          <span class="string">'file-loader'</span></span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">    <span class="comment">//配置模板，在index.html中会使用模板来应用title</span></span><br><span class="line">  plugins: [</span><br><span class="line">    <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</span><br><span class="line">      title: <span class="string">'hello webpack'</span>,</span><br><span class="line">      filename: <span class="string">'index.html'</span>,</span><br><span class="line">      template: <span class="string">'./src/index.html'</span></span><br><span class="line">    &#125;)</span><br><span class="line">  ]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>index.js文件中（入口文件）</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'./style.css'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'./index.html'</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'hello webpack2'</span>)</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
+
       
 
       
@@ -232,7 +233,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">关于某方面的标签</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
         		</li>
       		
 		</ul>
@@ -244,7 +245,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/分类别//" class="article-tag-list-link color4">分类别</a>
+        			<a href="/categories/工具//" class="article-tag-list-link color3">工具</a>
         		</li>
       		
 		</ul>
@@ -463,15 +464,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">js(框架)</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">博客搭载过程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">h5与c3</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -479,11 +472,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+                <a href="javascript:void(0)" class="js-tag color1">h5与c3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">关于某方面的标签</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -499,15 +504,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">node</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" class="js-tag color2">js(框架)</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
             
             <div class="clearfix"></div>

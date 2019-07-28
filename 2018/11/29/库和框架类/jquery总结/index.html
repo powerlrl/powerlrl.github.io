@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>jquery总结 | LinYo.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、绪论总体来说总结一下jquery 二、正文 学习了大约一个多月的jQuery,我发现jQuery的特性就是用更小的代码，实现很强大的功能，就像它的那句话，The Write Less, Do More。  一、首先是它的入口函数就有三种，123456789101112131415//第一种$(function()&amp;#123;    console.log(&quot;入口函数1&quot;);&amp;#125;)//第">
-<meta name="keywords" content="关于某方面的标签">
+  <meta name="description" content="总体来说总结一下jquery  学习了大约一个多月的jQuery,我发现jQuery的特性就是用更小的代码，实现很强大的功能，就像它的那句话，The Write Less, Do More。  一、首先是它的入口函数就有三种，123456789101112131415//第一种$(function()&amp;#123;    console.log(&quot;入口函数1&quot;);&amp;#125;)//第二种$(docu">
+<meta name="keywords" content="jquery">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jquery总结">
 <meta property="og:url" content="http://yoursite.com/2018/11/29/库和框架类/jquery总结/index.html">
 <meta property="og:site_name" content="LinYo.">
-<meta property="og:description" content="一、绪论总体来说总结一下jquery 二、正文 学习了大约一个多月的jQuery,我发现jQuery的特性就是用更小的代码，实现很强大的功能，就像它的那句话，The Write Less, Do More。  一、首先是它的入口函数就有三种，123456789101112131415//第一种$(function()&amp;#123;    console.log(&quot;入口函数1&quot;);&amp;#125;)//第">
+<meta property="og:description" content="总体来说总结一下jquery  学习了大约一个多月的jQuery,我发现jQuery的特性就是用更小的代码，实现很强大的功能，就像它的那句话，The Write Less, Do More。  一、首先是它的入口函数就有三种，123456789101112131415//第一种$(function()&amp;#123;    console.log(&quot;入口函数1&quot;);&amp;#125;)//第二种$(docu">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-09T07:05:41.166Z">
+<meta property="og:updated_time" content="2019-07-28T05:08:00.790Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jquery总结">
-<meta name="twitter:description" content="一、绪论总体来说总结一下jquery 二、正文 学习了大约一个多月的jQuery,我发现jQuery的特性就是用更小的代码，实现很强大的功能，就像它的那句话，The Write Less, Do More。  一、首先是它的入口函数就有三种，123456789101112131415//第一种$(function()&amp;#123;    console.log(&quot;入口函数1&quot;);&amp;#125;)//第">
+<meta name="twitter:description" content="总体来说总结一下jquery  学习了大约一个多月的jQuery,我发现jQuery的特性就是用更小的代码，实现很强大的功能，就像它的那句话，The Write Less, Do More。  一、首先是它的入口函数就有三种，123456789101112131415//第一种$(function()&amp;#123;    console.log(&quot;入口函数1&quot;);&amp;#125;)//第二种$(docu">
   
     <link rel="alternative" href="/atom.xml" title="LinYo." type="application/atom+xml">
   
@@ -64,7 +64,7 @@
 			</ul>
 		</nav>
 		<nav>
-			<a>Articles count26</a> 
+			<a>Articles count24</a> 
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -173,8 +173,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h1><p>总体来说总结一下jquery</p>
-<h1 id="二、正文"><a href="#二、正文" class="headerlink" title="二、正文"></a>二、正文</h1><blockquote>
+        <p>总体来说总结一下jquery</p>
+<blockquote>
 <p>学习了大约一个多月的jQuery,我发现jQuery的特性就是用更小的代码，实现很强大的功能，就像它的那句话，The Write Less, Do More。</p>
 </blockquote>
 <h6 id="一、首先是它的入口函数就有三种，"><a href="#一、首先是它的入口函数就有三种，" class="headerlink" title="一、首先是它的入口函数就有三种，"></a>一、首先是它的入口函数就有三种，</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第一种</span></span><br><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"入口函数1"</span>);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//第二种</span></span><br><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"入口函数2"</span>);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//第三种</span></span><br><span class="line">jquery.(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"入口函数3"</span>)；</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
@@ -222,7 +222,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">关于某方面的标签</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jquery</a>
         		</li>
       		
 		</ul>
@@ -234,7 +234,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/分类别//" class="article-tag-list-link color4">分类别</a>
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
@@ -314,7 +314,7 @@
   
   
     <a href="/2018/08/04/JavaScript/js篇/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">js篇</div>
+      <div class="article-nav-title">JavaScript</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -341,7 +341,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、绪论"><span class="toc-number">1.</span> <span class="toc-text">一、绪论</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、正文"><span class="toc-number">2.</span> <span class="toc-text">二、正文</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#一、首先是它的入口函数就有三种，"><span class="toc-number">2.0.0.0.0.1.</span> <span class="toc-text">一、首先是它的入口函数就有三种，</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#二、而且还有多种方法"><span class="toc-number">2.0.0.0.1.</span> <span class="toc-text">二、而且还有多种方法</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#一、首先是它的入口函数就有三种，"><span class="toc-number">1.</span> <span class="toc-text">一、首先是它的入口函数就有三种，</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#二、而且还有多种方法"><span class="toc-number"></span> <span class="toc-text">二、而且还有多种方法</span></a>
                     </div>
                 </span>
             </div>
@@ -453,15 +453,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">js(框架)</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">博客搭载过程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">h5与c3</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -469,11 +461,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+                <a href="javascript:void(0)" class="js-tag color1">h5与c3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">关于某方面的标签</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -489,15 +493,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">node</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" class="js-tag color2">js(框架)</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
             
             <div class="clearfix"></div>
