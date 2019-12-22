@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-15T05:07:38.623Z</updated>
+  <updated>2019-12-22T08:18:39.107Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github+jsdelivr+picg搭载免费图床</title>
+    <link href="http://yoursite.com/2019/12/22/%E5%B7%A5%E5%85%B7%E7%B1%BB/%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/"/>
+    <id>http://yoursite.com/2019/12/22/工具类/图床搭建/</id>
+    <published>2019-12-22T07:24:50.967Z</published>
+    <updated>2019-12-22T08:18:39.107Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><blockquote><p>图床：存放图片的服务器。用过的图床有：qq空间，sm包括一些其他的七里云（反正最后要域名还要备案，果断放弃）用了一段时间的sm，虽然很好用但是无奈加载速度感人，存放图片我也不知道在哪里可以看到，登录也非常的粗糙。放弃</p></blockquote><h2 id="GitHub配置"><a href="#GitHub配置" class="headerlink" title="GitHub配置"></a>GitHub配置</h2><p><strong>你需要在你的github中新建一个仓库例如叫（picture）</strong></p><p><img src="https://cdn.jsdelivr.net/gh/powerlrl/imgBed/blog/img6`$R43~W$7$R{QIP1N`XL1R.png" alt=""></p><p><strong>在主页中，找到设置，找到生成token的地方，生成一个token。一般这个token中只出现一次，一定要保存起来</strong></p><p><img src="https://cdn.jsdelivr.net/gh/powerlrl/imgBed/blog/imgSBJ8V(L" alt="">CBUI<code>)C4W82</code>AUP.png)</p><p><img src="https://cdn.jsdelivr.net/gh/powerlrl/imgBed/blog/img5S" alt="">C_CAC[XEH$@N48NUXO~7.png)</p><p><strong>生成token</strong></p><p><img src="https://cdn.jsdelivr.net/gh/powerlrl/imgBed/blog/img}XI0ZEK$1]L]XL`_I}X{R~8.png" alt=""></p><p><strong>复制token</strong></p><p><img src="https://cdn.jsdelivr.net/gh/powerlrl/imgBed/blog/img" alt="">R{(_OOTX@(]0WZH98Y113D.png)</p><h2 id="PicG配置"><a href="#PicG配置" class="headerlink" title="PicG配置"></a>PicG配置</h2><p>仓库名：用户名+新建的仓库名</p><p>分支名：一般为master</p><p>设定token：刚才copy的token</p><p>指定存储路径：仓库下面没有这个文件夹，会新建文件夹</p><p>设定自定义的域名：前面的的jsdelivr.net就是我们所用的加速cdn，快速访问到图片。gh代表用的GitHub，后面是用户名+仓库名</p><p><img src="https://cdn.jsdelivr.net/gh/powerlrl/imgBed/blog/img9JLWY`1IYMPJDT33]Q`0~~G.png" alt=""></p><p>如果想整批提交多个文件，建议使用git，把整个文件拉下来，再push上去。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;图床：存放图片的服务器。用过的图床有：qq空间，sm包括一些其他的七里云（反正最后要域名还要备案，果断放弃）用了一
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Dart</title>
@@ -536,31 +558,6 @@
     
     
       <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>容易忘记的东西</title>
-    <link href="http://yoursite.com/2019/02/12/%E5%B7%A5%E5%85%B7%E7%B1%BB/%E5%AE%B9%E6%98%93%E5%BF%98%E8%AE%B0%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
-    <id>http://yoursite.com/2019/02/12/工具类/容易忘记的东西/</id>
-    <published>2019-02-12T05:24:48.755Z</published>
-    <updated>2019-07-28T05:06:50.285Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="年纪大了容易忘记很多东西，那我就记下来吧！"><a href="#年纪大了容易忘记很多东西，那我就记下来吧！" class="headerlink" title="年纪大了容易忘记很多东西，那我就记下来吧！"></a>年纪大了容易忘记很多东西，那我就记下来吧！</h2><h2 id="vscode快捷键"><a href="#vscode快捷键" class="headerlink" title="vscode快捷键"></a>vscode快捷键</h2><p>alt+shift+down是向下复制一行</p><p>ctrl+enter是将光标快速移动到下一行</p><p>alt+shift是选中多行</p><p>alt+b在浏览器中运行</p><p>ctrl+shift+right/left是向左或者向右选中</p><h2 id="终端中的命令"><a href="#终端中的命令" class="headerlink" title="终端中的命令"></a>终端中的命令</h2><p>live -server可以不用刷新，直接保存即可在浏览器中看到运行结果，但前提的html文件必须是index.html。</p><a id="more"></a><h1 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h1><p>hexo n ‘文件名’</p><p>我们通过命令创建的.md文件会有一个同名的文件夹（这个.md文件会有初始化的格式是你自己自定义的，终于不用自己手写了太好了！），我们需要把图片添加到这个文件夹下</p><p>然后修改配置文件_config.yml需要把里面的<code>post_asset_folder</code>项为<code>true</code>。然后在hexo文件夹下</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure><p><strong>注意这里的图片路径是相对路径，绝对不可以带有d盘之类的</strong></p><h2 id="友情链接名称也不能一样，不然也会报错。。。"><a href="#友情链接名称也不能一样，不然也会报错。。。" class="headerlink" title="友情链接名称也不能一样，不然也会报错。。。"></a>友情链接名称也不能一样，不然也会报错。。。</h2><h1 id="不要把自己的hexo文件夹发给别人，不然你无法知道会报什么错误（老泪纵横，填坑填了许久。。。。）"><a href="#不要把自己的hexo文件夹发给别人，不然你无法知道会报什么错误（老泪纵横，填坑填了许久。。。。）" class="headerlink" title="不要把自己的hexo文件夹发给别人，不然你无法知道会报什么错误（老泪纵横，填坑填了许久。。。。）"></a>不要把自己的hexo文件夹发给别人，不然你无法知道会报什么错误（老泪纵横，填坑填了许久。。。。）</h1>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;年纪大了容易忘记很多东西，那我就记下来吧！&quot;&gt;&lt;a href=&quot;#年纪大了容易忘记很多东西，那我就记下来吧！&quot; class=&quot;headerlink&quot; title=&quot;年纪大了容易忘记很多东西，那我就记下来吧！&quot;&gt;&lt;/a&gt;年纪大了容易忘记很多东西，那我就记下来吧！&lt;/h2&gt;&lt;h2 id=&quot;vscode快捷键&quot;&gt;&lt;a href=&quot;#vscode快捷键&quot; class=&quot;headerlink&quot; title=&quot;vscode快捷键&quot;&gt;&lt;/a&gt;vscode快捷键&lt;/h2&gt;&lt;p&gt;alt+shift+down是向下复制一行&lt;/p&gt;
-&lt;p&gt;ctrl+enter是将光标快速移动到下一行&lt;/p&gt;
-&lt;p&gt;alt+shift是选中多行&lt;/p&gt;
-&lt;p&gt;alt+b在浏览器中运行&lt;/p&gt;
-&lt;p&gt;ctrl+shift+right/left是向左或者向右选中&lt;/p&gt;
-&lt;h2 id=&quot;终端中的命令&quot;&gt;&lt;a href=&quot;#终端中的命令&quot; class=&quot;headerlink&quot; title=&quot;终端中的命令&quot;&gt;&lt;/a&gt;终端中的命令&lt;/h2&gt;&lt;p&gt;live -server可以不用刷新，直接保存即可在浏览器中看到运行结果，但前提的html文件必须是index.html。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7/"/>
-    
     
   </entry>
   
